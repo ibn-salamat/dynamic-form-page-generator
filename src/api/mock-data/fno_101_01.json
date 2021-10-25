@@ -1,0 +1,2771 @@
+[
+  {
+    "name": "ФНО-101-01",
+    "createdAt": "2021-07-29T15:46:25.695608+06:00",
+    "updatedAt": null,
+    "lastRevision": {
+      "description": "Форма налоговой отчётности 101-01",
+      "createdAt": "2021-07-29T15:46:25.706578+06:00",
+      "active": true,
+      "fieldSets": [
+        {
+          "name": "string",
+          "orderNumber": 0,
+          "pageNumber": 0,
+          "fields": [
+            {
+              "nameRus": "Налоговый период, за который представляется налоговая отчетность(год)",
+              "nameKazCyr": "",
+              "nameKazLat": "",
+              "type": "LONG",
+              "jsonName": "_2",
+              "validationConstraints": [
+                {
+                  "constraintType": "NOT_NULL",
+                  "arguments": {
+                    "type": "MESSAGE_ARGUMENTS",
+                    "message": "",
+                    "each": false
+                  }
+                }
+              ],
+              "hidden": false,
+              "orderNumber": 1,
+              "pageNumber": 1,
+              "dictionaryName": "Dictionary name",
+              "collection": false,
+              "nestedFields": []
+            },
+            {
+              "nameRus": "Полное имя руководителя",
+              "nameKazCyr": "",
+              "nameKazLat": "",
+              "type": "STRING",
+              "jsonName": "fullNameOfHead",
+              "validationConstraints": [],
+              "hidden": false,
+              "orderNumber": 1,
+              "pageNumber": 1,
+              "dictionaryName": "Dictionary name",
+              "collection": false,
+              "nestedFields": []
+            },
+            {
+              "nameRus": "Вид Расчета",
+              "nameKazCyr": "",
+              "nameKazLat": "",
+              "type": "LONG",
+              "jsonName": "_4",
+              "validationConstraints": [
+                {
+                  "constraintType": "NOT_NULL",
+                  "arguments": {
+                    "type": "MESSAGE_ARGUMENTS",
+                    "message": "",
+                    "each": false
+                  }
+                }
+              ],
+              "hidden": false,
+              "orderNumber": 1,
+              "pageNumber": 1,
+              "dictionaryName": "Dictionary name",
+              "collection": false,
+              "nestedFields": []
+            },
+            {
+              "nameRus": "Отдельные категории налогоплательщика",
+              "nameKazCyr": "",
+              "nameKazLat": "",
+              "type": "LONG",
+              "jsonName": "_5",
+              "validationConstraints": [],
+              "hidden": false,
+              "orderNumber": 1,
+              "pageNumber": 1,
+              "dictionaryName": "Dictionary name",
+              "collection": false,
+              "nestedFields": []
+            },
+            {
+              "nameRus": "Код валюты",
+              "nameKazCyr": "",
+              "nameKazLat": "",
+              "type": "STRING",
+              "jsonName": "_6",
+              "validationConstraints": [
+                {
+                  "constraintType": "NOT_NULL",
+                  "arguments": {
+                    "type": "MESSAGE_ARGUMENTS",
+                    "message": "",
+                    "each": false
+                  }
+                },
+                {
+                  "constraintType": "NOT_EMPTY",
+                  "arguments": {
+                    "type": "MESSAGE_ARGUMENTS",
+                    "message": "",
+                    "each": false
+                  }
+                }
+              ],
+              "hidden": false,
+              "orderNumber": 1,
+              "pageNumber": 1,
+              "dictionaryName": "Dictionary name",
+              "collection": false,
+              "nestedFields": []
+            },
+            {
+              "nameRus": "Признак резидентства  - резидент РК",
+              "nameKazCyr": "",
+              "nameKazLat": "",
+              "type": "INTEGER",
+              "jsonName": "_7",
+              "validationConstraints": [
+                {
+                  "constraintType": "NOT_NULL",
+                  "arguments": {
+                    "type": "MESSAGE_ARGUMENTS",
+                    "message": "",
+                    "each": false
+                  }
+                }
+              ],
+              "hidden": false,
+              "orderNumber": 1,
+              "pageNumber": 1,
+              "dictionaryName": "Dictionary name",
+              "collection": false,
+              "nestedFields": []
+            },
+            {
+              "nameRus": "Признак резидентства  - резидент РК",
+              "nameKazCyr": "",
+              "nameKazLat": "",
+              "type": "BOOLEAN",
+              "jsonName": "_7_A",
+              "validationConstraints": [
+                {
+                  "constraintType": "NOT_NULL",
+                  "arguments": {
+                    "type": "MESSAGE_ARGUMENTS",
+                    "message": "",
+                    "each": false
+                  }
+                }
+              ],
+              "hidden": false,
+              "orderNumber": 1,
+              "pageNumber": 1,
+              "dictionaryName": "Dictionary name",
+              "collection": false,
+              "nestedFields": []
+            },
+            {
+              "nameRus": "Признак резидентства  - нерезидент РК",
+              "nameKazCyr": "",
+              "nameKazLat": "",
+              "type": "BOOLEAN",
+              "jsonName": "_7_B",
+              "validationConstraints": [
+                {
+                  "constraintType": "NOT_NULL",
+                  "arguments": {
+                    "type": "MESSAGE_ARGUMENTS",
+                    "message": "",
+                    "each": false
+                  }
+                }
+              ],
+              "hidden": false,
+              "orderNumber": 1,
+              "pageNumber": 1,
+              "dictionaryName": "Dictionary name",
+              "collection": false,
+              "nestedFields": []
+            },
+            {
+              "nameRus": "код страны резидентства",
+              "nameKazCyr": "",
+              "nameKazLat": "",
+              "type": "LONG",
+              "jsonName": "_8_A",
+              "validationConstraints": [],
+              "hidden": false,
+              "orderNumber": 1,
+              "pageNumber": 1,
+              "dictionaryName": "Dictionary name",
+              "collection": false,
+              "nestedFields": []
+            },
+            {
+              "nameRus": "номер налоговой регистрации в стране резидентства",
+              "nameKazCyr": "",
+              "nameKazLat": "",
+              "type": "LONG",
+              "jsonName": "_8_B",
+              "validationConstraints": [],
+              "hidden": false,
+              "orderNumber": 1,
+              "pageNumber": 1,
+              "dictionaryName": "Dictionary name",
+              "collection": false,
+              "nestedFields": []
+            },
+            {
+              "nameRus": "Общая сумма авансовых платежей за предыдущий налоговый период",
+              "nameKazCyr": "",
+              "nameKazLat": "",
+              "type": "LONG",
+              "jsonName": "_101_01_001",
+              "validationConstraints": [
+                {
+                  "constraintType": "NOT_NULL",
+                  "arguments": {
+                    "type": "MESSAGE_ARGUMENTS",
+                    "message": "",
+                    "each": false
+                  }
+                }
+              ],
+              "hidden": false,
+              "orderNumber": 1,
+              "pageNumber": 1,
+              "dictionaryName": "Dictionary name",
+              "collection": false,
+              "nestedFields": []
+            },
+            {
+              "nameRus": "Сумма авансовых платежей, подлежащая уплате за период до сдачи декларации",
+              "nameKazCyr": "",
+              "nameKazLat": "",
+              "type": "LONG",
+              "jsonName": "_101_01_002",
+              "validationConstraints": [
+                {
+                  "constraintType": "NOT_NULL",
+                  "arguments": {
+                    "type": "MESSAGE_ARGUMENTS",
+                    "message": "",
+                    "each": false
+                  }
+                }
+              ],
+              "hidden": false,
+              "orderNumber": 1,
+              "pageNumber": 1,
+              "dictionaryName": "Dictionary name",
+              "collection": false,
+              "nestedFields": []
+            },
+            {
+              "nameRus": "Сумма ежемесячного авансового платежа",
+              "nameKazCyr": "",
+              "nameKazLat": "",
+              "type": "LONG",
+              "jsonName": "_101_01_003",
+              "validationConstraints": [
+                {
+                  "constraintType": "NOT_NULL",
+                  "arguments": {
+                    "type": "MESSAGE_ARGUMENTS",
+                    "message": "",
+                    "each": false
+                  }
+                }
+              ],
+              "hidden": false,
+              "orderNumber": 1,
+              "pageNumber": 1,
+              "dictionaryName": "Dictionary name",
+              "collection": false,
+              "nestedFields": []
+            },
+            {
+              "nameRus": "Предполагаемая сумма КПН, исчисленная в соответствии с пунктом 1 статьи 302 Налогового кодекса",
+              "nameKazCyr": "",
+              "nameKazLat": "",
+              "type": "LONG",
+              "jsonName": "_101_01_004",
+              "validationConstraints": [
+                {
+                  "constraintType": "NOT_NULL",
+                  "arguments": {
+                    "type": "MESSAGE_ARGUMENTS",
+                    "message": "",
+                    "each": false
+                  }
+                }
+              ],
+              "hidden": false,
+              "orderNumber": 1,
+              "pageNumber": 1,
+              "dictionaryName": "Dictionary name",
+              "collection": false,
+              "nestedFields": []
+            },
+            {
+              "nameRus": "Предполагаемая сумма КПН, исчисленная в соответствии со статьей 652 Налогового кодекса",
+              "nameKazCyr": "",
+              "nameKazLat": "",
+              "type": "LONG",
+              "jsonName": "_101_01_005",
+              "validationConstraints": [
+                {
+                  "constraintType": "NOT_NULL",
+                  "arguments": {
+                    "type": "MESSAGE_ARGUMENTS",
+                    "message": "",
+                    "each": false
+                  }
+                }
+              ],
+              "hidden": false,
+              "orderNumber": 1,
+              "pageNumber": 1,
+              "dictionaryName": "Dictionary name",
+              "collection": false,
+              "nestedFields": []
+            },
+            {
+              "nameRus": "Сумма авансовых платежей, подлежащая уплате за период до сдачи декларации (101.01.004 + 101.01.005/4)",
+              "nameKazCyr": "",
+              "nameKazLat": "",
+              "type": "LONG",
+              "jsonName": "_101_01_006",
+              "validationConstraints": [
+                {
+                  "constraintType": "NOT_NULL",
+                  "arguments": {
+                    "type": "MESSAGE_ARGUMENTS",
+                    "message": "",
+                    "each": false
+                  }
+                }
+              ],
+              "hidden": false,
+              "orderNumber": 1,
+              "pageNumber": 1,
+              "dictionaryName": "Dictionary name",
+              "collection": false,
+              "nestedFields": []
+            },
+            {
+              "nameRus": "Уменьшение суммы авансовых платежей в соответствии со статьей 700 Налогового кодекса",
+              "nameKazCyr": "",
+              "nameKazLat": "",
+              "type": "LONG",
+              "jsonName": "_101_01_007",
+              "validationConstraints": [
+                {
+                  "constraintType": "NOT_NULL",
+                  "arguments": {
+                    "type": "MESSAGE_ARGUMENTS",
+                    "message": "",
+                    "each": false
+                  }
+                }
+              ],
+              "hidden": false,
+              "orderNumber": 1,
+              "pageNumber": 1,
+              "dictionaryName": "Dictionary name",
+              "collection": false,
+              "nestedFields": []
+            },
+            {
+              "nameRus": "Итого сумма авансовых платежей, подлежащая уплате за период до сдачи декларации (101.01.006 - 101.01.007)",
+              "nameKazCyr": "",
+              "nameKazLat": "",
+              "type": "LONG",
+              "jsonName": "_101_01_008",
+              "validationConstraints": [
+                {
+                  "constraintType": "NOT_NULL",
+                  "arguments": {
+                    "type": "MESSAGE_ARGUMENTS",
+                    "message": "",
+                    "each": false
+                  }
+                }
+              ],
+              "hidden": false,
+              "orderNumber": 1,
+              "pageNumber": 1,
+              "dictionaryName": "Dictionary name",
+              "collection": false,
+              "nestedFields": []
+            },
+            {
+              "nameRus": "Сумма ежемесячного авансового платежа",
+              "nameKazCyr": "",
+              "nameKazLat": "",
+              "type": "LONG",
+              "jsonName": "_101_01_009",
+              "validationConstraints": [
+                {
+                  "constraintType": "NOT_NULL",
+                  "arguments": {
+                    "type": "MESSAGE_ARGUMENTS",
+                    "message": "",
+                    "each": false
+                  }
+                }
+              ],
+              "hidden": false,
+              "orderNumber": 1,
+              "pageNumber": 1,
+              "dictionaryName": "Dictionary name",
+              "collection": false,
+              "nestedFields": []
+            }
+          ]
+        }
+      ],
+      "number": 1,
+      "fieldsToLockOnDocumentRegistration": ["_2", "_4", "iinBin"]
+    },
+    "formType": "fno_101_01",
+    "number": 1,
+    "validFrom": "2020-07-29T15:44:32.739+06:00",
+    "validTo": "2022-07-29T15:44:32.739+06:00"
+  },
+  {
+    "name": "ФНО 101-01",
+    "createdAt": "2021-09-14T09:34:53.930567+06:00",
+    "updatedAt": null,
+    "lastRevision": {
+      "description": "Форма налоговой отчётности 101-01",
+      "createdAt": "2021-09-14T09:34:53.958684+06:00",
+      "active": true,
+      "fieldSets": [
+        {
+          "name": "Основная форма",
+          "orderNumber": 1,
+          "pageNumber": 1,
+          "fields": [
+            {
+              "nameRus": "Налоговый период, за который представляется налоговая отчетность(год)",
+              "nameKazCyr": "Налоговый период, за который представляется налоговая отчетность(год)",
+              "nameKazLat": "Налоговый период, за который представляется налоговая отчетность(год)",
+              "type": "LONG",
+              "jsonName": "_2",
+              "validationConstraints": [
+                {
+                  "constraintType": "NOT_NULL",
+                  "arguments": {
+                    "type": "MESSAGE_ARGUMENTS",
+                    "message": null,
+                    "each": false
+                  }
+                }
+              ],
+              "hidden": false,
+              "orderNumber": 1,
+              "pageNumber": 1,
+              "collection": false,
+              "nestedFields": []
+            },
+            {
+              "nameRus": "Вид Расчета",
+              "nameKazCyr": "Вид Расчета",
+              "nameKazLat": "Вид Расчета",
+              "type": "STRING",
+              "jsonName": "_4",
+              "validationConstraints": [
+                {
+                  "constraintType": "NOT_NULL",
+                  "arguments": {
+                    "type": "MESSAGE_ARGUMENTS",
+                    "message": null,
+                    "each": false
+                  }
+                },
+                {
+                  "constraintType": "IN",
+                  "arguments": {
+                    "type": "IN_ARGUMENTS",
+                    "value": ["PRIORITY", "NEXT_PRIORITY", "ADDITIONAL"],
+                    "message": null,
+                    "each": false,
+                    "displayedValues": {
+                      "PRIORITY": {
+                        "kzCyr": "Первоначальный",
+                        "kzLat": "Первоначальный",
+                        "rus": "Первоначальный"
+                      },
+                      "ADDITIONAL": {
+                        "kzCyr": "Дополнительный",
+                        "kzLat": "Дополнительный",
+                        "rus": "Дополнительный"
+                      },
+                      "NEXT_PRIORITY": {
+                        "kzCyr": "Очередной",
+                        "kzLat": "Очередной",
+                        "rus": "Очередной"
+                      }
+                    }
+                  }
+                }
+              ],
+              "hidden": false,
+              "orderNumber": 2,
+              "pageNumber": 1,
+              "collection": false,
+              "nestedFields": [],
+              "enumerationValues": ["PRIORITY", "NEXT_PRIORITY", "ADDITIONAL"],
+              "enumerationDisplayedValues": {
+                "PRIORITY": {
+                  "kzCyr": "Первоначальный",
+                  "kzLat": "Первоначальный",
+                  "rus": "Первоначальный"
+                },
+                "ADDITIONAL": {
+                  "kzCyr": "Дополнительный",
+                  "kzLat": "Дополнительный",
+                  "rus": "Дополнительный"
+                },
+                "NEXT_PRIORITY": {
+                  "kzCyr": "Очередной",
+                  "kzLat": "Очередной",
+                  "rus": "Очередной"
+                }
+              }
+            },
+            {
+              "nameRus": "Категория налогоплатильщика",
+              "nameKazCyr": "Категория налогоплатильщика",
+              "nameKazLat": "Категория налогоплатильщика",
+              "type": "STRING",
+              "jsonName": "_5",
+              "validationConstraints": [
+                {
+                  "constraintType": "NOT_NULL",
+                  "arguments": {
+                    "type": "MESSAGE_ARGUMENTS",
+                    "message": null,
+                    "each": false
+                  }
+                },
+                {
+                  "constraintType": "IN",
+                  "arguments": {
+                    "type": "IN_ARGUMENTS",
+                    "value": ["5A", "5B", "5C"],
+                    "message": null,
+                    "each": false,
+                    "displayedValues": {
+                      "5A": {
+                        "kzCyr": "5A - Налогоплательщик, применяющий СНР в соответствиисо статьями 697-701 Налогового кодекса",
+                        "kzLat": "5A - Налогоплательщик, применяющий СНР в соответствиисо статьями 697-701 Налогового кодекса",
+                        "rus": "5A - Налогоплательщик, применяющий СНР в соответствиисо статьями 697-701 Налогового кодекса"
+                      },
+                      "5B": {
+                        "kzCyr": "5B - Доверительный управляющий в соответствии со статьей 40 Налогового кодекса",
+                        "kzLat": "5B - Доверительный управляющий в соответствии со статьей 40 Налогового кодекса",
+                        "rus": "5B - Доверительный управляющий в соответствии со статьей 40 Налогового кодекса"
+                      },
+                      "5C": {
+                        "kzCyr": "5C - Учредитель доверительного управления в соответствии со статьей 40 Налогового кодекса",
+                        "kzLat": "5C - Учредитель доверительного управления в соответствии со статьей 40 Налогового кодекса",
+                        "rus": "5C - Учредитель доверительного управления в соответствии со статьей 40 Налогового кодекса"
+                      }
+                    }
+                  }
+                }
+              ],
+              "hidden": false,
+              "orderNumber": 3,
+              "pageNumber": 1,
+              "collection": false,
+              "nestedFields": [],
+              "enumerationValues": ["5A", "5B", "5C"],
+              "enumerationDisplayedValues": {
+                "5A": {
+                  "kzCyr": "5A - Налогоплательщик, применяющий СНР в соответствиисо статьями 697-701 Налогового кодекса",
+                  "kzLat": "5A - Налогоплательщик, применяющий СНР в соответствиисо статьями 697-701 Налогового кодекса",
+                  "rus": "5A - Налогоплательщик, применяющий СНР в соответствиисо статьями 697-701 Налогового кодекса"
+                },
+                "5B": {
+                  "kzCyr": "5B - Доверительный управляющий в соответствии со статьей 40 Налогового кодекса",
+                  "kzLat": "5B - Доверительный управляющий в соответствии со статьей 40 Налогового кодекса",
+                  "rus": "5B - Доверительный управляющий в соответствии со статьей 40 Налогового кодекса"
+                },
+                "5C": {
+                  "kzCyr": "5C - Учредитель доверительного управления в соответствии со статьей 40 Налогового кодекса",
+                  "kzLat": "5C - Учредитель доверительного управления в соответствии со статьей 40 Налогового кодекса",
+                  "rus": "5C - Учредитель доверительного управления в соответствии со статьей 40 Налогового кодекса"
+                }
+              }
+            },
+            {
+              "nameRus": "Код валюты",
+              "nameKazCyr": "Код валюты",
+              "nameKazLat": "Код валюты",
+              "type": "STRING",
+              "jsonName": "_6",
+              "validationConstraints": [
+                {
+                  "constraintType": "NOT_NULL",
+                  "arguments": {
+                    "type": "MESSAGE_ARGUMENTS",
+                    "message": null,
+                    "each": false
+                  }
+                }
+              ],
+              "hidden": false,
+              "orderNumber": 4,
+              "pageNumber": 1,
+              "collection": false,
+              "nestedFields": []
+            },
+            {
+              "nameRus": "Признак резидентства",
+              "nameKazCyr": "Признак резидентства",
+              "nameKazLat": "Признак резидентства",
+              "type": "BOOLEAN",
+              "jsonName": "_7",
+              "validationConstraints": [
+                {
+                  "constraintType": "NOT_NULL",
+                  "arguments": {
+                    "type": "MESSAGE_ARGUMENTS",
+                    "message": null,
+                    "each": false
+                  }
+                }
+              ],
+              "hidden": false,
+              "orderNumber": 5,
+              "pageNumber": 1,
+              "collection": false,
+              "nestedFields": []
+            },
+            {
+              "nameRus": "Код страны резидентства",
+              "nameKazCyr": "Код страны резидентства",
+              "nameKazLat": "Код страны резидентства",
+              "type": "LONG",
+              "jsonName": "_8_A",
+              "validationConstraints": [],
+              "hidden": false,
+              "orderNumber": 6,
+              "pageNumber": 1,
+              "collection": false,
+              "nestedFields": []
+            },
+            {
+              "nameRus": "номер налоговой регистрации в стране резидентства",
+              "nameKazCyr": "номер налоговой регистрации в стране резидентства",
+              "nameKazLat": "номер налоговой регистрации в стране резидентства",
+              "type": "LONG",
+              "jsonName": "_8_B",
+              "validationConstraints": [],
+              "hidden": false,
+              "orderNumber": 7,
+              "pageNumber": 1,
+              "collection": false,
+              "nestedFields": []
+            },
+            {
+              "nameRus": "Общая сумма авансовых платежей за предыдущий налоговый период",
+              "nameKazCyr": "Общая сумма авансовых платежей за предыдущий налоговый период",
+              "nameKazLat": "Общая сумма авансовых платежей за предыдущий налоговый период",
+              "type": "LONG",
+              "jsonName": "_101_01_001",
+              "validationConstraints": [],
+              "hidden": false,
+              "orderNumber": 8,
+              "pageNumber": 1,
+              "collection": false,
+              "nestedFields": []
+            },
+            {
+              "nameRus": "Сумма авансовых платежей, подлежащая уплате за период до сдачи декларации",
+              "nameKazCyr": "Сумма авансовых платежей, подлежащая уплате за период до сдачи декларации",
+              "nameKazLat": "Сумма авансовых платежей, подлежащая уплате за период до сдачи декларации",
+              "type": "LONG",
+              "jsonName": "_101_01_002",
+              "validationConstraints": [],
+              "hidden": false,
+              "orderNumber": 9,
+              "pageNumber": 1,
+              "collection": false,
+              "nestedFields": []
+            },
+            {
+              "nameRus": "Сумма ежемесячного авансового платежа",
+              "nameKazCyr": "Сумма ежемесячного авансового платежа",
+              "nameKazLat": "Сумма ежемесячного авансового платежа",
+              "type": "LONG",
+              "jsonName": "_101_01_003",
+              "validationConstraints": [],
+              "hidden": false,
+              "orderNumber": 9,
+              "pageNumber": 1,
+              "collection": false,
+              "nestedFields": []
+            },
+            {
+              "nameRus": "Предполагаемая сумма КПН, исчисленная в соответствии с пунктом 1 статьи 302 Налогового кодекса",
+              "nameKazCyr": "Предполагаемая сумма КПН, исчисленная в соответствии с пунктом 1 статьи 302 Налогового кодекса",
+              "nameKazLat": "Предполагаемая сумма КПН, исчисленная в соответствии с пунктом 1 статьи 302 Налогового кодекса",
+              "type": "LONG",
+              "jsonName": "_101_01_004",
+              "validationConstraints": [],
+              "hidden": false,
+              "orderNumber": 10,
+              "pageNumber": 1,
+              "collection": false,
+              "nestedFields": []
+            },
+            {
+              "nameRus": "Предполагаемая сумма КПН, исчисленная в соответствии со статьей 652 Налогового кодекса",
+              "nameKazCyr": "Предполагаемая сумма КПН, исчисленная в соответствии со статьей 652 Налогового кодекса",
+              "nameKazLat": "Предполагаемая сумма КПН, исчисленная в соответствии со статьей 652 Налогового кодекса",
+              "type": "LONG",
+              "jsonName": "_101_01_005",
+              "validationConstraints": [],
+              "hidden": false,
+              "orderNumber": 11,
+              "pageNumber": 1,
+              "collection": false,
+              "nestedFields": []
+            },
+            {
+              "nameRus": "Сумма авансовых платежей, подлежащая уплате за период до сдачи декларации (101.01.004 + 101.01.005/4)",
+              "nameKazCyr": "Сумма авансовых платежей, подлежащая уплате за период до сдачи декларации (101.01.004 + 101.01.005/4)",
+              "nameKazLat": "Сумма авансовых платежей, подлежащая уплате за период до сдачи декларации (101.01.004 + 101.01.005/4)",
+              "type": "LONG",
+              "jsonName": "_101_01_006",
+              "validationConstraints": [],
+              "hidden": false,
+              "orderNumber": 12,
+              "pageNumber": 1,
+              "collection": false,
+              "nestedFields": []
+            },
+            {
+              "nameRus": "Уменьшение суммы авансовых платежей в соответствии со статьей 700 Налогового кодекса",
+              "nameKazCyr": "Уменьшение суммы авансовых платежей в соответствии со статьей 700 Налогового кодекса",
+              "nameKazLat": "Уменьшение суммы авансовых платежей в соответствии со статьей 700 Налогового кодекса",
+              "type": "LONG",
+              "jsonName": "_101_01_007",
+              "validationConstraints": [],
+              "hidden": false,
+              "orderNumber": 13,
+              "pageNumber": 1,
+              "collection": false,
+              "nestedFields": []
+            },
+            {
+              "nameRus": "Итого сумма авансовых платежей, подлежащая уплате за период до сдачи декларации (101.01.006 - 101.01.007)",
+              "nameKazCyr": "Итого сумма авансовых платежей, подлежащая уплате за период до сдачи декларации (101.01.006 - 101.01.007)",
+              "nameKazLat": "Итого сумма авансовых платежей, подлежащая уплате за период до сдачи декларации (101.01.006 - 101.01.007)",
+              "type": "LONG",
+              "jsonName": "_101_01_008",
+              "validationConstraints": [],
+              "hidden": false,
+              "orderNumber": 14,
+              "pageNumber": 1,
+              "collection": false,
+              "nestedFields": []
+            },
+            {
+              "nameRus": "Сумма ежемесячного авансового платежа",
+              "nameKazCyr": "Сумма ежемесячного авансового платежа",
+              "nameKazLat": "Сумма ежемесячного авансового платежа",
+              "type": "LONG",
+              "jsonName": "_101_01_009",
+              "validationConstraints": [],
+              "hidden": false,
+              "orderNumber": 15,
+              "pageNumber": 1,
+              "collection": false,
+              "nestedFields": []
+            },
+            {
+              "nameRus": "ФИО руководителя",
+              "nameKazCyr": "ФИО руководителя",
+              "nameKazLat": "ФИО руководителя",
+              "type": "STRING",
+              "jsonName": "fullNameOfHead",
+              "validationConstraints": [
+                {
+                  "constraintType": "NOT_NULL",
+                  "arguments": {
+                    "type": "MESSAGE_ARGUMENTS",
+                    "message": null,
+                    "each": false
+                  }
+                }
+              ],
+              "hidden": false,
+              "orderNumber": 16,
+              "pageNumber": 1,
+              "collection": false,
+              "nestedFields": []
+            }
+          ]
+        }
+      ],
+      "number": 2,
+      "fieldsToLockOnDocumentRegistration": ["_2", "_4", "_iinBin"]
+    },
+    "formType": "fno_101_01",
+    "number": 2,
+    "validFrom": "2020-01-01T01:01:01+06:00",
+    "validTo": "2022-12-31T23:59:59+06:00"
+  },
+  {
+    "name": "ФНО 101-01",
+    "createdAt": "2021-10-04T17:15:18.84486+06:00",
+    "updatedAt": null,
+    "lastRevision": {
+      "description": "Форма налоговой отчётности 101-01",
+      "createdAt": "2021-10-04T17:15:18.855204+06:00",
+      "active": true,
+      "fieldSets": [
+        {
+          "name": "Общие атрибуты входящей формы",
+          "orderNumber": 0,
+          "pageNumber": 1,
+          "fields": [
+            {
+              "nameRus": "Причина подачи документа",
+              "nameKazCyr": "Причина подачи документа",
+              "nameKazLat": "Причина подачи документа",
+              "type": "LONG",
+              "jsonName": "reasonId",
+              "validationConstraints": [],
+              "hidden": false,
+              "orderNumber": 1,
+              "pageNumber": 1,
+              "collection": false,
+              "nestedFields": []
+            },
+            {
+              "nameRus": "Источник документа(справочник)",
+              "nameKazCyr": "Источник документа(справочник)",
+              "nameKazLat": "Источник документа(справочник)",
+              "type": "LONG",
+              "jsonName": "documentSourceId",
+              "validationConstraints": [],
+              "hidden": false,
+              "orderNumber": 2,
+              "pageNumber": 1,
+              "collection": false,
+              "nestedFields": []
+            },
+            {
+              "nameRus": "Назначение документа(справочник)",
+              "nameKazCyr": "Назначение документа(справочник)",
+              "nameKazLat": "Назначение документа(справочник)",
+              "type": "LONG",
+              "jsonName": "documentDestinationId",
+              "validationConstraints": [],
+              "hidden": false,
+              "orderNumber": 3,
+              "pageNumber": 1,
+              "collection": false,
+              "nestedFields": []
+            },
+            {
+              "nameRus": "ОГД(справочник)",
+              "nameKazCyr": "ОГД(справочник)",
+              "nameKazLat": "ОГД(справочник)",
+              "type": "LONG",
+              "jsonName": "ogdId",
+              "validationConstraints": [],
+              "hidden": false,
+              "orderNumber": 4,
+              "pageNumber": 1,
+              "collection": false,
+              "nestedFields": []
+            },
+            {
+              "nameRus": "Тип документа(справочник)",
+              "nameKazCyr": "Тип документа(справочник)",
+              "nameKazLat": "Тип документа(справочник)",
+              "type": "LONG",
+              "jsonName": "documentTypeId",
+              "validationConstraints": [],
+              "hidden": false,
+              "orderNumber": 5,
+              "pageNumber": 1,
+              "collection": false,
+              "nestedFields": []
+            },
+            {
+              "nameRus": "ИИН/БИН",
+              "nameKazCyr": "ИИН/БИН",
+              "nameKazLat": "ИИН/БИН",
+              "type": "STRING",
+              "jsonName": "iinBin",
+              "validationConstraints": [],
+              "hidden": false,
+              "orderNumber": 6,
+              "pageNumber": 1,
+              "collection": false,
+              "nestedFields": []
+            },
+            {
+              "nameRus": "Ф.И.О. должностного лица государственного органа",
+              "nameKazCyr": "Ф.И.О. должностного лица государственного органа",
+              "nameKazLat": "Ф.И.О. должностного лица государственного органа",
+              "type": "STRING",
+              "jsonName": "checkerFullName",
+              "validationConstraints": [],
+              "hidden": false,
+              "orderNumber": 7,
+              "pageNumber": 1,
+              "collection": false,
+              "nestedFields": []
+            },
+            {
+              "nameRus": "Дата подачи налогового заявления",
+              "nameKazCyr": "Дата подачи налогового заявления",
+              "nameKazLat": "Дата подачи налогового заявления",
+              "type": "TIMESTAMP",
+              "jsonName": "applicationDate",
+              "validationConstraints": [],
+              "hidden": false,
+              "orderNumber": 8,
+              "pageNumber": 1,
+              "collection": false,
+              "nestedFields": []
+            },
+            {
+              "nameRus": "Дата почтового штемпеля",
+              "nameKazCyr": "Дата почтового штемпеля",
+              "nameKazLat": "Дата почтового штемпеля",
+              "type": "TIMESTAMP",
+              "jsonName": "postmarkDate",
+              "validationConstraints": [],
+              "hidden": false,
+              "orderNumber": 9,
+              "pageNumber": 1,
+              "collection": false,
+              "nestedFields": []
+            }
+          ]
+        },
+        {
+          "name": "Основная форма",
+          "orderNumber": 1,
+          "pageNumber": 1,
+          "fields": [
+            {
+              "nameRus": "Налоговый период, за который представляется налоговая отчетность(год)",
+              "nameKazCyr": "Налоговый период, за который представляется налоговая отчетность(год)",
+              "nameKazLat": "Налоговый период, за который представляется налоговая отчетность(год)",
+              "type": "LONG",
+              "jsonName": "_2",
+              "validationConstraints": [
+                {
+                  "constraintType": "NOT_NULL",
+                  "arguments": {
+                    "type": "MESSAGE_ARGUMENTS",
+                    "message": null,
+                    "each": false
+                  }
+                }
+              ],
+              "hidden": false,
+              "orderNumber": 1,
+              "pageNumber": 1,
+              "collection": false,
+              "nestedFields": []
+            },
+            {
+              "nameRus": "Вид Расчета",
+              "nameKazCyr": "Вид Расчета",
+              "nameKazLat": "Вид Расчета",
+              "type": "STRING",
+              "jsonName": "_4",
+              "validationConstraints": [
+                {
+                  "constraintType": "NOT_NULL",
+                  "arguments": {
+                    "type": "MESSAGE_ARGUMENTS",
+                    "message": null,
+                    "each": false
+                  }
+                },
+                {
+                  "constraintType": "IN",
+                  "arguments": {
+                    "type": "IN_ARGUMENTS",
+                    "value": [
+                      "PRIORITY",
+                      "NEXT_PRIORITY",
+                      "ADDITIONAL",
+                      "PRIORITY",
+                      "NEXT_PRIORITY",
+                      "ADDITIONAL"
+                    ],
+                    "message": null,
+                    "each": false,
+                    "displayedValues": {
+                      "PRIORITY": {
+                        "kzCyr": "Первоначальный",
+                        "kzLat": "Первоначальный",
+                        "rus": "Первоначальный"
+                      },
+                      "ADDITIONAL": {
+                        "kzCyr": "Дополнительный",
+                        "kzLat": "Дополнительный",
+                        "rus": "Дополнительный"
+                      },
+                      "NEXT_PRIORITY": {
+                        "kzCyr": "Очередной",
+                        "kzLat": "Очередной",
+                        "rus": "Очередной"
+                      }
+                    }
+                  }
+                }
+              ],
+              "hidden": false,
+              "orderNumber": 2,
+              "pageNumber": 1,
+              "collection": false,
+              "nestedFields": [],
+              "enumerationValues": [
+                "PRIORITY",
+                "NEXT_PRIORITY",
+                "ADDITIONAL",
+                "PRIORITY",
+                "NEXT_PRIORITY",
+                "ADDITIONAL"
+              ],
+              "enumerationDisplayedValues": {
+                "PRIORITY": {
+                  "kzCyr": "Первоначальный",
+                  "kzLat": "Первоначальный",
+                  "rus": "Первоначальный"
+                },
+                "ADDITIONAL": {
+                  "kzCyr": "Дополнительный",
+                  "kzLat": "Дополнительный",
+                  "rus": "Дополнительный"
+                },
+                "NEXT_PRIORITY": {
+                  "kzCyr": "Очередной",
+                  "kzLat": "Очередной",
+                  "rus": "Очередной"
+                }
+              }
+            },
+            {
+              "nameRus": "Категория налогоплатильщика",
+              "nameKazCyr": "Категория налогоплатильщика",
+              "nameKazLat": "Категория налогоплатильщика",
+              "type": "STRING",
+              "jsonName": "_5",
+              "validationConstraints": [
+                {
+                  "constraintType": "NOT_NULL",
+                  "arguments": {
+                    "type": "MESSAGE_ARGUMENTS",
+                    "message": null,
+                    "each": false
+                  }
+                },
+                {
+                  "constraintType": "IN",
+                  "arguments": {
+                    "type": "IN_ARGUMENTS",
+                    "value": ["5A", "5B", "5C", "5A", "5B", "5C"],
+                    "message": null,
+                    "each": false,
+                    "displayedValues": {
+                      "5A": {
+                        "kzCyr": "5A - Налогоплательщик, применяющий СНР в соответствиисо статьями 697-701 Налогового кодекса",
+                        "kzLat": "5A - Налогоплательщик, применяющий СНР в соответствиисо статьями 697-701 Налогового кодекса",
+                        "rus": "5A - Налогоплательщик, применяющий СНР в соответствиисо статьями 697-701 Налогового кодекса"
+                      },
+                      "5B": {
+                        "kzCyr": "5B - Доверительный управляющий в соответствии со статьей 40 Налогового кодекса",
+                        "kzLat": "5B - Доверительный управляющий в соответствии со статьей 40 Налогового кодекса",
+                        "rus": "5B - Доверительный управляющий в соответствии со статьей 40 Налогового кодекса"
+                      },
+                      "5C": {
+                        "kzCyr": "5C - Учредитель доверительного управления в соответствии со статьей 40 Налогового кодекса",
+                        "kzLat": "5C - Учредитель доверительного управления в соответствии со статьей 40 Налогового кодекса",
+                        "rus": "5C - Учредитель доверительного управления в соответствии со статьей 40 Налогового кодекса"
+                      }
+                    }
+                  }
+                }
+              ],
+              "hidden": false,
+              "orderNumber": 3,
+              "pageNumber": 1,
+              "collection": false,
+              "nestedFields": [],
+              "enumerationValues": ["5A", "5B", "5C", "5A", "5B", "5C"],
+              "enumerationDisplayedValues": {
+                "5A": {
+                  "kzCyr": "5A - Налогоплательщик, применяющий СНР в соответствиисо статьями 697-701 Налогового кодекса",
+                  "kzLat": "5A - Налогоплательщик, применяющий СНР в соответствиисо статьями 697-701 Налогового кодекса",
+                  "rus": "5A - Налогоплательщик, применяющий СНР в соответствиисо статьями 697-701 Налогового кодекса"
+                },
+                "5B": {
+                  "kzCyr": "5B - Доверительный управляющий в соответствии со статьей 40 Налогового кодекса",
+                  "kzLat": "5B - Доверительный управляющий в соответствии со статьей 40 Налогового кодекса",
+                  "rus": "5B - Доверительный управляющий в соответствии со статьей 40 Налогового кодекса"
+                },
+                "5C": {
+                  "kzCyr": "5C - Учредитель доверительного управления в соответствии со статьей 40 Налогового кодекса",
+                  "kzLat": "5C - Учредитель доверительного управления в соответствии со статьей 40 Налогового кодекса",
+                  "rus": "5C - Учредитель доверительного управления в соответствии со статьей 40 Налогового кодекса"
+                }
+              }
+            },
+            {
+              "nameRus": "Код валюты",
+              "nameKazCyr": "Код валюты",
+              "nameKazLat": "Код валюты",
+              "type": "STRING",
+              "jsonName": "_6",
+              "validationConstraints": [
+                {
+                  "constraintType": "NOT_NULL",
+                  "arguments": {
+                    "type": "MESSAGE_ARGUMENTS",
+                    "message": null,
+                    "each": false
+                  }
+                }
+              ],
+              "hidden": false,
+              "orderNumber": 4,
+              "pageNumber": 1,
+              "dictionaryName": "d_currencies",
+              "collection": false,
+              "nestedFields": [],
+              "dictionaryFieldDescription": {
+                "jsonSentKey": "code",
+                "displayedRuKey": "nameRu",
+                "displayedKazCyrKey": "nameKk",
+                "displayedKazLatKey": "nameQq"
+              }
+            },
+            {
+              "nameRus": "Признак резидентства",
+              "nameKazCyr": "Признак резидентства",
+              "nameKazLat": "Признак резидентства",
+              "type": "BOOLEAN",
+              "jsonName": "_7",
+              "validationConstraints": [
+                {
+                  "constraintType": "NOT_NULL",
+                  "arguments": {
+                    "type": "MESSAGE_ARGUMENTS",
+                    "message": null,
+                    "each": false
+                  }
+                }
+              ],
+              "hidden": false,
+              "orderNumber": 5,
+              "pageNumber": 1,
+              "collection": false,
+              "nestedFields": []
+            },
+            {
+              "nameRus": "Код страны резидентства",
+              "nameKazCyr": "Код страны резидентства",
+              "nameKazLat": "Код страны резидентства",
+              "type": "LONG",
+              "jsonName": "_8_A",
+              "validationConstraints": [],
+              "hidden": false,
+              "orderNumber": 6,
+              "pageNumber": 1,
+              "collection": false,
+              "nestedFields": []
+            },
+            {
+              "nameRus": "номер налоговой регистрации в стране резидентства",
+              "nameKazCyr": "номер налоговой регистрации в стране резидентства",
+              "nameKazLat": "номер налоговой регистрации в стране резидентства",
+              "type": "LONG",
+              "jsonName": "_8_B",
+              "validationConstraints": [
+                {
+                  "constraintType": "SIZE",
+                  "arguments": {
+                    "type": "SIZE_ARGUMENTS",
+                    "min": 1,
+                    "max": 19,
+                    "message": null,
+                    "each": false
+                  }
+                }
+              ],
+              "hidden": false,
+              "orderNumber": 7,
+              "pageNumber": 1,
+              "collection": false,
+              "nestedFields": []
+            },
+            {
+              "nameRus": "Общая сумма авансовых платежей за предыдущий налоговый период",
+              "nameKazCyr": "Общая сумма авансовых платежей за предыдущий налоговый период",
+              "nameKazLat": "Общая сумма авансовых платежей за предыдущий налоговый период",
+              "type": "LONG",
+              "jsonName": "_101_01_001",
+              "validationConstraints": [
+                {
+                  "constraintType": "SIZE",
+                  "arguments": {
+                    "type": "SIZE_ARGUMENTS",
+                    "min": 0,
+                    "max": 15,
+                    "message": null,
+                    "each": false
+                  }
+                }
+              ],
+              "hidden": false,
+              "orderNumber": 8,
+              "pageNumber": 1,
+              "collection": false,
+              "nestedFields": []
+            },
+            {
+              "nameRus": "Сумма авансовых платежей, подлежащая уплате за период до сдачи декларации",
+              "nameKazCyr": "Сумма авансовых платежей, подлежащая уплате за период до сдачи декларации",
+              "nameKazLat": "Сумма авансовых платежей, подлежащая уплате за период до сдачи декларации",
+              "type": "LONG",
+              "jsonName": "_101_01_002",
+              "validationConstraints": [
+                {
+                  "constraintType": "SIZE",
+                  "arguments": {
+                    "type": "SIZE_ARGUMENTS",
+                    "min": 0,
+                    "max": 15,
+                    "message": null,
+                    "each": false
+                  }
+                }
+              ],
+              "hidden": false,
+              "orderNumber": 9,
+              "pageNumber": 1,
+              "collection": false,
+              "nestedFields": []
+            },
+            {
+              "nameRus": "Сумма ежемесячного авансового платежа",
+              "nameKazCyr": "Сумма ежемесячного авансового платежа",
+              "nameKazLat": "Сумма ежемесячного авансового платежа",
+              "type": "LONG",
+              "jsonName": "_101_01_003",
+              "validationConstraints": [
+                {
+                  "constraintType": "SIZE",
+                  "arguments": {
+                    "type": "SIZE_ARGUMENTS",
+                    "min": 0,
+                    "max": 15,
+                    "message": null,
+                    "each": false
+                  }
+                }
+              ],
+              "hidden": false,
+              "orderNumber": 9,
+              "pageNumber": 1,
+              "collection": false,
+              "nestedFields": []
+            },
+            {
+              "nameRus": "Предполагаемая сумма КПН, исчисленная в соответствии с пунктом 1 статьи 302 Налогового кодекса",
+              "nameKazCyr": "Предполагаемая сумма КПН, исчисленная в соответствии с пунктом 1 статьи 302 Налогового кодекса",
+              "nameKazLat": "Предполагаемая сумма КПН, исчисленная в соответствии с пунктом 1 статьи 302 Налогового кодекса",
+              "type": "LONG",
+              "jsonName": "_101_01_004",
+              "validationConstraints": [
+                {
+                  "constraintType": "SIZE",
+                  "arguments": {
+                    "type": "SIZE_ARGUMENTS",
+                    "min": 0,
+                    "max": 15,
+                    "message": null,
+                    "each": false
+                  }
+                }
+              ],
+              "hidden": false,
+              "orderNumber": 10,
+              "pageNumber": 1,
+              "collection": false,
+              "nestedFields": []
+            },
+            {
+              "nameRus": "Предполагаемая сумма КПН, исчисленная в соответствии со статьей 652 Налогового кодекса",
+              "nameKazCyr": "Предполагаемая сумма КПН, исчисленная в соответствии со статьей 652 Налогового кодекса",
+              "nameKazLat": "Предполагаемая сумма КПН, исчисленная в соответствии со статьей 652 Налогового кодекса",
+              "type": "LONG",
+              "jsonName": "_101_01_005",
+              "validationConstraints": [
+                {
+                  "constraintType": "SIZE",
+                  "arguments": {
+                    "type": "SIZE_ARGUMENTS",
+                    "min": 0,
+                    "max": 15,
+                    "message": null,
+                    "each": false
+                  }
+                }
+              ],
+              "hidden": false,
+              "orderNumber": 11,
+              "pageNumber": 1,
+              "collection": false,
+              "nestedFields": []
+            },
+            {
+              "nameRus": "Сумма авансовых платежей, подлежащая уплате за период до сдачи декларации (101.01.004 + 101.01.005/4)",
+              "nameKazCyr": "Сумма авансовых платежей, подлежащая уплате за период до сдачи декларации (101.01.004 + 101.01.005/4)",
+              "nameKazLat": "Сумма авансовых платежей, подлежащая уплате за период до сдачи декларации (101.01.004 + 101.01.005/4)",
+              "type": "LONG",
+              "jsonName": "_101_01_006",
+              "validationConstraints": [
+                {
+                  "constraintType": "SIZE",
+                  "arguments": {
+                    "type": "SIZE_ARGUMENTS",
+                    "min": 0,
+                    "max": 15,
+                    "message": null,
+                    "each": false
+                  }
+                }
+              ],
+              "hidden": false,
+              "orderNumber": 12,
+              "pageNumber": 1,
+              "collection": false,
+              "nestedFields": []
+            },
+            {
+              "nameRus": "Уменьшение суммы авансовых платежей в соответствии со статьей 700 Налогового кодекса",
+              "nameKazCyr": "Уменьшение суммы авансовых платежей в соответствии со статьей 700 Налогового кодекса",
+              "nameKazLat": "Уменьшение суммы авансовых платежей в соответствии со статьей 700 Налогового кодекса",
+              "type": "LONG",
+              "jsonName": "_101_01_007",
+              "validationConstraints": [
+                {
+                  "constraintType": "SIZE",
+                  "arguments": {
+                    "type": "SIZE_ARGUMENTS",
+                    "min": 0,
+                    "max": 15,
+                    "message": null,
+                    "each": false
+                  }
+                }
+              ],
+              "hidden": false,
+              "orderNumber": 13,
+              "pageNumber": 1,
+              "collection": false,
+              "nestedFields": []
+            },
+            {
+              "nameRus": "Итого сумма авансовых платежей, подлежащая уплате за период до сдачи декларации (101.01.006 - 101.01.007)",
+              "nameKazCyr": "Итого сумма авансовых платежей, подлежащая уплате за период до сдачи декларации (101.01.006 - 101.01.007)",
+              "nameKazLat": "Итого сумма авансовых платежей, подлежащая уплате за период до сдачи декларации (101.01.006 - 101.01.007)",
+              "type": "LONG",
+              "jsonName": "_101_01_008",
+              "validationConstraints": [
+                {
+                  "constraintType": "SIZE",
+                  "arguments": {
+                    "type": "SIZE_ARGUMENTS",
+                    "min": 0,
+                    "max": 15,
+                    "message": null,
+                    "each": false
+                  }
+                }
+              ],
+              "hidden": false,
+              "orderNumber": 14,
+              "pageNumber": 1,
+              "collection": false,
+              "nestedFields": []
+            },
+            {
+              "nameRus": "Сумма ежемесячного авансового платежа",
+              "nameKazCyr": "Сумма ежемесячного авансового платежа",
+              "nameKazLat": "Сумма ежемесячного авансового платежа",
+              "type": "LONG",
+              "jsonName": "_101_01_009",
+              "validationConstraints": [
+                {
+                  "constraintType": "SIZE",
+                  "arguments": {
+                    "type": "SIZE_ARGUMENTS",
+                    "min": 0,
+                    "max": 15,
+                    "message": null,
+                    "each": false
+                  }
+                }
+              ],
+              "hidden": false,
+              "orderNumber": 15,
+              "pageNumber": 1,
+              "collection": false,
+              "nestedFields": []
+            },
+            {
+              "nameRus": "ФИО руководителя",
+              "nameKazCyr": "ФИО руководителя",
+              "nameKazLat": "ФИО руководителя",
+              "type": "STRING",
+              "jsonName": "fullNameOfHead",
+              "validationConstraints": [
+                {
+                  "constraintType": "NOT_NULL",
+                  "arguments": {
+                    "type": "MESSAGE_ARGUMENTS",
+                    "message": null,
+                    "each": false
+                  }
+                }
+              ],
+              "hidden": false,
+              "orderNumber": 16,
+              "pageNumber": 1,
+              "collection": false,
+              "nestedFields": []
+            }
+          ]
+        }
+      ],
+      "number": 4,
+      "fieldsToLockOnDocumentRegistration": ["_2", "_4", "_iinBin"]
+    },
+    "formType": "fno_101_01",
+    "number": 4,
+    "validFrom": "2020-01-01T01:01:01+06:00",
+    "validTo": "2022-12-31T23:59:59+06:00"
+  },
+  {
+    "name": "ФНО 101-01",
+    "createdAt": "2021-10-18T13:48:03.696864+06:00",
+    "updatedAt": null,
+    "lastRevision": {
+      "description": "Форма налоговой отчётности 101-01",
+      "createdAt": "2021-10-18T13:48:03.721112+06:00",
+      "active": true,
+      "fieldSets": [
+        {
+          "name": "Общие атрибуты входящей формы",
+          "orderNumber": 0,
+          "pageNumber": 1,
+          "fields": [
+            {
+              "nameRus": "Причина подачи документа",
+              "nameKazCyr": "Причина подачи документа",
+              "nameKazLat": "Причина подачи документа",
+              "type": "LONG",
+              "jsonName": "reasonId",
+              "validationConstraints": [],
+              "hidden": false,
+              "orderNumber": 1,
+              "pageNumber": 1,
+              "collection": false,
+              "nestedFields": []
+            },
+            {
+              "nameRus": "Источник документа(справочник)",
+              "nameKazCyr": "Источник документа(справочник)",
+              "nameKazLat": "Источник документа(справочник)",
+              "type": "LONG",
+              "jsonName": "documentSourceId",
+              "validationConstraints": [],
+              "hidden": false,
+              "orderNumber": 2,
+              "pageNumber": 1,
+              "collection": false,
+              "nestedFields": []
+            },
+            {
+              "nameRus": "Назначение документа(справочник)",
+              "nameKazCyr": "Назначение документа(справочник)",
+              "nameKazLat": "Назначение документа(справочник)",
+              "type": "LONG",
+              "jsonName": "documentDestinationId",
+              "validationConstraints": [],
+              "hidden": false,
+              "orderNumber": 3,
+              "pageNumber": 1,
+              "collection": false,
+              "nestedFields": []
+            },
+            {
+              "nameRus": "ОГД(справочник)",
+              "nameKazCyr": "ОГД(справочник)",
+              "nameKazLat": "ОГД(справочник)",
+              "type": "LONG",
+              "jsonName": "ogdId",
+              "validationConstraints": [],
+              "hidden": false,
+              "orderNumber": 4,
+              "pageNumber": 1,
+              "collection": false,
+              "nestedFields": []
+            },
+            {
+              "nameRus": "Тип документа(справочник)",
+              "nameKazCyr": "Тип документа(справочник)",
+              "nameKazLat": "Тип документа(справочник)",
+              "type": "LONG",
+              "jsonName": "documentTypeId",
+              "validationConstraints": [],
+              "hidden": false,
+              "orderNumber": 5,
+              "pageNumber": 1,
+              "collection": false,
+              "nestedFields": []
+            },
+            {
+              "nameRus": "ИИН/БИН",
+              "nameKazCyr": "ИИН/БИН",
+              "nameKazLat": "ИИН/БИН",
+              "type": "STRING",
+              "jsonName": "iinBin",
+              "validationConstraints": [],
+              "hidden": false,
+              "orderNumber": 6,
+              "pageNumber": 1,
+              "collection": false,
+              "nestedFields": []
+            },
+            {
+              "nameRus": "Ф.И.О. должностного лица государственного органа",
+              "nameKazCyr": "Ф.И.О. должностного лица государственного органа",
+              "nameKazLat": "Ф.И.О. должностного лица государственного органа",
+              "type": "STRING",
+              "jsonName": "checkerFullName",
+              "validationConstraints": [],
+              "hidden": false,
+              "orderNumber": 7,
+              "pageNumber": 1,
+              "collection": false,
+              "nestedFields": []
+            },
+            {
+              "nameRus": "Дата подачи налогового заявления",
+              "nameKazCyr": "Дата подачи налогового заявления",
+              "nameKazLat": "Дата подачи налогового заявления",
+              "type": "TIMESTAMP",
+              "jsonName": "applicationDate",
+              "validationConstraints": [],
+              "hidden": false,
+              "orderNumber": 8,
+              "pageNumber": 1,
+              "collection": false,
+              "nestedFields": []
+            },
+            {
+              "nameRus": "Дата почтового штемпеля",
+              "nameKazCyr": "Дата почтового штемпеля",
+              "nameKazLat": "Дата почтового штемпеля",
+              "type": "TIMESTAMP",
+              "jsonName": "postmarkDate",
+              "validationConstraints": [],
+              "hidden": false,
+              "orderNumber": 9,
+              "pageNumber": 1,
+              "collection": false,
+              "nestedFields": []
+            }
+          ]
+        },
+        {
+          "name": "Основная форма",
+          "orderNumber": 1,
+          "pageNumber": 1,
+          "fields": [
+            {
+              "nameRus": "Налоговый период, за который представляется налоговая отчетность(год)",
+              "nameKazCyr": "Налоговый период, за который представляется налоговая отчетность(год)",
+              "nameKazLat": "Налоговый период, за который представляется налоговая отчетность(год)",
+              "type": "LONG",
+              "jsonName": "_2",
+              "validationConstraints": [
+                {
+                  "constraintType": "NOT_NULL",
+                  "arguments": {
+                    "type": "MESSAGE_ARGUMENTS",
+                    "message": null,
+                    "each": false
+                  }
+                },
+                {
+                  "constraintType": "INCLUSIVE_RANGE",
+                  "arguments": {
+                    "type": "INCLUSIVE_RANGE_ARGUMENTS",
+                    "minValue": 1999,
+                    "maxValue": 2099,
+                    "maxDecimalDigitCount": 0,
+                    "message": null,
+                    "each": false
+                  }
+                }
+              ],
+              "hidden": false,
+              "orderNumber": 1,
+              "pageNumber": 1,
+              "collection": false,
+              "nestedFields": []
+            },
+            {
+              "nameRus": "Вид Расчета",
+              "nameKazCyr": "Вид Расчета",
+              "nameKazLat": "Вид Расчета",
+              "type": "STRING",
+              "jsonName": "_4",
+              "validationConstraints": [
+                {
+                  "constraintType": "NOT_NULL",
+                  "arguments": {
+                    "type": "MESSAGE_ARGUMENTS",
+                    "message": null,
+                    "each": false
+                  }
+                },
+                {
+                  "constraintType": "IN",
+                  "arguments": {
+                    "type": "IN_ARGUMENTS",
+                    "value": [
+                      "PRIORITY",
+                      "NEXT_PRIORITY",
+                      "ADDITIONAL",
+                      "PRIORITY",
+                      "NEXT_PRIORITY",
+                      "ADDITIONAL"
+                    ],
+                    "message": null,
+                    "each": false,
+                    "displayedValues": {
+                      "PRIORITY": {
+                        "kzCyr": "Первоначальный",
+                        "kzLat": "Первоначальный",
+                        "rus": "Первоначальный"
+                      },
+                      "ADDITIONAL": {
+                        "kzCyr": "Дополнительный",
+                        "kzLat": "Дополнительный",
+                        "rus": "Дополнительный"
+                      },
+                      "NEXT_PRIORITY": {
+                        "kzCyr": "Очередной",
+                        "kzLat": "Очередной",
+                        "rus": "Очередной"
+                      }
+                    }
+                  }
+                }
+              ],
+              "hidden": false,
+              "orderNumber": 2,
+              "pageNumber": 1,
+              "collection": false,
+              "nestedFields": [],
+              "enumerationValues": [
+                "PRIORITY",
+                "NEXT_PRIORITY",
+                "ADDITIONAL",
+                "PRIORITY",
+                "NEXT_PRIORITY",
+                "ADDITIONAL"
+              ],
+              "enumerationDisplayedValues": {
+                "PRIORITY": {
+                  "kzCyr": "Первоначальный",
+                  "kzLat": "Первоначальный",
+                  "rus": "Первоначальный"
+                },
+                "ADDITIONAL": {
+                  "kzCyr": "Дополнительный",
+                  "kzLat": "Дополнительный",
+                  "rus": "Дополнительный"
+                },
+                "NEXT_PRIORITY": {
+                  "kzCyr": "Очередной",
+                  "kzLat": "Очередной",
+                  "rus": "Очередной"
+                }
+              }
+            },
+            {
+              "nameRus": "Категория налогоплательщика",
+              "nameKazCyr": "Категория налогоплательщика",
+              "nameKazLat": "Категория налогоплательщика",
+              "type": "STRING",
+              "jsonName": "_5",
+              "validationConstraints": [
+                {
+                  "constraintType": "NOT_NULL",
+                  "arguments": {
+                    "type": "MESSAGE_ARGUMENTS",
+                    "message": null,
+                    "each": false
+                  }
+                },
+                {
+                  "constraintType": "IN",
+                  "arguments": {
+                    "type": "IN_ARGUMENTS",
+                    "value": ["5A", "5B", "5C", "5A", "5B", "5C"],
+                    "message": null,
+                    "each": false,
+                    "displayedValues": {
+                      "5A": {
+                        "kzCyr": "Налогоплательщик, применяющий СНР в соответствии со статьями 697-701 Налогового кодекса",
+                        "kzLat": "Налогоплательщик, применяющий СНР в соответствии со статьями 697-701 Налогового кодекса",
+                        "rus": "Налогоплательщик, применяющий СНР в соответствии со статьями 697-701 Налогового кодекса"
+                      },
+                      "5B": {
+                        "kzCyr": "Доверительный управляющий в соответствии со статьей 40 Налогового кодекса",
+                        "kzLat": "Доверительный управляющий в соответствии со статьей 40 Налогового кодекса",
+                        "rus": "Доверительный управляющий в соответствии со статьей 40 Налогового кодекса"
+                      },
+                      "5C": {
+                        "kzCyr": "Учредитель доверительного управления в соответствии со статьей 40 Налогового кодекса",
+                        "kzLat": "Учредитель доверительного управления в соответствии со статьей 40 Налогового кодекса",
+                        "rus": "Учредитель доверительного управления в соответствии со статьей 40 Налогового кодекса"
+                      }
+                    }
+                  }
+                }
+              ],
+              "hidden": false,
+              "orderNumber": 3,
+              "pageNumber": 1,
+              "collection": false,
+              "nestedFields": [],
+              "enumerationValues": ["5A", "5B", "5C", "5A", "5B", "5C"],
+              "enumerationDisplayedValues": {
+                "5A": {
+                  "kzCyr": "Налогоплательщик, применяющий СНР в соответствии со статьями 697-701 Налогового кодекса",
+                  "kzLat": "Налогоплательщик, применяющий СНР в соответствии со статьями 697-701 Налогового кодекса",
+                  "rus": "Налогоплательщик, применяющий СНР в соответствии со статьями 697-701 Налогового кодекса"
+                },
+                "5B": {
+                  "kzCyr": "Доверительный управляющий в соответствии со статьей 40 Налогового кодекса",
+                  "kzLat": "Доверительный управляющий в соответствии со статьей 40 Налогового кодекса",
+                  "rus": "Доверительный управляющий в соответствии со статьей 40 Налогового кодекса"
+                },
+                "5C": {
+                  "kzCyr": "Учредитель доверительного управления в соответствии со статьей 40 Налогового кодекса",
+                  "kzLat": "Учредитель доверительного управления в соответствии со статьей 40 Налогового кодекса",
+                  "rus": "Учредитель доверительного управления в соответствии со статьей 40 Налогового кодекса"
+                }
+              }
+            },
+            {
+              "nameRus": "Код валюты",
+              "nameKazCyr": "Код валюты",
+              "nameKazLat": "Код валюты",
+              "type": "STRING",
+              "jsonName": "_6",
+              "validationConstraints": [
+                {
+                  "constraintType": "NOT_NULL",
+                  "arguments": {
+                    "type": "MESSAGE_ARGUMENTS",
+                    "message": null,
+                    "each": false
+                  }
+                }
+              ],
+              "hidden": false,
+              "orderNumber": 4,
+              "pageNumber": 1,
+              "dictionaryName": "d_currencies",
+              "collection": false,
+              "nestedFields": [],
+              "dictionaryFieldDescription": {
+                "jsonSentKey": "code",
+                "displayedRuKey": "nameRu",
+                "displayedKazCyrKey": "nameKk",
+                "displayedKazLatKey": "nameQq"
+              }
+            },
+            {
+              "nameRus": "Признак резидентства",
+              "nameKazCyr": "Признак резидентства",
+              "nameKazLat": "Признак резидентства",
+              "type": "BOOLEAN",
+              "jsonName": "_7",
+              "validationConstraints": [
+                {
+                  "constraintType": "NOT_NULL",
+                  "arguments": {
+                    "type": "MESSAGE_ARGUMENTS",
+                    "message": null,
+                    "each": false
+                  }
+                }
+              ],
+              "hidden": false,
+              "orderNumber": 5,
+              "pageNumber": 1,
+              "collection": false,
+              "nestedFields": []
+            },
+            {
+              "nameRus": "Код страны резидентства",
+              "nameKazCyr": "Код страны резидентства",
+              "nameKazLat": "Код страны резидентства",
+              "type": "LONG",
+              "jsonName": "_8_A",
+              "validationConstraints": [],
+              "hidden": false,
+              "orderNumber": 6,
+              "pageNumber": 1,
+              "collection": false,
+              "nestedFields": []
+            },
+            {
+              "nameRus": "номер налоговой регистрации в стране резидентства",
+              "nameKazCyr": "номер налоговой регистрации в стране резидентства",
+              "nameKazLat": "номер налоговой регистрации в стране резидентства",
+              "type": "LONG",
+              "jsonName": "_8_B",
+              "validationConstraints": [
+                {
+                  "constraintType": "SIZE",
+                  "arguments": {
+                    "type": "SIZE_ARGUMENTS",
+                    "min": 1,
+                    "max": 19,
+                    "message": null,
+                    "each": false
+                  }
+                }
+              ],
+              "hidden": false,
+              "orderNumber": 7,
+              "pageNumber": 1,
+              "collection": false,
+              "nestedFields": []
+            },
+            {
+              "nameRus": "Общая сумма авансовых платежей за предыдущий налоговый период",
+              "nameKazCyr": "Общая сумма авансовых платежей за предыдущий налоговый период",
+              "nameKazLat": "Общая сумма авансовых платежей за предыдущий налоговый период",
+              "type": "LONG",
+              "jsonName": "_101_01_001",
+              "validationConstraints": [
+                {
+                  "constraintType": "SIZE",
+                  "arguments": {
+                    "type": "SIZE_ARGUMENTS",
+                    "min": 0,
+                    "max": 15,
+                    "message": null,
+                    "each": false
+                  }
+                }
+              ],
+              "hidden": false,
+              "orderNumber": 8,
+              "pageNumber": 1,
+              "collection": false,
+              "nestedFields": []
+            },
+            {
+              "nameRus": "Сумма авансовых платежей, подлежащая уплате за период до сдачи декларации",
+              "nameKazCyr": "Сумма авансовых платежей, подлежащая уплате за период до сдачи декларации",
+              "nameKazLat": "Сумма авансовых платежей, подлежащая уплате за период до сдачи декларации",
+              "type": "LONG",
+              "jsonName": "_101_01_002",
+              "validationConstraints": [
+                {
+                  "constraintType": "SIZE",
+                  "arguments": {
+                    "type": "SIZE_ARGUMENTS",
+                    "min": 0,
+                    "max": 15,
+                    "message": null,
+                    "each": false
+                  }
+                }
+              ],
+              "hidden": false,
+              "orderNumber": 9,
+              "pageNumber": 1,
+              "collection": false,
+              "nestedFields": []
+            },
+            {
+              "nameRus": "Сумма ежемесячного авансового платежа",
+              "nameKazCyr": "Сумма ежемесячного авансового платежа",
+              "nameKazLat": "Сумма ежемесячного авансового платежа",
+              "type": "LONG",
+              "jsonName": "_101_01_003",
+              "validationConstraints": [
+                {
+                  "constraintType": "SIZE",
+                  "arguments": {
+                    "type": "SIZE_ARGUMENTS",
+                    "min": 0,
+                    "max": 15,
+                    "message": null,
+                    "each": false
+                  }
+                }
+              ],
+              "hidden": false,
+              "orderNumber": 9,
+              "pageNumber": 1,
+              "collection": false,
+              "nestedFields": []
+            },
+            {
+              "nameRus": "Предполагаемая сумма КПН, исчисленная в соответствии с пунктом 1 статьи 302 Налогового кодекса",
+              "nameKazCyr": "Предполагаемая сумма КПН, исчисленная в соответствии с пунктом 1 статьи 302 Налогового кодекса",
+              "nameKazLat": "Предполагаемая сумма КПН, исчисленная в соответствии с пунктом 1 статьи 302 Налогового кодекса",
+              "type": "LONG",
+              "jsonName": "_101_01_004",
+              "validationConstraints": [
+                {
+                  "constraintType": "SIZE",
+                  "arguments": {
+                    "type": "SIZE_ARGUMENTS",
+                    "min": 0,
+                    "max": 15,
+                    "message": null,
+                    "each": false
+                  }
+                }
+              ],
+              "hidden": false,
+              "orderNumber": 10,
+              "pageNumber": 1,
+              "collection": false,
+              "nestedFields": []
+            },
+            {
+              "nameRus": "Предполагаемая сумма КПН, исчисленная в соответствии со статьей 652 Налогового кодекса",
+              "nameKazCyr": "Предполагаемая сумма КПН, исчисленная в соответствии со статьей 652 Налогового кодекса",
+              "nameKazLat": "Предполагаемая сумма КПН, исчисленная в соответствии со статьей 652 Налогового кодекса",
+              "type": "LONG",
+              "jsonName": "_101_01_005",
+              "validationConstraints": [
+                {
+                  "constraintType": "SIZE",
+                  "arguments": {
+                    "type": "SIZE_ARGUMENTS",
+                    "min": 0,
+                    "max": 15,
+                    "message": null,
+                    "each": false
+                  }
+                }
+              ],
+              "hidden": false,
+              "orderNumber": 11,
+              "pageNumber": 1,
+              "collection": false,
+              "nestedFields": []
+            },
+            {
+              "nameRus": "Сумма авансовых платежей, подлежащая уплате за период до сдачи декларации (101.01.004 + 101.01.005/4)",
+              "nameKazCyr": "Сумма авансовых платежей, подлежащая уплате за период до сдачи декларации (101.01.004 + 101.01.005/4)",
+              "nameKazLat": "Сумма авансовых платежей, подлежащая уплате за период до сдачи декларации (101.01.004 + 101.01.005/4)",
+              "type": "LONG",
+              "jsonName": "_101_01_006",
+              "validationConstraints": [
+                {
+                  "constraintType": "SIZE",
+                  "arguments": {
+                    "type": "SIZE_ARGUMENTS",
+                    "min": 0,
+                    "max": 15,
+                    "message": null,
+                    "each": false
+                  }
+                }
+              ],
+              "hidden": false,
+              "orderNumber": 12,
+              "pageNumber": 1,
+              "collection": false,
+              "nestedFields": []
+            },
+            {
+              "nameRus": "Уменьшение суммы авансовых платежей в соответствии со статьей 700 Налогового кодекса",
+              "nameKazCyr": "Уменьшение суммы авансовых платежей в соответствии со статьей 700 Налогового кодекса",
+              "nameKazLat": "Уменьшение суммы авансовых платежей в соответствии со статьей 700 Налогового кодекса",
+              "type": "LONG",
+              "jsonName": "_101_01_007",
+              "validationConstraints": [
+                {
+                  "constraintType": "SIZE",
+                  "arguments": {
+                    "type": "SIZE_ARGUMENTS",
+                    "min": 0,
+                    "max": 15,
+                    "message": null,
+                    "each": false
+                  }
+                }
+              ],
+              "hidden": false,
+              "orderNumber": 13,
+              "pageNumber": 1,
+              "collection": false,
+              "nestedFields": []
+            },
+            {
+              "nameRus": "Итого сумма авансовых платежей, подлежащая уплате за период до сдачи декларации (101.01.006 - 101.01.007)",
+              "nameKazCyr": "Итого сумма авансовых платежей, подлежащая уплате за период до сдачи декларации (101.01.006 - 101.01.007)",
+              "nameKazLat": "Итого сумма авансовых платежей, подлежащая уплате за период до сдачи декларации (101.01.006 - 101.01.007)",
+              "type": "LONG",
+              "jsonName": "_101_01_008",
+              "validationConstraints": [
+                {
+                  "constraintType": "SIZE",
+                  "arguments": {
+                    "type": "SIZE_ARGUMENTS",
+                    "min": 0,
+                    "max": 15,
+                    "message": null,
+                    "each": false
+                  }
+                }
+              ],
+              "hidden": false,
+              "orderNumber": 14,
+              "pageNumber": 1,
+              "collection": false,
+              "nestedFields": []
+            },
+            {
+              "nameRus": "Сумма ежемесячного авансового платежа",
+              "nameKazCyr": "Сумма ежемесячного авансового платежа",
+              "nameKazLat": "Сумма ежемесячного авансового платежа",
+              "type": "LONG",
+              "jsonName": "_101_01_009",
+              "validationConstraints": [
+                {
+                  "constraintType": "SIZE",
+                  "arguments": {
+                    "type": "SIZE_ARGUMENTS",
+                    "min": 0,
+                    "max": 15,
+                    "message": null,
+                    "each": false
+                  }
+                }
+              ],
+              "hidden": false,
+              "orderNumber": 15,
+              "pageNumber": 1,
+              "collection": false,
+              "nestedFields": []
+            },
+            {
+              "nameRus": "ФИО руководителя",
+              "nameKazCyr": "ФИО руководителя",
+              "nameKazLat": "ФИО руководителя",
+              "type": "STRING",
+              "jsonName": "fullNameOfHead",
+              "validationConstraints": [
+                {
+                  "constraintType": "NOT_NULL",
+                  "arguments": {
+                    "type": "MESSAGE_ARGUMENTS",
+                    "message": null,
+                    "each": false
+                  }
+                }
+              ],
+              "hidden": false,
+              "orderNumber": 16,
+              "pageNumber": 1,
+              "collection": false,
+              "nestedFields": []
+            }
+          ]
+        }
+      ],
+      "number": 5,
+      "fieldsToLockOnDocumentRegistration": ["_2", "_4", "_iinBin"]
+    },
+    "formType": "fno_101_01",
+    "number": 5,
+    "validFrom": "2020-01-01T01:01:01+06:00",
+    "validTo": "2022-12-31T23:59:59+06:00"
+  },
+  {
+    "name": "ФНО 101-01",
+    "createdAt": "2021-10-18T15:33:12.094389+06:00",
+    "updatedAt": null,
+    "lastRevision": {
+      "description": "Форма налоговой отчётности 101-01",
+      "createdAt": "2021-10-18T15:33:12.098472+06:00",
+      "active": true,
+      "fieldSets": [
+        {
+          "name": "Общие атрибуты входящей формы",
+          "orderNumber": 0,
+          "pageNumber": 1,
+          "fields": [
+            {
+              "nameRus": "Причина подачи документа",
+              "nameKazCyr": "Причина подачи документа",
+              "nameKazLat": "Причина подачи документа",
+              "type": "LONG",
+              "jsonName": "reasonId",
+              "validationConstraints": [],
+              "hidden": false,
+              "orderNumber": 1,
+              "pageNumber": 1,
+              "collection": false,
+              "nestedFields": []
+            },
+            {
+              "nameRus": "Источник документа(справочник)",
+              "nameKazCyr": "Источник документа(справочник)",
+              "nameKazLat": "Источник документа(справочник)",
+              "type": "LONG",
+              "jsonName": "documentSourceId",
+              "validationConstraints": [],
+              "hidden": false,
+              "orderNumber": 2,
+              "pageNumber": 1,
+              "collection": false,
+              "nestedFields": []
+            },
+            {
+              "nameRus": "Назначение документа(справочник)",
+              "nameKazCyr": "Назначение документа(справочник)",
+              "nameKazLat": "Назначение документа(справочник)",
+              "type": "LONG",
+              "jsonName": "documentDestinationId",
+              "validationConstraints": [],
+              "hidden": false,
+              "orderNumber": 3,
+              "pageNumber": 1,
+              "collection": false,
+              "nestedFields": []
+            },
+            {
+              "nameRus": "ОГД(справочник)",
+              "nameKazCyr": "ОГД(справочник)",
+              "nameKazLat": "ОГД(справочник)",
+              "type": "LONG",
+              "jsonName": "ogdId",
+              "validationConstraints": [],
+              "hidden": false,
+              "orderNumber": 4,
+              "pageNumber": 1,
+              "collection": false,
+              "nestedFields": []
+            },
+            {
+              "nameRus": "Тип документа(справочник)",
+              "nameKazCyr": "Тип документа(справочник)",
+              "nameKazLat": "Тип документа(справочник)",
+              "type": "LONG",
+              "jsonName": "documentTypeId",
+              "validationConstraints": [],
+              "hidden": false,
+              "orderNumber": 5,
+              "pageNumber": 1,
+              "collection": false,
+              "nestedFields": []
+            },
+            {
+              "nameRus": "ИИН/БИН",
+              "nameKazCyr": "ИИН/БИН",
+              "nameKazLat": "ИИН/БИН",
+              "type": "STRING",
+              "jsonName": "iinBin",
+              "validationConstraints": [],
+              "hidden": false,
+              "orderNumber": 6,
+              "pageNumber": 1,
+              "collection": false,
+              "nestedFields": []
+            },
+            {
+              "nameRus": "Ф.И.О. должностного лица государственного органа",
+              "nameKazCyr": "Ф.И.О. должностного лица государственного органа",
+              "nameKazLat": "Ф.И.О. должностного лица государственного органа",
+              "type": "STRING",
+              "jsonName": "checkerFullName",
+              "validationConstraints": [],
+              "hidden": false,
+              "orderNumber": 7,
+              "pageNumber": 1,
+              "collection": false,
+              "nestedFields": []
+            },
+            {
+              "nameRus": "Дата подачи налогового заявления",
+              "nameKazCyr": "Дата подачи налогового заявления",
+              "nameKazLat": "Дата подачи налогового заявления",
+              "type": "TIMESTAMP",
+              "jsonName": "applicationDate",
+              "validationConstraints": [],
+              "hidden": false,
+              "orderNumber": 8,
+              "pageNumber": 1,
+              "collection": false,
+              "nestedFields": []
+            },
+            {
+              "nameRus": "Дата почтового штемпеля",
+              "nameKazCyr": "Дата почтового штемпеля",
+              "nameKazLat": "Дата почтового штемпеля",
+              "type": "TIMESTAMP",
+              "jsonName": "postmarkDate",
+              "validationConstraints": [],
+              "hidden": false,
+              "orderNumber": 9,
+              "pageNumber": 1,
+              "collection": false,
+              "nestedFields": []
+            }
+          ]
+        },
+        {
+          "name": "Основная форма",
+          "orderNumber": 1,
+          "pageNumber": 1,
+          "fields": [
+            {
+              "nameRus": "Налоговый период, за который представляется налоговая отчетность(год)",
+              "nameKazCyr": "Налоговый период, за который представляется налоговая отчетность(год)",
+              "nameKazLat": "Налоговый период, за который представляется налоговая отчетность(год)",
+              "type": "LONG",
+              "jsonName": "_2",
+              "validationConstraints": [
+                {
+                  "constraintType": "NOT_NULL",
+                  "arguments": {
+                    "type": "MESSAGE_ARGUMENTS",
+                    "message": null,
+                    "each": false
+                  }
+                }
+              ],
+              "hidden": false,
+              "orderNumber": 1,
+              "pageNumber": 1,
+              "dictionaryName": "d_taxable_years",
+              "collection": false,
+              "nestedFields": [],
+              "dictionaryFieldDescription": {
+                "jsonSentKey": "code",
+                "displayedRuKey": "nameRu",
+                "displayedKazCyrKey": "nameKk",
+                "displayedKazLatKey": "nameQq"
+              }
+            },
+            {
+              "nameRus": "Вид Расчета",
+              "nameKazCyr": "Вид Расчета",
+              "nameKazLat": "Вид Расчета",
+              "type": "STRING",
+              "jsonName": "_4",
+              "validationConstraints": [
+                {
+                  "constraintType": "NOT_NULL",
+                  "arguments": {
+                    "type": "MESSAGE_ARGUMENTS",
+                    "message": null,
+                    "each": false
+                  }
+                },
+                {
+                  "constraintType": "IN",
+                  "arguments": {
+                    "type": "IN_ARGUMENTS",
+                    "value": [
+                      "PRIORITY",
+                      "NEXT_PRIORITY",
+                      "ADDITIONAL",
+                      "PRIORITY",
+                      "NEXT_PRIORITY",
+                      "ADDITIONAL"
+                    ],
+                    "message": null,
+                    "each": false,
+                    "displayedValues": {
+                      "PRIORITY": {
+                        "kzCyr": "Первоначальный",
+                        "kzLat": "Первоначальный",
+                        "rus": "Первоначальный"
+                      },
+                      "ADDITIONAL": {
+                        "kzCyr": "Дополнительный",
+                        "kzLat": "Дополнительный",
+                        "rus": "Дополнительный"
+                      },
+                      "NEXT_PRIORITY": {
+                        "kzCyr": "Очередной",
+                        "kzLat": "Очередной",
+                        "rus": "Очередной"
+                      }
+                    }
+                  }
+                }
+              ],
+              "hidden": false,
+              "orderNumber": 2,
+              "pageNumber": 1,
+              "collection": false,
+              "nestedFields": [],
+              "enumerationValues": [
+                "PRIORITY",
+                "NEXT_PRIORITY",
+                "ADDITIONAL",
+                "PRIORITY",
+                "NEXT_PRIORITY",
+                "ADDITIONAL"
+              ],
+              "enumerationDisplayedValues": {
+                "PRIORITY": {
+                  "kzCyr": "Первоначальный",
+                  "kzLat": "Первоначальный",
+                  "rus": "Первоначальный"
+                },
+                "ADDITIONAL": {
+                  "kzCyr": "Дополнительный",
+                  "kzLat": "Дополнительный",
+                  "rus": "Дополнительный"
+                },
+                "NEXT_PRIORITY": {
+                  "kzCyr": "Очередной",
+                  "kzLat": "Очередной",
+                  "rus": "Очередной"
+                }
+              }
+            },
+            {
+              "nameRus": "Категория налогоплательщика",
+              "nameKazCyr": "Категория налогоплательщика",
+              "nameKazLat": "Категория налогоплательщика",
+              "type": "STRING",
+              "jsonName": "_5",
+              "validationConstraints": [
+                {
+                  "constraintType": "NOT_NULL",
+                  "arguments": {
+                    "type": "MESSAGE_ARGUMENTS",
+                    "message": null,
+                    "each": false
+                  }
+                },
+                {
+                  "constraintType": "IN",
+                  "arguments": {
+                    "type": "IN_ARGUMENTS",
+                    "value": ["5A", "5B", "5C", "5A", "5B", "5C"],
+                    "message": null,
+                    "each": false,
+                    "displayedValues": {
+                      "5A": {
+                        "kzCyr": "Налогоплательщик, применяющий СНР в соответствии со статьями 697-701 Налогового кодекса",
+                        "kzLat": "Налогоплательщик, применяющий СНР в соответствии со статьями 697-701 Налогового кодекса",
+                        "rus": "Налогоплательщик, применяющий СНР в соответствии со статьями 697-701 Налогового кодекса"
+                      },
+                      "5B": {
+                        "kzCyr": "Доверительный управляющий в соответствии со статьей 40 Налогового кодекса",
+                        "kzLat": "Доверительный управляющий в соответствии со статьей 40 Налогового кодекса",
+                        "rus": "Доверительный управляющий в соответствии со статьей 40 Налогового кодекса"
+                      },
+                      "5C": {
+                        "kzCyr": "Учредитель доверительного управления в соответствии со статьей 40 Налогового кодекса",
+                        "kzLat": "Учредитель доверительного управления в соответствии со статьей 40 Налогового кодекса",
+                        "rus": "Учредитель доверительного управления в соответствии со статьей 40 Налогового кодекса"
+                      }
+                    }
+                  }
+                }
+              ],
+              "hidden": false,
+              "orderNumber": 3,
+              "pageNumber": 1,
+              "collection": false,
+              "nestedFields": [],
+              "enumerationValues": ["5A", "5B", "5C", "5A", "5B", "5C"],
+              "enumerationDisplayedValues": {
+                "5A": {
+                  "kzCyr": "Налогоплательщик, применяющий СНР в соответствии со статьями 697-701 Налогового кодекса",
+                  "kzLat": "Налогоплательщик, применяющий СНР в соответствии со статьями 697-701 Налогового кодекса",
+                  "rus": "Налогоплательщик, применяющий СНР в соответствии со статьями 697-701 Налогового кодекса"
+                },
+                "5B": {
+                  "kzCyr": "Доверительный управляющий в соответствии со статьей 40 Налогового кодекса",
+                  "kzLat": "Доверительный управляющий в соответствии со статьей 40 Налогового кодекса",
+                  "rus": "Доверительный управляющий в соответствии со статьей 40 Налогового кодекса"
+                },
+                "5C": {
+                  "kzCyr": "Учредитель доверительного управления в соответствии со статьей 40 Налогового кодекса",
+                  "kzLat": "Учредитель доверительного управления в соответствии со статьей 40 Налогового кодекса",
+                  "rus": "Учредитель доверительного управления в соответствии со статьей 40 Налогового кодекса"
+                }
+              }
+            },
+            {
+              "nameRus": "Код валюты",
+              "nameKazCyr": "Код валюты",
+              "nameKazLat": "Код валюты",
+              "type": "STRING",
+              "jsonName": "_6",
+              "validationConstraints": [
+                {
+                  "constraintType": "NOT_NULL",
+                  "arguments": {
+                    "type": "MESSAGE_ARGUMENTS",
+                    "message": null,
+                    "each": false
+                  }
+                }
+              ],
+              "hidden": false,
+              "orderNumber": 4,
+              "pageNumber": 1,
+              "dictionaryName": "d_currencies",
+              "collection": false,
+              "nestedFields": [],
+              "dictionaryFieldDescription": {
+                "jsonSentKey": "code",
+                "displayedRuKey": "nameRu",
+                "displayedKazCyrKey": "nameKk",
+                "displayedKazLatKey": "nameQq"
+              }
+            },
+            {
+              "nameRus": "Признак резидентства",
+              "nameKazCyr": "Признак резидентства",
+              "nameKazLat": "Признак резидентства",
+              "type": "BOOLEAN",
+              "jsonName": "_7",
+              "validationConstraints": [
+                {
+                  "constraintType": "NOT_NULL",
+                  "arguments": {
+                    "type": "MESSAGE_ARGUMENTS",
+                    "message": null,
+                    "each": false
+                  }
+                }
+              ],
+              "hidden": false,
+              "orderNumber": 5,
+              "pageNumber": 1,
+              "collection": false,
+              "nestedFields": []
+            },
+            {
+              "nameRus": "Код страны резидентства",
+              "nameKazCyr": "Код страны резидентства",
+              "nameKazLat": "Код страны резидентства",
+              "type": "LONG",
+              "jsonName": "_8_A",
+              "validationConstraints": [],
+              "hidden": false,
+              "orderNumber": 6,
+              "pageNumber": 1,
+              "collection": false,
+              "nestedFields": []
+            },
+            {
+              "nameRus": "номер налоговой регистрации в стране резидентства",
+              "nameKazCyr": "номер налоговой регистрации в стране резидентства",
+              "nameKazLat": "номер налоговой регистрации в стране резидентства",
+              "type": "LONG",
+              "jsonName": "_8_B",
+              "validationConstraints": [
+                {
+                  "constraintType": "SIZE",
+                  "arguments": {
+                    "type": "SIZE_ARGUMENTS",
+                    "min": 1,
+                    "max": 19,
+                    "message": null,
+                    "each": false
+                  }
+                }
+              ],
+              "hidden": false,
+              "orderNumber": 7,
+              "pageNumber": 1,
+              "collection": false,
+              "nestedFields": []
+            },
+            {
+              "nameRus": "Общая сумма авансовых платежей за предыдущий налоговый период",
+              "nameKazCyr": "Общая сумма авансовых платежей за предыдущий налоговый период",
+              "nameKazLat": "Общая сумма авансовых платежей за предыдущий налоговый период",
+              "type": "LONG",
+              "jsonName": "_101_01_001",
+              "validationConstraints": [
+                {
+                  "constraintType": "SIZE",
+                  "arguments": {
+                    "type": "SIZE_ARGUMENTS",
+                    "min": 0,
+                    "max": 15,
+                    "message": null,
+                    "each": false
+                  }
+                }
+              ],
+              "hidden": false,
+              "orderNumber": 8,
+              "pageNumber": 1,
+              "collection": false,
+              "nestedFields": []
+            },
+            {
+              "nameRus": "Сумма авансовых платежей, подлежащая уплате за период до сдачи декларации",
+              "nameKazCyr": "Сумма авансовых платежей, подлежащая уплате за период до сдачи декларации",
+              "nameKazLat": "Сумма авансовых платежей, подлежащая уплате за период до сдачи декларации",
+              "type": "LONG",
+              "jsonName": "_101_01_002",
+              "validationConstraints": [
+                {
+                  "constraintType": "SIZE",
+                  "arguments": {
+                    "type": "SIZE_ARGUMENTS",
+                    "min": 0,
+                    "max": 15,
+                    "message": null,
+                    "each": false
+                  }
+                }
+              ],
+              "hidden": false,
+              "orderNumber": 9,
+              "pageNumber": 1,
+              "collection": false,
+              "nestedFields": []
+            },
+            {
+              "nameRus": "Сумма ежемесячного авансового платежа",
+              "nameKazCyr": "Сумма ежемесячного авансового платежа",
+              "nameKazLat": "Сумма ежемесячного авансового платежа",
+              "type": "LONG",
+              "jsonName": "_101_01_003",
+              "validationConstraints": [
+                {
+                  "constraintType": "SIZE",
+                  "arguments": {
+                    "type": "SIZE_ARGUMENTS",
+                    "min": 0,
+                    "max": 15,
+                    "message": null,
+                    "each": false
+                  }
+                }
+              ],
+              "hidden": false,
+              "orderNumber": 9,
+              "pageNumber": 1,
+              "collection": false,
+              "nestedFields": []
+            },
+            {
+              "nameRus": "Предполагаемая сумма КПН, исчисленная в соответствии с пунктом 1 статьи 302 Налогового кодекса",
+              "nameKazCyr": "Предполагаемая сумма КПН, исчисленная в соответствии с пунктом 1 статьи 302 Налогового кодекса",
+              "nameKazLat": "Предполагаемая сумма КПН, исчисленная в соответствии с пунктом 1 статьи 302 Налогового кодекса",
+              "type": "LONG",
+              "jsonName": "_101_01_004",
+              "validationConstraints": [
+                {
+                  "constraintType": "SIZE",
+                  "arguments": {
+                    "type": "SIZE_ARGUMENTS",
+                    "min": 0,
+                    "max": 15,
+                    "message": null,
+                    "each": false
+                  }
+                }
+              ],
+              "hidden": false,
+              "orderNumber": 10,
+              "pageNumber": 1,
+              "collection": false,
+              "nestedFields": []
+            },
+            {
+              "nameRus": "Предполагаемая сумма КПН, исчисленная в соответствии со статьей 652 Налогового кодекса",
+              "nameKazCyr": "Предполагаемая сумма КПН, исчисленная в соответствии со статьей 652 Налогового кодекса",
+              "nameKazLat": "Предполагаемая сумма КПН, исчисленная в соответствии со статьей 652 Налогового кодекса",
+              "type": "LONG",
+              "jsonName": "_101_01_005",
+              "validationConstraints": [
+                {
+                  "constraintType": "SIZE",
+                  "arguments": {
+                    "type": "SIZE_ARGUMENTS",
+                    "min": 0,
+                    "max": 15,
+                    "message": null,
+                    "each": false
+                  }
+                }
+              ],
+              "hidden": false,
+              "orderNumber": 11,
+              "pageNumber": 1,
+              "collection": false,
+              "nestedFields": []
+            },
+            {
+              "nameRus": "Сумма авансовых платежей, подлежащая уплате за период до сдачи декларации (101.01.004 + 101.01.005/4)",
+              "nameKazCyr": "Сумма авансовых платежей, подлежащая уплате за период до сдачи декларации (101.01.004 + 101.01.005/4)",
+              "nameKazLat": "Сумма авансовых платежей, подлежащая уплате за период до сдачи декларации (101.01.004 + 101.01.005/4)",
+              "type": "LONG",
+              "jsonName": "_101_01_006",
+              "validationConstraints": [
+                {
+                  "constraintType": "SIZE",
+                  "arguments": {
+                    "type": "SIZE_ARGUMENTS",
+                    "min": 0,
+                    "max": 15,
+                    "message": null,
+                    "each": false
+                  }
+                }
+              ],
+              "hidden": false,
+              "orderNumber": 12,
+              "pageNumber": 1,
+              "collection": false,
+              "nestedFields": []
+            },
+            {
+              "nameRus": "Уменьшение суммы авансовых платежей в соответствии со статьей 700 Налогового кодекса",
+              "nameKazCyr": "Уменьшение суммы авансовых платежей в соответствии со статьей 700 Налогового кодекса",
+              "nameKazLat": "Уменьшение суммы авансовых платежей в соответствии со статьей 700 Налогового кодекса",
+              "type": "LONG",
+              "jsonName": "_101_01_007",
+              "validationConstraints": [
+                {
+                  "constraintType": "SIZE",
+                  "arguments": {
+                    "type": "SIZE_ARGUMENTS",
+                    "min": 0,
+                    "max": 15,
+                    "message": null,
+                    "each": false
+                  }
+                }
+              ],
+              "hidden": false,
+              "orderNumber": 13,
+              "pageNumber": 1,
+              "collection": false,
+              "nestedFields": []
+            },
+            {
+              "nameRus": "Итого сумма авансовых платежей, подлежащая уплате за период до сдачи декларации (101.01.006 - 101.01.007)",
+              "nameKazCyr": "Итого сумма авансовых платежей, подлежащая уплате за период до сдачи декларации (101.01.006 - 101.01.007)",
+              "nameKazLat": "Итого сумма авансовых платежей, подлежащая уплате за период до сдачи декларации (101.01.006 - 101.01.007)",
+              "type": "LONG",
+              "jsonName": "_101_01_008",
+              "validationConstraints": [
+                {
+                  "constraintType": "SIZE",
+                  "arguments": {
+                    "type": "SIZE_ARGUMENTS",
+                    "min": 0,
+                    "max": 15,
+                    "message": null,
+                    "each": false
+                  }
+                }
+              ],
+              "hidden": false,
+              "orderNumber": 14,
+              "pageNumber": 1,
+              "collection": false,
+              "nestedFields": []
+            },
+            {
+              "nameRus": "Сумма ежемесячного авансового платежа",
+              "nameKazCyr": "Сумма ежемесячного авансового платежа",
+              "nameKazLat": "Сумма ежемесячного авансового платежа",
+              "type": "LONG",
+              "jsonName": "_101_01_009",
+              "validationConstraints": [
+                {
+                  "constraintType": "SIZE",
+                  "arguments": {
+                    "type": "SIZE_ARGUMENTS",
+                    "min": 0,
+                    "max": 15,
+                    "message": null,
+                    "each": false
+                  }
+                }
+              ],
+              "hidden": false,
+              "orderNumber": 15,
+              "pageNumber": 1,
+              "collection": false,
+              "nestedFields": []
+            },
+            {
+              "nameRus": "ФИО руководителя",
+              "nameKazCyr": "ФИО руководителя",
+              "nameKazLat": "ФИО руководителя",
+              "type": "STRING",
+              "jsonName": "fullNameOfHead",
+              "validationConstraints": [
+                {
+                  "constraintType": "NOT_NULL",
+                  "arguments": {
+                    "type": "MESSAGE_ARGUMENTS",
+                    "message": null,
+                    "each": false
+                  }
+                }
+              ],
+              "hidden": false,
+              "orderNumber": 16,
+              "pageNumber": 1,
+              "collection": false,
+              "nestedFields": []
+            }
+          ]
+        }
+      ],
+      "number": 6,
+      "fieldsToLockOnDocumentRegistration": ["_2", "_4", "_iinBin"]
+    },
+    "formType": "fno_101_01",
+    "number": 6,
+    "validFrom": "2020-01-01T01:01:01+06:00",
+    "validTo": "2022-12-31T23:59:59+06:00"
+  }
+]

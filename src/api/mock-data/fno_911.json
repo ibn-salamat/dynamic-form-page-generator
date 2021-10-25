@@ -1,0 +1,2695 @@
+[
+  {
+    "name": "ФНО-911",
+    "createdAt": "2021-09-01T16:48:07.221339+06:00",
+    "updatedAt": null,
+    "lastRevision": {
+      "description": "FNO-911",
+      "createdAt": "2021-09-01T16:48:07.231601+06:00",
+      "active": true,
+      "fieldSets": [
+        {
+          "name": "fieldSet",
+          "orderNumber": 1,
+          "pageNumber": 1,
+          "fields": [
+            {
+              "nameRus": "Тип налогоплательщика",
+              "nameKazCyr": "Тип налогоплательщика",
+              "nameKazLat": "Тип налогоплательщика",
+              "type": "STRING",
+              "jsonName": "taxpayerType",
+              "validationConstraints": [
+                { "constraintType": "NOT_NULL", "arguments": null }
+              ],
+              "hidden": false,
+              "orderNumber": 1,
+              "pageNumber": 1,
+              "collection": false,
+              "nestedFields": []
+            },
+            {
+              "nameRus": "Тип налогоплательщика, составившего документ",
+              "nameKazCyr": "Тип налогоплательщика, составившего документ",
+              "nameKazLat": "Тип налогоплательщика, составившего документ",
+              "type": "STRING",
+              "jsonName": "creatorType",
+              "validationConstraints": [],
+              "hidden": false,
+              "orderNumber": 2,
+              "pageNumber": 1,
+              "collection": false,
+              "nestedFields": []
+            },
+            {
+              "nameRus": "ИИН/БИН налогоплательщика, составившего документ",
+              "nameKazCyr": "ИИН/БИН налогоплательщика, составившего документ",
+              "nameKazLat": "ИИН/БИН налогоплательщика, составившего документ",
+              "type": "STRING",
+              "jsonName": "creatorCode",
+              "validationConstraints": [],
+              "hidden": false,
+              "orderNumber": 3,
+              "pageNumber": 1,
+              "collection": false,
+              "nestedFields": []
+            },
+            {
+              "nameRus": "ИИН",
+              "nameKazCyr": "ИИН",
+              "nameKazLat": "ИИН",
+              "type": "STRING",
+              "jsonName": "taxpayerCode",
+              "validationConstraints": [
+                { "constraintType": "NOT_NULL", "arguments": null },
+                {
+                  "constraintType": "SIZE",
+                  "arguments": {
+                    "type": "SIZE_ARGUMENTS",
+                    "min": 12,
+                    "max": 12,
+                    "message": "ИИН должен состоять из 12 символов",
+                    "each": false
+                  }
+                },
+                {
+                  "constraintType": "PATTERN",
+                  "arguments": {
+                    "type": "PATTERN_ARGUMENTS",
+                    "value": "0-9]+",
+                    "message": "ИНН должен состоять из цифр (0..9)",
+                    "each": false
+                  }
+                }
+              ],
+              "hidden": false,
+              "orderNumber": 4,
+              "pageNumber": 1,
+              "collection": false,
+              "nestedFields": []
+            },
+            {
+              "nameRus": "Фамилия, имя, отчество (при его наличии) или наименование налогоплательщика на русском",
+              "nameKazCyr": "Фамилия, имя, отчество (при его наличии) или наименование налогоплательщика на русском",
+              "nameKazLat": "Фамилия, имя, отчество (при его наличии) или наименование налогоплательщика на русском",
+              "type": "STRING",
+              "jsonName": "taxpayerNameRu",
+              "validationConstraints": [
+                { "constraintType": "NOT_NULL", "arguments": null }
+              ],
+              "hidden": false,
+              "orderNumber": 5,
+              "pageNumber": 1,
+              "collection": false,
+              "nestedFields": []
+            },
+            {
+              "nameRus": "Фамилия, имя, отчество (при его наличии) или наименование налогоплательщика на казахском",
+              "nameKazCyr": "Фамилия, имя, отчество (при его наличии) или наименование налогоплательщика на казахском",
+              "nameKazLat": "Фамилия, имя, отчество (при его наличии) или наименование налогоплательщика на казахском",
+              "type": "STRING",
+              "jsonName": "taxpayerNameKk",
+              "validationConstraints": [
+                { "constraintType": "NOT_NULL", "arguments": null }
+              ],
+              "hidden": false,
+              "orderNumber": 6,
+              "pageNumber": 1,
+              "collection": false,
+              "nestedFields": []
+            },
+            {
+              "nameRus": "ФИО/Наименование налогоплательщика на русском, составившего документ",
+              "nameKazCyr": "ФИО/Наименование налогоплательщика на русском, составившего документ",
+              "nameKazLat": "ФИО/Наименование налогоплательщика на русском, составившего документ",
+              "type": "STRING",
+              "jsonName": "creatorNameRu",
+              "validationConstraints": [],
+              "hidden": false,
+              "orderNumber": 7,
+              "pageNumber": 1,
+              "collection": false,
+              "nestedFields": []
+            },
+            {
+              "nameRus": "ФИО/Наименование налогоплательщика на казахском, составившего документ",
+              "nameKazCyr": "ФИО/Наименование налогоплательщика на казахском, составившего документ",
+              "nameKazLat": "ФИО/Наименование налогоплательщика на казахском, составившего документ",
+              "type": "STRING",
+              "jsonName": "creatorNameKk",
+              "validationConstraints": [],
+              "hidden": false,
+              "orderNumber": 8,
+              "pageNumber": 1,
+              "collection": false,
+              "nestedFields": []
+            },
+            {
+              "nameRus": "Вид Расчета",
+              "nameKazCyr": "Вид Расчета",
+              "nameKazLat": "Вид Расчета",
+              "type": "STRING",
+              "jsonName": "declarationTypes",
+              "validationConstraints": [
+                {
+                  "constraintType": "IN",
+                  "arguments": {
+                    "type": "IN_ARGUMENTS",
+                    "value": ["PRIORITY", "NEXT_PRIORITY", "ADDITIONAL"],
+                    "message": "Поже должно принимать одно из сдедующих значений PRIORITY, NEXT_PRIORITY, ADDITIONAL",
+                    "each": true,
+                    "displayedValues": null
+                  }
+                }
+              ],
+              "hidden": false,
+              "orderNumber": 9,
+              "pageNumber": 1,
+              "collection": true,
+              "nestedFields": [],
+              "enumerationValues": ["PRIORITY", "NEXT_PRIORITY", "ADDITIONAL"]
+            },
+            {
+              "nameRus": "Вид Расчета",
+              "nameKazCyr": "Вид Расчета",
+              "nameKazLat": "Вид Расчета",
+              "type": "STRING",
+              "jsonName": "taxpayerCategories",
+              "validationConstraints": [],
+              "hidden": false,
+              "orderNumber": 10,
+              "pageNumber": 1,
+              "collection": true,
+              "nestedFields": []
+            },
+            {
+              "nameRus": "Налоговый период, за который представляется налоговая отчетность",
+              "nameKazCyr": "Налоговый период, за который представляется налоговая отчетность",
+              "nameKazLat": "Налоговый период, за который представляется налоговая отчетность",
+              "type": "STRING",
+              "jsonName": "periodType",
+              "validationConstraints": [
+                { "constraintType": "NOT_NULL", "arguments": null }
+              ],
+              "hidden": false,
+              "orderNumber": 11,
+              "pageNumber": 1,
+              "collection": false,
+              "nestedFields": []
+            },
+            {
+              "nameRus": "Значение периода",
+              "nameKazCyr": "Значение периода",
+              "nameKazLat": "Значение периода",
+              "type": "STRING",
+              "jsonName": "periodValue",
+              "validationConstraints": [],
+              "hidden": false,
+              "orderNumber": 12,
+              "pageNumber": 1,
+              "collection": false,
+              "nestedFields": []
+            },
+            {
+              "nameRus": "Год",
+              "nameKazCyr": "Год",
+              "nameKazLat": "Год",
+              "type": "STRING",
+              "jsonName": "fnoYear",
+              "validationConstraints": [
+                { "constraintType": "NOT_NULL", "arguments": null }
+              ],
+              "hidden": false,
+              "orderNumber": 13,
+              "pageNumber": 1,
+              "collection": false,
+              "nestedFields": []
+            },
+            {
+              "nameRus": "Код валюты",
+              "nameKazCyr": "Код валюты",
+              "nameKazLat": "Код валюты",
+              "type": "STRING",
+              "jsonName": "currencyCode",
+              "validationConstraints": [
+                { "constraintType": "NOT_NULL", "arguments": null }
+              ],
+              "hidden": false,
+              "orderNumber": 14,
+              "pageNumber": 1,
+              "collection": false,
+              "nestedFields": []
+            },
+            {
+              "nameRus": "Код органа государственных доходов по месту нахождения",
+              "nameKazCyr": "Код органа государственных доходов по месту нахождения",
+              "nameKazLat": "Код органа государственных доходов по месту нахождения",
+              "type": "STRING",
+              "jsonName": "ogdCodeByLocation",
+              "validationConstraints": [],
+              "hidden": false,
+              "orderNumber": 15,
+              "pageNumber": 1,
+              "collection": false,
+              "nestedFields": []
+            },
+            {
+              "nameRus": "Код органа государственнхы доходов по месту жительства",
+              "nameKazCyr": "Код органа государственнхы доходов по месту жительства",
+              "nameKazLat": "Код органа государственнхы доходов по месту жительства",
+              "type": "STRING",
+              "jsonName": "ogdCodeByResidence",
+              "validationConstraints": [],
+              "hidden": false,
+              "orderNumber": 16,
+              "pageNumber": 1,
+              "collection": false,
+              "nestedFields": []
+            },
+            {
+              "nameRus": "UID ревизии",
+              "nameKazCyr": "UID ревизии",
+              "nameKazLat": "UID ревизии",
+              "type": "STRING",
+              "jsonName": "revisionUid",
+              "validationConstraints": [],
+              "hidden": false,
+              "orderNumber": 17,
+              "pageNumber": 1,
+              "collection": false,
+              "nestedFields": []
+            },
+            {
+              "nameRus": "Содержание ФНО",
+              "nameKazCyr": "Содержание ФНО",
+              "nameKazLat": "Содержание ФНО",
+              "type": "FORM_FIELD",
+              "jsonName": "fnoContent",
+              "validationConstraints": [],
+              "hidden": false,
+              "orderNumber": 18,
+              "pageNumber": 1,
+              "collection": false,
+              "nestedFields": [
+                {
+                  "nameRus": "Тип ФНО",
+                  "nameKazCyr": "Тип ФНО",
+                  "nameKazLat": "Тип ФНО",
+                  "type": "STRING",
+                  "jsonName": "type",
+                  "validationConstraints": [],
+                  "hidden": false,
+                  "orderNumber": 1,
+                  "pageNumber": 1,
+                  "collection": false,
+                  "nestedFields": []
+                },
+                {
+                  "nameRus": "Основные сведения ФНО",
+                  "nameKazCyr": "Основные сведения ФНО",
+                  "nameKazLat": "Основные сведения ФНО",
+                  "type": "FORM_FIELD",
+                  "jsonName": "commonInfo",
+                  "validationConstraints": [],
+                  "hidden": false,
+                  "orderNumber": 2,
+                  "pageNumber": 1,
+                  "collection": false,
+                  "nestedFields": [
+                    {
+                      "nameRus": "Номер и Дата уведомления/ извещения (заполняется в случае представления дополнительного расчета по уведомлению/извещению)",
+                      "nameKazCyr": "Номер и Дата уведомления/ извещения (заполняется в случае представления дополнительного расчета по уведомлению/извещению)",
+                      "nameKazLat": "Номер и Дата уведомления/ извещения (заполняется в случае представления дополнительного расчета по уведомлению/извещению)",
+                      "type": "FORM_FIELD",
+                      "jsonName": "_5",
+                      "validationConstraints": [],
+                      "hidden": false,
+                      "orderNumber": 1,
+                      "pageNumber": 1,
+                      "collection": false,
+                      "nestedFields": [
+                        {
+                          "nameRus": "Номер",
+                          "nameKazCyr": "Номер",
+                          "nameKazLat": "Номер",
+                          "type": "STRING",
+                          "jsonName": "A",
+                          "validationConstraints": [],
+                          "hidden": false,
+                          "orderNumber": 1,
+                          "pageNumber": 1,
+                          "collection": false,
+                          "nestedFields": []
+                        },
+                        {
+                          "nameRus": "Дата",
+                          "nameKazCyr": "Дата",
+                          "nameKazLat": "Дата",
+                          "type": "DATE",
+                          "jsonName": "B",
+                          "validationConstraints": [],
+                          "hidden": false,
+                          "orderNumber": 2,
+                          "pageNumber": 1,
+                          "collection": false,
+                          "nestedFields": []
+                        }
+                      ]
+                    },
+                    {
+                      "nameRus": "Трехкомпонентная интегрированная система",
+                      "nameKazCyr": "Трехкомпонентная интегрированная система",
+                      "nameKazLat": "Трехкомпонентная интегрированная система",
+                      "type": "BOOLEAN",
+                      "jsonName": "isUsedTIS",
+                      "validationConstraints": [],
+                      "hidden": false,
+                      "orderNumber": 2,
+                      "pageNumber": 1,
+                      "collection": false,
+                      "nestedFields": []
+                    },
+                    {
+                      "nameRus": "Трехкомпонентная интегрированная система",
+                      "nameKazCyr": "Трехкомпонентная интегрированная система",
+                      "nameKazLat": "Трехкомпонентная интегрированная система",
+                      "type": "FORM_FIELD",
+                      "jsonName": "_7",
+                      "validationConstraints": [],
+                      "hidden": false,
+                      "orderNumber": 3,
+                      "pageNumber": 1,
+                      "collection": false,
+                      "nestedFields": [
+                        {
+                          "nameRus": "A – Укажите наименование трехкомпонентной интегрированной системы",
+                          "nameKazCyr": "A – Укажите наименование трехкомпонентной интегрированной системы",
+                          "nameKazLat": "A – Укажите наименование трехкомпонентной интегрированной системы",
+                          "type": "STRING",
+                          "jsonName": "A",
+                          "validationConstraints": [],
+                          "hidden": false,
+                          "orderNumber": 1,
+                          "pageNumber": 1,
+                          "collection": false,
+                          "nestedFields": []
+                        },
+                        {
+                          "nameRus": "B - номер регистрационной карточки",
+                          "nameKazCyr": "B - номер регистрационной карточки",
+                          "nameKazLat": "B - номер регистрационной карточки",
+                          "type": "STRING",
+                          "jsonName": "B",
+                          "validationConstraints": [],
+                          "hidden": false,
+                          "orderNumber": 2,
+                          "pageNumber": 1,
+                          "collection": false,
+                          "nestedFields": []
+                        },
+                        {
+                          "nameRus": "C - дата постановки на учет",
+                          "nameKazCyr": "C - дата постановки на учет",
+                          "nameKazLat": "C - дата постановки на учет",
+                          "type": "DATE",
+                          "jsonName": "C",
+                          "validationConstraints": [],
+                          "hidden": false,
+                          "orderNumber": 3,
+                          "pageNumber": 1,
+                          "collection": false,
+                          "nestedFields": []
+                        }
+                      ]
+                    },
+                    {
+                      "nameRus": "Трехкомпонентная интегрированная система",
+                      "nameKazCyr": "Трехкомпонентная интегрированная система",
+                      "nameKazLat": "Трехкомпонентная интегрированная система",
+                      "type": "FORM_FIELD",
+                      "jsonName": "_01",
+                      "validationConstraints": [],
+                      "hidden": false,
+                      "orderNumber": 4,
+                      "pageNumber": 1,
+                      "collection": false,
+                      "nestedFields": [
+                        {
+                          "nameRus": "911.00.012А- Запасы на начало налогового периода всего",
+                          "nameKazCyr": "911.00.012А- Запасы на начало налогового периода всего",
+                          "nameKazLat": "911.00.012А- Запасы на начало налогового периода всего",
+                          "type": "INTEGER",
+                          "jsonName": "A",
+                          "validationConstraints": [],
+                          "hidden": false,
+                          "orderNumber": 1,
+                          "pageNumber": 1,
+                          "collection": false,
+                          "nestedFields": []
+                        },
+                        {
+                          "nameRus": "911.00.012В- Запасы на конец налогового периода всего",
+                          "nameKazCyr": "911.00.012В- Запасы на конец налогового периода всего",
+                          "nameKazLat": "911.00.012В- Запасы на конец налогового периода всего",
+                          "type": "INTEGER",
+                          "jsonName": "B",
+                          "validationConstraints": [],
+                          "hidden": false,
+                          "orderNumber": 2,
+                          "pageNumber": 1,
+                          "collection": false,
+                          "nestedFields": []
+                        },
+                        {
+                          "nameRus": "911.00.012С- Приобретено запасов, работ, услуг всего",
+                          "nameKazCyr": "911.00.012С- Приобретено запасов, работ, услуг всего",
+                          "nameKazLat": "911.00.012С- Приобретено запасов, работ, услуг всего",
+                          "type": "INTEGER",
+                          "jsonName": "C",
+                          "validationConstraints": [],
+                          "hidden": false,
+                          "orderNumber": 3,
+                          "pageNumber": 1,
+                          "collection": false,
+                          "nestedFields": []
+                        },
+                        {
+                          "nameRus": "911.00.012- Приобретено запасов",
+                          "nameKazCyr": "911.00.012- Приобретено запасов",
+                          "nameKazLat": "911.00.012- Приобретено запасов",
+                          "type": "INTEGER",
+                          "jsonName": "total",
+                          "validationConstraints": [],
+                          "hidden": false,
+                          "orderNumber": 4,
+                          "pageNumber": 1,
+                          "collection": false,
+                          "nestedFields": []
+                        }
+                      ]
+                    },
+                    {
+                      "nameRus": "Представление расчета в электронном виде",
+                      "nameKazCyr": "Представление расчета в электронном виде",
+                      "nameKazLat": "Представление расчета в электронном виде",
+                      "type": "BOOLEAN",
+                      "jsonName": "isHasApplication",
+                      "validationConstraints": [],
+                      "hidden": false,
+                      "orderNumber": 5,
+                      "pageNumber": 1,
+                      "collection": false,
+                      "nestedFields": []
+                    },
+                    {
+                      "nameRus": "Количество приложений",
+                      "nameKazCyr": "Количество приложений",
+                      "nameKazLat": "Количество приложений",
+                      "type": "INTEGER",
+                      "jsonName": "_10",
+                      "validationConstraints": [
+                        { "constraintType": "NOT_NULL", "arguments": null }
+                      ],
+                      "hidden": false,
+                      "orderNumber": 6,
+                      "pageNumber": 1,
+                      "collection": false,
+                      "nestedFields": []
+                    }
+                  ]
+                },
+                {
+                  "nameRus": "Исчисление стоимости патента",
+                  "nameKazCyr": "Исчисление стоимости патента",
+                  "nameKazLat": "Исчисление стоимости патента",
+                  "type": "FORM_FIELD",
+                  "jsonName": "calculationPatentCost",
+                  "validationConstraints": [],
+                  "hidden": false,
+                  "orderNumber": 3,
+                  "pageNumber": 1,
+                  "collection": false,
+                  "nestedFields": [
+                    {
+                      "nameRus": "Строка 911.00.001- Доходы индивидуальных предпринимателей, за исключением осуществляющих деятельность в сфере торговли",
+                      "nameKazCyr": "Строка 911.00.001- Доходы индивидуальных предпринимателей, за исключением осуществляющих деятельность в сфере торговли",
+                      "nameKazLat": "Строка 911.00.001- Доходы индивидуальных предпринимателей, за исключением осуществляющих деятельность в сфере торговли",
+                      "type": "INTEGER",
+                      "jsonName": "_001",
+                      "validationConstraints": [
+                        { "constraintType": "NOT_NULL", "arguments": null }
+                      ],
+                      "hidden": false,
+                      "orderNumber": 1,
+                      "pageNumber": 1,
+                      "collection": false,
+                      "nestedFields": []
+                    },
+                    {
+                      "nameRus": "Строка 911.00.002",
+                      "nameKazCyr": "Строка 911.00.002",
+                      "nameKazLat": "Строка 911.00.002",
+                      "type": "FORM_FIELD",
+                      "jsonName": "_002",
+                      "validationConstraints": [
+                        { "constraintType": "NOT_NULL", "arguments": null }
+                      ],
+                      "hidden": false,
+                      "orderNumber": 2,
+                      "pageNumber": 1,
+                      "collection": false,
+                      "nestedFields": [
+                        {
+                          "nameRus": "Строка 911.00.002 А- доходы, полученные путем безналичных расчетов",
+                          "nameKazCyr": "Строка 911.00.002 А- доходы, полученные путем безналичных расчетов",
+                          "nameKazLat": "Строка 911.00.002 А- доходы, полученные путем безналичных расчетов",
+                          "type": "INTEGER",
+                          "jsonName": "A",
+                          "validationConstraints": [
+                            { "constraintType": "NOT_NULL", "arguments": null }
+                          ],
+                          "hidden": false,
+                          "orderNumber": 1,
+                          "pageNumber": 1,
+                          "collection": false,
+                          "nestedFields": []
+                        },
+                        {
+                          "nameRus": "Строка 911.00.002 В- доходы, полученные путем наличных расчетов",
+                          "nameKazCyr": "Строка 911.00.002 В- доходы, полученные путем наличных расчетов",
+                          "nameKazLat": "Строка 911.00.002 В- доходы, полученные путем наличных расчетов",
+                          "type": "INTEGER",
+                          "jsonName": "B",
+                          "validationConstraints": [
+                            { "constraintType": "NOT_NULL", "arguments": null }
+                          ],
+                          "hidden": false,
+                          "orderNumber": 2,
+                          "pageNumber": 1,
+                          "collection": false,
+                          "nestedFields": []
+                        },
+                        {
+                          "nameRus": "Строка 911.00.002- Доходы индивидуальных предпринимателей, осуществляющих деятельность в сфере торговли",
+                          "nameKazCyr": "Строка 911.00.002- Доходы индивидуальных предпринимателей, осуществляющих деятельность в сфере торговли",
+                          "nameKazLat": "Строка 911.00.002- Доходы индивидуальных предпринимателей, осуществляющих деятельность в сфере торговли",
+                          "type": "INTEGER",
+                          "jsonName": "total",
+                          "validationConstraints": [],
+                          "hidden": false,
+                          "orderNumber": 3,
+                          "pageNumber": 1,
+                          "collection": false,
+                          "nestedFields": []
+                        }
+                      ]
+                    },
+                    {
+                      "nameRus": "Строка 911.00.003-Сумма исчисленного индивидуального подоходного налога (911.00.01+911.00.02А)х1%",
+                      "nameKazCyr": "Строка 911.00.003-Сумма исчисленного индивидуального подоходного налога (911.00.01+911.00.02А)х1%",
+                      "nameKazLat": "Строка 911.00.003-Сумма исчисленного индивидуального подоходного налога (911.00.01+911.00.02А)х1%",
+                      "type": "INTEGER",
+                      "jsonName": "_003",
+                      "validationConstraints": [],
+                      "hidden": false,
+                      "orderNumber": 3,
+                      "pageNumber": 1,
+                      "collection": false,
+                      "nestedFields": []
+                    },
+                    {
+                      "nameRus": "Строка 911.00.004-Сумма исчисленного индивидуального подоходного налога (911.00.02Вх2%)",
+                      "nameKazCyr": "Строка 911.00.004-Сумма исчисленного индивидуального подоходного налога (911.00.02Вх2%)",
+                      "nameKazLat": "Строка 911.00.004-Сумма исчисленного индивидуального подоходного налога (911.00.02Вх2%)",
+                      "type": "INTEGER",
+                      "jsonName": "_004",
+                      "validationConstraints": [],
+                      "hidden": false,
+                      "orderNumber": 4,
+                      "pageNumber": 1,
+                      "collection": false,
+                      "nestedFields": []
+                    },
+                    {
+                      "nameRus": "Строка 911.00.005-Уменьшение суммы индивидуального подоходного налога в соответствии с пунктом 2-1 статьи 686 Налогового кодекса (на сумму 60 000 тенге, но не более чем на 50 процентов от исчисленной суммы индивидуального подоходного налога) за календарный год",
+                      "nameKazCyr": "Строка 911.00.005-Уменьшение суммы индивидуального подоходного налога в соответствии с пунктом 2-1 статьи 686 Налогового кодекса (на сумму 60 000 тенге, но не более чем на 50 процентов от исчисленной суммы индивидуального подоходного налога) за календарный год",
+                      "nameKazLat": "Строка 911.00.005-Уменьшение суммы индивидуального подоходного налога в соответствии с пунктом 2-1 статьи 686 Налогового кодекса (на сумму 60 000 тенге, но не более чем на 50 процентов от исчисленной суммы индивидуального подоходного налога) за календарный год",
+                      "type": "INTEGER",
+                      "jsonName": "_005",
+                      "validationConstraints": [],
+                      "hidden": false,
+                      "orderNumber": 5,
+                      "pageNumber": 1,
+                      "collection": false,
+                      "nestedFields": []
+                    },
+                    {
+                      "nameRus": "Строка 911.00.006-Сумма индивидуального подоходного налога, подлежащего уплате в бюджет (911.00.03+911.00.04)-911.00.05",
+                      "nameKazCyr": "Строка 911.00.006-Сумма индивидуального подоходного налога, подлежащего уплате в бюджет (911.00.03+911.00.04)-911.00.05",
+                      "nameKazLat": "Строка 911.00.006-Сумма индивидуального подоходного налога, подлежащего уплате в бюджет (911.00.03+911.00.04)-911.00.05",
+                      "type": "INTEGER",
+                      "jsonName": "_006",
+                      "validationConstraints": [],
+                      "hidden": false,
+                      "orderNumber": 6,
+                      "pageNumber": 1,
+                      "collection": false,
+                      "nestedFields": []
+                    },
+                    {
+                      "nameRus": "Строка 911.00.007-Сумма социальных отчислений",
+                      "nameKazCyr": "Строка 911.00.007-Сумма социальных отчислений",
+                      "nameKazLat": "Строка 911.00.007-Сумма социальных отчислений",
+                      "type": "INTEGER",
+                      "jsonName": "_007",
+                      "validationConstraints": [
+                        { "constraintType": "NOT_NULL", "arguments": null }
+                      ],
+                      "hidden": false,
+                      "orderNumber": 7,
+                      "pageNumber": 1,
+                      "collection": false,
+                      "nestedFields": []
+                    },
+                    {
+                      "nameRus": "Строка 911.00.008-Доход для исчисления обязательных пенсионных взносов",
+                      "nameKazCyr": "Строка 911.00.008-Доход для исчисления обязательных пенсионных взносов",
+                      "nameKazLat": "Строка 911.00.008-Доход для исчисления обязательных пенсионных взносов",
+                      "type": "INTEGER",
+                      "jsonName": "_008",
+                      "validationConstraints": [
+                        { "constraintType": "NOT_NULL", "arguments": null }
+                      ],
+                      "hidden": false,
+                      "orderNumber": 8,
+                      "pageNumber": 1,
+                      "collection": false,
+                      "nestedFields": []
+                    },
+                    {
+                      "nameRus": "Строка 911.00.009-Сумма обязательных пенсионных взносов",
+                      "nameKazCyr": "Строка 911.00.009-Сумма обязательных пенсионных взносов",
+                      "nameKazLat": "Строка 911.00.009-Сумма обязательных пенсионных взносов",
+                      "type": "STRING",
+                      "jsonName": "_009",
+                      "validationConstraints": [
+                        { "constraintType": "NOT_NULL", "arguments": null }
+                      ],
+                      "hidden": false,
+                      "orderNumber": 9,
+                      "pageNumber": 1,
+                      "collection": false,
+                      "nestedFields": []
+                    },
+                    {
+                      "nameRus": "Строка 911.00.010-Сумма взносов на обязательное социальное медицинское",
+                      "nameKazCyr": "Строка 911.00.010-Сумма взносов на обязательное социальное медицинское",
+                      "nameKazLat": "Строка 911.00.010-Сумма взносов на обязательное социальное медицинское",
+                      "type": "INTEGER",
+                      "jsonName": "_010",
+                      "validationConstraints": [
+                        { "constraintType": "NOT_NULL", "arguments": null }
+                      ],
+                      "hidden": false,
+                      "orderNumber": 10,
+                      "pageNumber": 1,
+                      "collection": false,
+                      "nestedFields": []
+                    }
+                  ]
+                },
+                {
+                  "nameRus": "Раздел. Сведения об уплате стоимости патент",
+                  "nameKazCyr": "Раздел. Сведения об уплате стоимости патент",
+                  "nameKazLat": "Раздел. Сведения об уплате стоимости патент",
+                  "type": "FORM_FIELD",
+                  "jsonName": "informationPatentCostPayment",
+                  "validationConstraints": [],
+                  "hidden": false,
+                  "orderNumber": 4,
+                  "pageNumber": 1,
+                  "collection": false,
+                  "nestedFields": [
+                    {
+                      "nameRus": "Индивидуальный подоходный налог",
+                      "nameKazCyr": "Индивидуальный подоходный налог",
+                      "nameKazLat": "Индивидуальный подоходный налог",
+                      "type": "FORM_FIELD",
+                      "jsonName": "individualIncomeTax",
+                      "validationConstraints": [],
+                      "hidden": false,
+                      "orderNumber": 1,
+                      "pageNumber": 1,
+                      "collection": false,
+                      "nestedFields": [
+                        {
+                          "nameRus": "КБК",
+                          "nameKazCyr": "КБК",
+                          "nameKazLat": "КБК",
+                          "type": "STRING",
+                          "jsonName": "B",
+                          "validationConstraints": [
+                            { "constraintType": "NOT_NULL", "arguments": null }
+                          ],
+                          "hidden": false,
+                          "orderNumber": 1,
+                          "pageNumber": 1,
+                          "collection": false,
+                          "nestedFields": []
+                        },
+                        {
+                          "nameRus": "Номер платежного документа",
+                          "nameKazCyr": "Номер платежного документа",
+                          "nameKazLat": "Номер платежного документа",
+                          "type": "STRING",
+                          "jsonName": "C",
+                          "validationConstraints": [],
+                          "hidden": false,
+                          "orderNumber": 2,
+                          "pageNumber": 1,
+                          "collection": false,
+                          "nestedFields": []
+                        },
+                        {
+                          "nameRus": "Дата уплаты",
+                          "nameKazCyr": "Дата уплаты",
+                          "nameKazLat": "Дата уплаты",
+                          "type": "DATE",
+                          "jsonName": "D",
+                          "validationConstraints": [],
+                          "hidden": false,
+                          "orderNumber": 3,
+                          "pageNumber": 1,
+                          "collection": false,
+                          "nestedFields": []
+                        },
+                        {
+                          "nameRus": "Сумма",
+                          "nameKazCyr": "Сумма",
+                          "nameKazLat": "Сумма",
+                          "type": "INTEGER",
+                          "jsonName": "E",
+                          "validationConstraints": [],
+                          "hidden": false,
+                          "orderNumber": 4,
+                          "pageNumber": 1,
+                          "collection": false,
+                          "nestedFields": []
+                        }
+                      ]
+                    },
+                    {
+                      "nameRus": "Социальные отчисления",
+                      "nameKazCyr": "Социальные отчисления",
+                      "nameKazLat": "Социальные отчисления",
+                      "type": "FORM_FIELD",
+                      "jsonName": "socialContributions",
+                      "validationConstraints": [],
+                      "hidden": false,
+                      "orderNumber": 2,
+                      "pageNumber": 1,
+                      "collection": false,
+                      "nestedFields": [
+                        {
+                          "nameRus": "КБК",
+                          "nameKazCyr": "КБК",
+                          "nameKazLat": "КБК",
+                          "type": "STRING",
+                          "jsonName": "B",
+                          "validationConstraints": [
+                            { "constraintType": "NOT_NULL", "arguments": null }
+                          ],
+                          "hidden": false,
+                          "orderNumber": 1,
+                          "pageNumber": 1,
+                          "collection": false,
+                          "nestedFields": []
+                        },
+                        {
+                          "nameRus": "Номер платежного документа",
+                          "nameKazCyr": "Номер платежного документа",
+                          "nameKazLat": "Номер платежного документа",
+                          "type": "STRING",
+                          "jsonName": "C",
+                          "validationConstraints": [],
+                          "hidden": false,
+                          "orderNumber": 2,
+                          "pageNumber": 1,
+                          "collection": false,
+                          "nestedFields": []
+                        },
+                        {
+                          "nameRus": "Дата уплаты",
+                          "nameKazCyr": "Дата уплаты",
+                          "nameKazLat": "Дата уплаты",
+                          "type": "DATE",
+                          "jsonName": "D",
+                          "validationConstraints": [],
+                          "hidden": false,
+                          "orderNumber": 3,
+                          "pageNumber": 1,
+                          "collection": false,
+                          "nestedFields": []
+                        },
+                        {
+                          "nameRus": "Сумма",
+                          "nameKazCyr": "Сумма",
+                          "nameKazLat": "Сумма",
+                          "type": "INTEGER",
+                          "jsonName": "E",
+                          "validationConstraints": [],
+                          "hidden": false,
+                          "orderNumber": 4,
+                          "pageNumber": 1,
+                          "collection": false,
+                          "nestedFields": []
+                        }
+                      ]
+                    },
+                    {
+                      "nameRus": "Обязательные пенсионные взносы",
+                      "nameKazCyr": "Обязательные пенсионные взносы",
+                      "nameKazLat": "Обязательные пенсионные взносы",
+                      "type": "FORM_FIELD",
+                      "jsonName": "mandatoryPensionContributions",
+                      "validationConstraints": [],
+                      "hidden": false,
+                      "orderNumber": 3,
+                      "pageNumber": 1,
+                      "collection": false,
+                      "nestedFields": [
+                        {
+                          "nameRus": "КБК",
+                          "nameKazCyr": "КБК",
+                          "nameKazLat": "КБК",
+                          "type": "STRING",
+                          "jsonName": "B",
+                          "validationConstraints": [
+                            { "constraintType": "NOT_NULL", "arguments": null }
+                          ],
+                          "hidden": false,
+                          "orderNumber": 1,
+                          "pageNumber": 1,
+                          "collection": false,
+                          "nestedFields": []
+                        },
+                        {
+                          "nameRus": "Номер платежного документа",
+                          "nameKazCyr": "Номер платежного документа",
+                          "nameKazLat": "Номер платежного документа",
+                          "type": "STRING",
+                          "jsonName": "C",
+                          "validationConstraints": [],
+                          "hidden": false,
+                          "orderNumber": 2,
+                          "pageNumber": 1,
+                          "collection": false,
+                          "nestedFields": []
+                        },
+                        {
+                          "nameRus": "Дата уплаты",
+                          "nameKazCyr": "Дата уплаты",
+                          "nameKazLat": "Дата уплаты",
+                          "type": "DATE",
+                          "jsonName": "D",
+                          "validationConstraints": [],
+                          "hidden": false,
+                          "orderNumber": 3,
+                          "pageNumber": 1,
+                          "collection": false,
+                          "nestedFields": []
+                        },
+                        {
+                          "nameRus": "Сумма",
+                          "nameKazCyr": "Сумма",
+                          "nameKazLat": "Сумма",
+                          "type": "INTEGER",
+                          "jsonName": "E",
+                          "validationConstraints": [],
+                          "hidden": false,
+                          "orderNumber": 4,
+                          "pageNumber": 1,
+                          "collection": false,
+                          "nestedFields": []
+                        }
+                      ]
+                    },
+                    {
+                      "nameRus": "Взносы на обязательное социальное медицинское страхование\t",
+                      "nameKazCyr": "Взносы на обязательное социальное медицинское страхование\t",
+                      "nameKazLat": "Взносы на обязательное социальное медицинское страхование\t",
+                      "type": "FORM_FIELD",
+                      "jsonName": "contributionSocialHealthInsurance",
+                      "validationConstraints": [],
+                      "hidden": false,
+                      "orderNumber": 4,
+                      "pageNumber": 1,
+                      "collection": false,
+                      "nestedFields": [
+                        {
+                          "nameRus": "КБК",
+                          "nameKazCyr": "КБК",
+                          "nameKazLat": "КБК",
+                          "type": "STRING",
+                          "jsonName": "B",
+                          "validationConstraints": [
+                            { "constraintType": "NOT_NULL", "arguments": null }
+                          ],
+                          "hidden": false,
+                          "orderNumber": 1,
+                          "pageNumber": 1,
+                          "collection": false,
+                          "nestedFields": []
+                        },
+                        {
+                          "nameRus": "Номер платежного документа",
+                          "nameKazCyr": "Номер платежного документа",
+                          "nameKazLat": "Номер платежного документа",
+                          "type": "STRING",
+                          "jsonName": "C",
+                          "validationConstraints": [],
+                          "hidden": false,
+                          "orderNumber": 2,
+                          "pageNumber": 1,
+                          "collection": false,
+                          "nestedFields": []
+                        },
+                        {
+                          "nameRus": "Дата уплаты",
+                          "nameKazCyr": "Дата уплаты",
+                          "nameKazLat": "Дата уплаты",
+                          "type": "DATE",
+                          "jsonName": "D",
+                          "validationConstraints": [],
+                          "hidden": false,
+                          "orderNumber": 3,
+                          "pageNumber": 1,
+                          "collection": false,
+                          "nestedFields": []
+                        },
+                        {
+                          "nameRus": "Сумма",
+                          "nameKazCyr": "Сумма",
+                          "nameKazLat": "Сумма",
+                          "type": "INTEGER",
+                          "jsonName": "E",
+                          "validationConstraints": [],
+                          "hidden": false,
+                          "orderNumber": 4,
+                          "pageNumber": 1,
+                          "collection": false,
+                          "nestedFields": []
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "nameRus": "Приложение к расчету стоимости патента",
+                  "nameKazCyr": "Приложение к расчету стоимости патента",
+                  "nameKazLat": "Приложение к расчету стоимости патента",
+                  "type": "FORM_FIELD",
+                  "jsonName": "application_01",
+                  "validationConstraints": [],
+                  "hidden": false,
+                  "orderNumber": 5,
+                  "pageNumber": 1,
+                  "collection": false,
+                  "nestedFields": [
+                    {
+                      "nameRus": "Номер страницы",
+                      "nameKazCyr": "Номер страницы",
+                      "nameKazLat": "Номер страницы",
+                      "type": "STRING",
+                      "jsonName": "pageNum",
+                      "validationConstraints": [],
+                      "hidden": false,
+                      "orderNumber": 1,
+                      "pageNumber": 1,
+                      "collection": false,
+                      "nestedFields": []
+                    },
+                    {
+                      "nameRus": "Строка 911.01.001-срок действия патента",
+                      "nameKazCyr": "Строка 911.01.001-срок действия патента",
+                      "nameKazLat": "Строка 911.01.001-срок действия патента",
+                      "type": "FORM_FIELD",
+                      "jsonName": "_001",
+                      "validationConstraints": [],
+                      "hidden": false,
+                      "orderNumber": 2,
+                      "pageNumber": 1,
+                      "collection": false,
+                      "nestedFields": [
+                        {
+                          "nameRus": "Строка 911.01.001 с",
+                          "nameKazCyr": "Строка 911.01.001 с",
+                          "nameKazLat": "Строка 911.01.001 с",
+                          "type": "DATE",
+                          "jsonName": "from",
+                          "validationConstraints": [
+                            { "constraintType": "NOT_NULL", "arguments": null }
+                          ],
+                          "hidden": false,
+                          "orderNumber": 1,
+                          "pageNumber": 1,
+                          "collection": false,
+                          "nestedFields": []
+                        },
+                        {
+                          "nameRus": "Строка 911.01.001 по",
+                          "nameKazCyr": "Строка 911.01.001 по",
+                          "nameKazLat": "Строка 911.01.001 по",
+                          "type": "DATE",
+                          "jsonName": "to",
+                          "validationConstraints": [
+                            { "constraintType": "NOT_NULL", "arguments": null }
+                          ],
+                          "hidden": false,
+                          "orderNumber": 2,
+                          "pageNumber": 1,
+                          "collection": false,
+                          "nestedFields": []
+                        }
+                      ]
+                    },
+                    {
+                      "nameRus": "Строка 911.01.002-Вид деятельности:",
+                      "nameKazCyr": "Строка 911.01.002-Вид деятельности:",
+                      "nameKazLat": "Строка 911.01.002-Вид деятельности:",
+                      "type": "STRING",
+                      "jsonName": "_002",
+                      "validationConstraints": [
+                        { "constraintType": "NOT_NULL", "arguments": null }
+                      ],
+                      "hidden": false,
+                      "orderNumber": 3,
+                      "pageNumber": 1,
+                      "collection": false,
+                      "nestedFields": []
+                    },
+                    {
+                      "nameRus": "Строка 911.01.003-Место осуществления предпринимательской деятельности: (справочник РКА)",
+                      "nameKazCyr": "Строка 911.01.003-Место осуществления предпринимательской деятельности: (справочник РКА)",
+                      "nameKazLat": "Строка 911.01.003-Место осуществления предпринимательской деятельности: (справочник РКА)",
+                      "type": "STRING",
+                      "jsonName": "_003",
+                      "validationConstraints": [
+                        { "constraintType": "NOT_NULL", "arguments": null }
+                      ],
+                      "hidden": false,
+                      "orderNumber": 4,
+                      "pageNumber": 1,
+                      "collection": false,
+                      "nestedFields": []
+                    },
+                    {
+                      "nameRus": "Строка 911.01.004-Вид деятельности",
+                      "nameKazCyr": "Строка 911.01.004-Вид деятельности",
+                      "nameKazLat": "Строка 911.01.004-Вид деятельности",
+                      "type": "STRING",
+                      "jsonName": "_004",
+                      "validationConstraints": [
+                        { "constraintType": "NOT_NULL", "arguments": null }
+                      ],
+                      "hidden": false,
+                      "orderNumber": 5,
+                      "pageNumber": 1,
+                      "collection": false,
+                      "nestedFields": []
+                    },
+                    {
+                      "nameRus": "Строка 911.01.005-Место осуществления предпринимательской деятельности: (справочник РКА)",
+                      "nameKazCyr": "Строка 911.01.005-Место осуществления предпринимательской деятельности: (справочник РКА)",
+                      "nameKazLat": "Строка 911.01.005-Место осуществления предпринимательской деятельности: (справочник РКА)",
+                      "type": "STRING",
+                      "jsonName": "_005",
+                      "validationConstraints": [
+                        { "constraintType": "NOT_NULL", "arguments": null }
+                      ],
+                      "hidden": false,
+                      "orderNumber": 6,
+                      "pageNumber": 1,
+                      "collection": false,
+                      "nestedFields": []
+                    }
+                  ]
+                },
+                {
+                  "nameRus": "Раздел. Ответственность",
+                  "nameKazCyr": "Раздел. Ответственность",
+                  "nameKazLat": "Раздел. Ответственность",
+                  "type": "FORM_FIELD",
+                  "jsonName": "taxpayerResponsibility",
+                  "validationConstraints": [],
+                  "hidden": false,
+                  "orderNumber": 6,
+                  "pageNumber": 1,
+                  "collection": false,
+                  "nestedFields": [
+                    {
+                      "nameRus": "Ответственность налогоплательщика",
+                      "nameKazCyr": "Ответственность налогоплательщика",
+                      "nameKazLat": "Ответственность налогоплательщика",
+                      "type": "BOOLEAN",
+                      "jsonName": "isResponsible",
+                      "validationConstraints": [],
+                      "hidden": false,
+                      "orderNumber": 1,
+                      "pageNumber": 1,
+                      "collection": false,
+                      "nestedFields": []
+                    },
+                    {
+                      "nameRus": "Фамилия, имя, отчетсво (при его наличии) налогоплательщика",
+                      "nameKazCyr": "Фамилия, имя, отчетсво (при его наличии) налогоплательщика",
+                      "nameKazLat": "Фамилия, имя, отчетсво (при его наличии) налогоплательщика",
+                      "type": "STRING",
+                      "jsonName": "fullNameOfHead",
+                      "validationConstraints": [
+                        { "constraintType": "NOT_NULL", "arguments": null }
+                      ],
+                      "hidden": false,
+                      "orderNumber": 2,
+                      "pageNumber": 1,
+                      "collection": false,
+                      "nestedFields": []
+                    },
+                    {
+                      "nameRus": "Дата подачи расчета",
+                      "nameKazCyr": "Дата подачи расчета",
+                      "nameKazLat": "Дата подачи расчета",
+                      "type": "DATE",
+                      "jsonName": "declarationDate",
+                      "validationConstraints": [
+                        { "constraintType": "NOT_NULL", "arguments": null }
+                      ],
+                      "hidden": false,
+                      "orderNumber": 3,
+                      "pageNumber": 1,
+                      "collection": false,
+                      "nestedFields": []
+                    },
+                    {
+                      "nameRus": "Фамилия, имя, отчество (при его наличии) должностного лица, принявшего Расчет ",
+                      "nameKazCyr": "Фамилия, имя, отчество (при его наличии) должностного лица, принявшего Расчет ",
+                      "nameKazLat": "Фамилия, имя, отчество (при его наличии) должностного лица, принявшего Расчет ",
+                      "type": "STRING",
+                      "jsonName": "fullNameOfEmployeeWhoAcceptedDeclaration",
+                      "validationConstraints": [],
+                      "hidden": false,
+                      "orderNumber": 4,
+                      "pageNumber": 1,
+                      "collection": false,
+                      "nestedFields": []
+                    },
+                    {
+                      "nameRus": "Дата приема Расчета",
+                      "nameKazCyr": "Дата приема Расчета",
+                      "nameKazLat": "Дата приема Расчета",
+                      "type": "DATE",
+                      "jsonName": "declarationReceiptDate",
+                      "validationConstraints": [],
+                      "hidden": false,
+                      "orderNumber": 5,
+                      "pageNumber": 1,
+                      "collection": false,
+                      "nestedFields": []
+                    },
+                    {
+                      "nameRus": "Входящий номер документа",
+                      "nameKazCyr": "Входящий номер документа",
+                      "nameKazLat": "Входящий номер документа",
+                      "type": "STRING",
+                      "jsonName": "declarationIncomingNumber",
+                      "validationConstraints": [],
+                      "hidden": false,
+                      "orderNumber": 6,
+                      "pageNumber": 1,
+                      "collection": false,
+                      "nestedFields": []
+                    },
+                    {
+                      "nameRus": "Дата почтового штемпеля",
+                      "nameKazCyr": "Дата почтового штемпеля",
+                      "nameKazLat": "Дата почтового штемпеля",
+                      "type": "DATE",
+                      "jsonName": "postmarkDate",
+                      "validationConstraints": [],
+                      "hidden": false,
+                      "orderNumber": 7,
+                      "pageNumber": 1,
+                      "collection": false,
+                      "nestedFields": []
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "number": 1,
+      "fieldsToLockOnDocumentRegistration": ["creatorType"]
+    },
+    "formType": "fno_911",
+    "number": 1,
+    "validFrom": "2021-12-31T23:59:59+06:00",
+    "validTo": null
+  },
+  {
+    "name": "ФНО-911",
+    "createdAt": "2021-10-05T23:17:42.760224+06:00",
+    "updatedAt": null,
+    "lastRevision": {
+      "description": "FNO-911",
+      "createdAt": "2021-10-05T23:17:43.034975+06:00",
+      "active": true,
+      "fieldSets": [
+        {
+          "name": "fieldSet",
+          "orderNumber": 1,
+          "pageNumber": 1,
+          "fields": [
+            {
+              "nameRus": "Тип налогоплательщика",
+              "nameKazCyr": "Тип налогоплательщика",
+              "nameKazLat": "Тип налогоплательщика",
+              "type": "STRING",
+              "jsonName": "taxpayerType",
+              "validationConstraints": [
+                { "constraintType": "NOT_NULL", "arguments": null }
+              ],
+              "hidden": false,
+              "orderNumber": 1,
+              "pageNumber": 1,
+              "collection": false,
+              "nestedFields": []
+            },
+            {
+              "nameRus": "Тип налогоплательщика, составившего документ",
+              "nameKazCyr": "Тип налогоплательщика, составившего документ",
+              "nameKazLat": "Тип налогоплательщика, составившего документ",
+              "type": "STRING",
+              "jsonName": "creatorType",
+              "validationConstraints": [],
+              "hidden": false,
+              "orderNumber": 2,
+              "pageNumber": 1,
+              "collection": false,
+              "nestedFields": []
+            },
+            {
+              "nameRus": "ИИН/БИН налогоплательщика, составившего документ",
+              "nameKazCyr": "ИИН/БИН налогоплательщика, составившего документ",
+              "nameKazLat": "ИИН/БИН налогоплательщика, составившего документ",
+              "type": "STRING",
+              "jsonName": "creatorCode",
+              "validationConstraints": [
+                {
+                  "constraintType": "SIZE",
+                  "arguments": {
+                    "type": "SIZE_ARGUMENTS",
+                    "min": 12,
+                    "max": 12,
+                    "message": "Значения поля должно состоять из 12символов",
+                    "each": false
+                  }
+                },
+                {
+                  "constraintType": "PATTERN",
+                  "arguments": {
+                    "type": "PATTERN_ARGUMENTS",
+                    "value": "[0-9]+",
+                    "message": "ИИН должен состоять из 12 символов",
+                    "each": false
+                  }
+                }
+              ],
+              "hidden": false,
+              "orderNumber": 3,
+              "pageNumber": 1,
+              "collection": false,
+              "nestedFields": []
+            },
+            {
+              "nameRus": "ИИН",
+              "nameKazCyr": "ИИН",
+              "nameKazLat": "ИИН",
+              "type": "STRING",
+              "jsonName": "taxpayerCode",
+              "validationConstraints": [
+                { "constraintType": "NOT_NULL", "arguments": null },
+                {
+                  "constraintType": "SIZE",
+                  "arguments": {
+                    "type": "SIZE_ARGUMENTS",
+                    "min": 12,
+                    "max": 12,
+                    "message": "ИИН должен состоять из 12 символов",
+                    "each": false
+                  }
+                },
+                {
+                  "constraintType": "PATTERN",
+                  "arguments": {
+                    "type": "PATTERN_ARGUMENTS",
+                    "value": "[0-9]+",
+                    "message": "ИНН должен состоять из цифр (0..9)",
+                    "each": false
+                  }
+                }
+              ],
+              "hidden": false,
+              "orderNumber": 4,
+              "pageNumber": 1,
+              "collection": false,
+              "nestedFields": []
+            },
+            {
+              "nameRus": "Фамилия, имя, отчество (при его наличии) или наименование налогоплательщика на русском",
+              "nameKazCyr": "Фамилия, имя, отчество (при его наличии) или наименование налогоплательщика на русском",
+              "nameKazLat": "Фамилия, имя, отчество (при его наличии) или наименование налогоплательщика на русском",
+              "type": "STRING",
+              "jsonName": "taxpayerNameRu",
+              "validationConstraints": [
+                { "constraintType": "NOT_NULL", "arguments": null }
+              ],
+              "hidden": false,
+              "orderNumber": 5,
+              "pageNumber": 1,
+              "collection": false,
+              "nestedFields": []
+            },
+            {
+              "nameRus": "Фамилия, имя, отчество (при его наличии) или наименование налогоплательщика на казахском",
+              "nameKazCyr": "Фамилия, имя, отчество (при его наличии) или наименование налогоплательщика на казахском",
+              "nameKazLat": "Фамилия, имя, отчество (при его наличии) или наименование налогоплательщика на казахском",
+              "type": "STRING",
+              "jsonName": "taxpayerNameKk",
+              "validationConstraints": [
+                { "constraintType": "NOT_NULL", "arguments": null }
+              ],
+              "hidden": false,
+              "orderNumber": 6,
+              "pageNumber": 1,
+              "collection": false,
+              "nestedFields": []
+            },
+            {
+              "nameRus": "ФИО/Наименование налогоплательщика на русском, составившего документ",
+              "nameKazCyr": "ФИО/Наименование налогоплательщика на русском, составившего документ",
+              "nameKazLat": "ФИО/Наименование налогоплательщика на русском, составившего документ",
+              "type": "STRING",
+              "jsonName": "creatorNameRu",
+              "validationConstraints": [
+                {
+                  "constraintType": "SIZE",
+                  "arguments": {
+                    "type": "SIZE_ARGUMENTS",
+                    "min": 1,
+                    "max": 100,
+                    "message": "Поле не должно содержать больше 100 символов",
+                    "each": false
+                  }
+                }
+              ],
+              "hidden": false,
+              "orderNumber": 7,
+              "pageNumber": 1,
+              "collection": false,
+              "nestedFields": []
+            },
+            {
+              "nameRus": "ФИО/Наименование налогоплательщика на казахском, составившего документ",
+              "nameKazCyr": "ФИО/Наименование налогоплательщика на казахском, составившего документ",
+              "nameKazLat": "ФИО/Наименование налогоплательщика на казахском, составившего документ",
+              "type": "STRING",
+              "jsonName": "creatorNameKk",
+              "validationConstraints": [
+                {
+                  "constraintType": "SIZE",
+                  "arguments": {
+                    "type": "SIZE_ARGUMENTS",
+                    "min": 1,
+                    "max": 100,
+                    "message": "Поле не должно содержать больше 100 символов",
+                    "each": false
+                  }
+                }
+              ],
+              "hidden": false,
+              "orderNumber": 8,
+              "pageNumber": 1,
+              "collection": false,
+              "nestedFields": []
+            },
+            {
+              "nameRus": "Вид Расчета",
+              "nameKazCyr": "Вид Расчета",
+              "nameKazLat": "Вид Расчета",
+              "type": "STRING",
+              "jsonName": "declarationTypes",
+              "validationConstraints": [
+                {
+                  "constraintType": "IN",
+                  "arguments": {
+                    "type": "IN_ARGUMENTS",
+                    "value": [
+                      "PRIORITY",
+                      "NEXT_PRIORITY",
+                      "ADDITIONAL",
+                      "PRIORITY",
+                      "NEXT_PRIORITY",
+                      "ADDITIONAL"
+                    ],
+                    "message": "Поже должно принимать одно из сдедующих значений PRIORITY, NEXT_PRIORITY, ADDITIONAL",
+                    "each": true,
+                    "displayedValues": {
+                      "PRIORITY": {
+                        "kzCyr": "Первоначальный",
+                        "kzLat": "Первоначальный",
+                        "rus": "Первоначальный"
+                      },
+                      "ADDITIONAL": {
+                        "kzCyr": "Дополнительный",
+                        "kzLat": "Дополнительный",
+                        "rus": "Дополнительный"
+                      },
+                      "NEXT_PRIORITY": {
+                        "kzCyr": "Очередный",
+                        "kzLat": "Очередный",
+                        "rus": "Очередный"
+                      }
+                    }
+                  }
+                }
+              ],
+              "hidden": false,
+              "orderNumber": 9,
+              "pageNumber": 1,
+              "collection": true,
+              "nestedFields": [],
+              "enumerationValues": [
+                "PRIORITY",
+                "NEXT_PRIORITY",
+                "ADDITIONAL",
+                "PRIORITY",
+                "NEXT_PRIORITY",
+                "ADDITIONAL"
+              ],
+              "enumerationDisplayedValues": {
+                "PRIORITY": {
+                  "kzCyr": "Первоначальный",
+                  "kzLat": "Первоначальный",
+                  "rus": "Первоначальный"
+                },
+                "ADDITIONAL": {
+                  "kzCyr": "Дополнительный",
+                  "kzLat": "Дополнительный",
+                  "rus": "Дополнительный"
+                },
+                "NEXT_PRIORITY": {
+                  "kzCyr": "Очередный",
+                  "kzLat": "Очередный",
+                  "rus": "Очередный"
+                }
+              }
+            },
+            {
+              "nameRus": "Вид Расчета",
+              "nameKazCyr": "Вид Расчета",
+              "nameKazLat": "Вид Расчета",
+              "type": "STRING",
+              "jsonName": "taxpayerCategories",
+              "validationConstraints": [
+                {
+                  "constraintType": "IN",
+                  "arguments": {
+                    "type": "IN_ARGUMENTS",
+                    "value": ["6A", "6B", "6C", "6D", "6A", "6B", "6C", "6D"],
+                    "message": "Поле должно принимать одно из сдедующих значений 6A,6B,6C,6D",
+                    "each": true,
+                    "displayedValues": {
+                      "6A": {
+                        "kzCyr": "Доверительный управляющий в соответствии со статьей 40 Налогового кодекса;",
+                        "kzLat": "Доверительный управляющий в соответствии со статьей 40 Налогового кодекса;",
+                        "rus": "Доверительный управляющий в соответствии со статьей 40 Налогового кодекса;"
+                      },
+                      "6B": {
+                        "kzCyr": "Учредитель доверительного управления в соответствии со статьей 40 Налогового кодекса;",
+                        "kzLat": "Учредитель доверительного управления в соответствии со статьей 40 Налогового кодекса;",
+                        "rus": "Учредитель доверительного управления в соответствии со статьей 40 Налогового кодекса;"
+                      },
+                      "6C": {
+                        "kzCyr": "Ведет бухгалтерский учет в соответствии с пунктом 2 статьи 2 Закона Республики Казахстан «О бухгалтерском учете и финансовой отчетности»",
+                        "kzLat": "Ведет бухгалтерский учет в соответствии с пунктом 2 статьи 2 Закона Республики Казахстан «О бухгалтерском учете и финансовой отчетности»",
+                        "rus": "Ведет бухгалтерский учет в соответствии с пунктом 2 статьи 2 Закона Республики Казахстан «О бухгалтерском учете и финансовой отчетности»"
+                      },
+                      "6D": {
+                        "kzCyr": "Не ведет бухгалтерский учет в соответствии с пунктом 2 статьи 2 Закона Республики Казахстан «О бухгалтерском учете и финансовой отчетности»",
+                        "kzLat": "Не ведет бухгалтерский учет в соответствии с пунктом 2 статьи 2 Закона Республики Казахстан «О бухгалтерском учете и финансовой отчетности»",
+                        "rus": "Не ведет бухгалтерский учет в соответствии с пунктом 2 статьи 2 Закона Республики Казахстан «О бухгалтерском учете и финансовой отчетности»"
+                      }
+                    }
+                  }
+                }
+              ],
+              "hidden": false,
+              "orderNumber": 10,
+              "pageNumber": 1,
+              "collection": true,
+              "nestedFields": [],
+              "enumerationValues": [
+                "6A",
+                "6B",
+                "6C",
+                "6D",
+                "6A",
+                "6B",
+                "6C",
+                "6D"
+              ],
+              "enumerationDisplayedValues": {
+                "6A": {
+                  "kzCyr": "Доверительный управляющий в соответствии со статьей 40 Налогового кодекса;",
+                  "kzLat": "Доверительный управляющий в соответствии со статьей 40 Налогового кодекса;",
+                  "rus": "Доверительный управляющий в соответствии со статьей 40 Налогового кодекса;"
+                },
+                "6B": {
+                  "kzCyr": "Учредитель доверительного управления в соответствии со статьей 40 Налогового кодекса;",
+                  "kzLat": "Учредитель доверительного управления в соответствии со статьей 40 Налогового кодекса;",
+                  "rus": "Учредитель доверительного управления в соответствии со статьей 40 Налогового кодекса;"
+                },
+                "6C": {
+                  "kzCyr": "Ведет бухгалтерский учет в соответствии с пунктом 2 статьи 2 Закона Республики Казахстан «О бухгалтерском учете и финансовой отчетности»",
+                  "kzLat": "Ведет бухгалтерский учет в соответствии с пунктом 2 статьи 2 Закона Республики Казахстан «О бухгалтерском учете и финансовой отчетности»",
+                  "rus": "Ведет бухгалтерский учет в соответствии с пунктом 2 статьи 2 Закона Республики Казахстан «О бухгалтерском учете и финансовой отчетности»"
+                },
+                "6D": {
+                  "kzCyr": "Не ведет бухгалтерский учет в соответствии с пунктом 2 статьи 2 Закона Республики Казахстан «О бухгалтерском учете и финансовой отчетности»",
+                  "kzLat": "Не ведет бухгалтерский учет в соответствии с пунктом 2 статьи 2 Закона Республики Казахстан «О бухгалтерском учете и финансовой отчетности»",
+                  "rus": "Не ведет бухгалтерский учет в соответствии с пунктом 2 статьи 2 Закона Республики Казахстан «О бухгалтерском учете и финансовой отчетности»"
+                }
+              }
+            },
+            {
+              "nameRus": "Налоговый период, за который представляется налоговая отчетность",
+              "nameKazCyr": "Налоговый период, за который представляется налоговая отчетность",
+              "nameKazLat": "Налоговый период, за который представляется налоговая отчетность",
+              "type": "STRING",
+              "jsonName": "periodType",
+              "validationConstraints": [
+                { "constraintType": "NOT_NULL", "arguments": null }
+              ],
+              "hidden": false,
+              "orderNumber": 11,
+              "pageNumber": 1,
+              "collection": false,
+              "nestedFields": []
+            },
+            {
+              "nameRus": "Значение периода",
+              "nameKazCyr": "Значение периода",
+              "nameKazLat": "Значение периода",
+              "type": "STRING",
+              "jsonName": "periodValue",
+              "validationConstraints": [
+                {
+                  "constraintType": "MAX",
+                  "arguments": {
+                    "type": "MAX_ARGUMENTS",
+                    "value": 4,
+                    "message": "Максимальное значение поля - 4",
+                    "each": false
+                  }
+                }
+              ],
+              "hidden": false,
+              "orderNumber": 12,
+              "pageNumber": 1,
+              "collection": false,
+              "nestedFields": []
+            },
+            {
+              "nameRus": "Год",
+              "nameKazCyr": "Год",
+              "nameKazLat": "Год",
+              "type": "STRING",
+              "jsonName": "fnoYear",
+              "validationConstraints": [
+                { "constraintType": "NOT_NULL", "arguments": null }
+              ],
+              "hidden": false,
+              "orderNumber": 13,
+              "pageNumber": 1,
+              "collection": false,
+              "nestedFields": []
+            },
+            {
+              "nameRus": "Код валюты",
+              "nameKazCyr": "Код валюты",
+              "nameKazLat": "Код валюты",
+              "type": "STRING",
+              "jsonName": "currencyCode",
+              "validationConstraints": [
+                { "constraintType": "NOT_NULL", "arguments": null }
+              ],
+              "hidden": false,
+              "orderNumber": 14,
+              "pageNumber": 1,
+              "collection": false,
+              "nestedFields": []
+            },
+            {
+              "nameRus": "Код органа государственных доходов по месту нахождения",
+              "nameKazCyr": "Код органа государственных доходов по месту нахождения",
+              "nameKazLat": "Код органа государственных доходов по месту нахождения",
+              "type": "STRING",
+              "jsonName": "ogdCodeByLocation",
+              "validationConstraints": [],
+              "hidden": false,
+              "orderNumber": 15,
+              "pageNumber": 1,
+              "dictionaryName": "d_tax_org",
+              "collection": false,
+              "nestedFields": [],
+              "dictionaryFieldDescription": {
+                "jsonSentKey": "code",
+                "displayedRuKey": "nameRu",
+                "displayedKazCyrKey": "nameKk",
+                "displayedKazLatKey": "nameQq"
+              }
+            },
+            {
+              "nameRus": "Код органа государственнхы доходов по месту жительства",
+              "nameKazCyr": "Код органа государственнхы доходов по месту жительства",
+              "nameKazLat": "Код органа государственнхы доходов по месту жительства",
+              "type": "STRING",
+              "jsonName": "ogdCodeByResidence",
+              "validationConstraints": [],
+              "hidden": false,
+              "orderNumber": 16,
+              "pageNumber": 1,
+              "dictionaryName": "d_tax_org",
+              "collection": false,
+              "nestedFields": [],
+              "dictionaryFieldDescription": {
+                "jsonSentKey": "code",
+                "displayedRuKey": "nameRu",
+                "displayedKazCyrKey": "nameKk",
+                "displayedKazLatKey": "nameQq"
+              }
+            },
+            {
+              "nameRus": "UID ревизии",
+              "nameKazCyr": "UID ревизии",
+              "nameKazLat": "UID ревизии",
+              "type": "STRING",
+              "jsonName": "revisionUid",
+              "validationConstraints": [],
+              "hidden": false,
+              "orderNumber": 17,
+              "pageNumber": 1,
+              "collection": false,
+              "nestedFields": []
+            },
+            {
+              "nameRus": "Содержание ФНО",
+              "nameKazCyr": "Содержание ФНО",
+              "nameKazLat": "Содержание ФНО",
+              "type": "FORM_FIELD",
+              "jsonName": "fnoContent",
+              "validationConstraints": [],
+              "hidden": false,
+              "orderNumber": 18,
+              "pageNumber": 1,
+              "collection": false,
+              "nestedFields": [
+                {
+                  "nameRus": "Тип ФНО",
+                  "nameKazCyr": "Тип ФНО",
+                  "nameKazLat": "Тип ФНО",
+                  "type": "STRING",
+                  "jsonName": "type",
+                  "validationConstraints": [],
+                  "hidden": false,
+                  "orderNumber": 1,
+                  "pageNumber": 1,
+                  "collection": false,
+                  "nestedFields": []
+                },
+                {
+                  "nameRus": "Основные сведения ФНО",
+                  "nameKazCyr": "Основные сведения ФНО",
+                  "nameKazLat": "Основные сведения ФНО",
+                  "type": "FORM_FIELD",
+                  "jsonName": "commonInfo",
+                  "validationConstraints": [],
+                  "hidden": false,
+                  "orderNumber": 2,
+                  "pageNumber": 1,
+                  "collection": false,
+                  "nestedFields": [
+                    {
+                      "nameRus": "Номер и Дата уведомления/ извещения (заполняется в случае представления дополнительного расчета по уведомлению/извещению)",
+                      "nameKazCyr": "Номер и Дата уведомления/ извещения (заполняется в случае представления дополнительного расчета по уведомлению/извещению)",
+                      "nameKazLat": "Номер и Дата уведомления/ извещения (заполняется в случае представления дополнительного расчета по уведомлению/извещению)",
+                      "type": "FORM_FIELD",
+                      "jsonName": "_5",
+                      "validationConstraints": [],
+                      "hidden": false,
+                      "orderNumber": 1,
+                      "pageNumber": 1,
+                      "collection": false,
+                      "nestedFields": [
+                        {
+                          "nameRus": "Номер",
+                          "nameKazCyr": "Номер",
+                          "nameKazLat": "Номер",
+                          "type": "STRING",
+                          "jsonName": "A",
+                          "validationConstraints": [],
+                          "hidden": false,
+                          "orderNumber": 1,
+                          "pageNumber": 1,
+                          "collection": false,
+                          "nestedFields": []
+                        },
+                        {
+                          "nameRus": "Дата",
+                          "nameKazCyr": "Дата",
+                          "nameKazLat": "Дата",
+                          "type": "DATE",
+                          "jsonName": "B",
+                          "validationConstraints": [],
+                          "hidden": false,
+                          "orderNumber": 2,
+                          "pageNumber": 1,
+                          "collection": false,
+                          "nestedFields": []
+                        }
+                      ]
+                    },
+                    {
+                      "nameRus": "Трехкомпонентная интегрированная система",
+                      "nameKazCyr": "Трехкомпонентная интегрированная система",
+                      "nameKazLat": "Трехкомпонентная интегрированная система",
+                      "type": "BOOLEAN",
+                      "jsonName": "isUsedTIS",
+                      "validationConstraints": [],
+                      "hidden": false,
+                      "orderNumber": 2,
+                      "pageNumber": 1,
+                      "collection": false,
+                      "nestedFields": []
+                    },
+                    {
+                      "nameRus": "Трехкомпонентная интегрированная система",
+                      "nameKazCyr": "Трехкомпонентная интегрированная система",
+                      "nameKazLat": "Трехкомпонентная интегрированная система",
+                      "type": "FORM_FIELD",
+                      "jsonName": "_7",
+                      "validationConstraints": [],
+                      "hidden": false,
+                      "orderNumber": 3,
+                      "pageNumber": 1,
+                      "collection": false,
+                      "nestedFields": [
+                        {
+                          "nameRus": "A – Укажите наименование трехкомпонентной интегрированной системы",
+                          "nameKazCyr": "A – Укажите наименование трехкомпонентной интегрированной системы",
+                          "nameKazLat": "A – Укажите наименование трехкомпонентной интегрированной системы",
+                          "type": "STRING",
+                          "jsonName": "A",
+                          "validationConstraints": [],
+                          "hidden": false,
+                          "orderNumber": 1,
+                          "pageNumber": 1,
+                          "collection": false,
+                          "nestedFields": []
+                        },
+                        {
+                          "nameRus": "B - номер регистрационной карточки",
+                          "nameKazCyr": "B - номер регистрационной карточки",
+                          "nameKazLat": "B - номер регистрационной карточки",
+                          "type": "STRING",
+                          "jsonName": "B",
+                          "validationConstraints": [],
+                          "hidden": false,
+                          "orderNumber": 2,
+                          "pageNumber": 1,
+                          "collection": false,
+                          "nestedFields": []
+                        },
+                        {
+                          "nameRus": "C - дата постановки на учет",
+                          "nameKazCyr": "C - дата постановки на учет",
+                          "nameKazLat": "C - дата постановки на учет",
+                          "type": "DATE",
+                          "jsonName": "C",
+                          "validationConstraints": [],
+                          "hidden": false,
+                          "orderNumber": 3,
+                          "pageNumber": 1,
+                          "collection": false,
+                          "nestedFields": []
+                        }
+                      ]
+                    },
+                    {
+                      "nameRus": "Трехкомпонентная интегрированная система",
+                      "nameKazCyr": "Трехкомпонентная интегрированная система",
+                      "nameKazLat": "Трехкомпонентная интегрированная система",
+                      "type": "FORM_FIELD",
+                      "jsonName": "_01",
+                      "validationConstraints": [],
+                      "hidden": false,
+                      "orderNumber": 4,
+                      "pageNumber": 1,
+                      "collection": false,
+                      "nestedFields": [
+                        {
+                          "nameRus": "911.00.012А- Запасы на начало налогового периода всего",
+                          "nameKazCyr": "911.00.012А- Запасы на начало налогового периода всего",
+                          "nameKazLat": "911.00.012А- Запасы на начало налогового периода всего",
+                          "type": "INTEGER",
+                          "jsonName": "A",
+                          "validationConstraints": [],
+                          "hidden": false,
+                          "orderNumber": 1,
+                          "pageNumber": 1,
+                          "collection": false,
+                          "nestedFields": []
+                        },
+                        {
+                          "nameRus": "911.00.012В- Запасы на конец налогового периода всего",
+                          "nameKazCyr": "911.00.012В- Запасы на конец налогового периода всего",
+                          "nameKazLat": "911.00.012В- Запасы на конец налогового периода всего",
+                          "type": "INTEGER",
+                          "jsonName": "B",
+                          "validationConstraints": [],
+                          "hidden": false,
+                          "orderNumber": 2,
+                          "pageNumber": 1,
+                          "collection": false,
+                          "nestedFields": []
+                        },
+                        {
+                          "nameRus": "911.00.012С- Приобретено запасов, работ, услуг всего",
+                          "nameKazCyr": "911.00.012С- Приобретено запасов, работ, услуг всего",
+                          "nameKazLat": "911.00.012С- Приобретено запасов, работ, услуг всего",
+                          "type": "INTEGER",
+                          "jsonName": "C",
+                          "validationConstraints": [],
+                          "hidden": false,
+                          "orderNumber": 3,
+                          "pageNumber": 1,
+                          "collection": false,
+                          "nestedFields": []
+                        },
+                        {
+                          "nameRus": "911.00.012- Приобретено запасов",
+                          "nameKazCyr": "911.00.012- Приобретено запасов",
+                          "nameKazLat": "911.00.012- Приобретено запасов",
+                          "type": "INTEGER",
+                          "jsonName": "total",
+                          "validationConstraints": [],
+                          "hidden": false,
+                          "orderNumber": 4,
+                          "pageNumber": 1,
+                          "collection": false,
+                          "nestedFields": []
+                        }
+                      ]
+                    },
+                    {
+                      "nameRus": "Представление расчета в электронном виде",
+                      "nameKazCyr": "Представление расчета в электронном виде",
+                      "nameKazLat": "Представление расчета в электронном виде",
+                      "type": "BOOLEAN",
+                      "jsonName": "isHasApplication",
+                      "validationConstraints": [],
+                      "hidden": false,
+                      "orderNumber": 5,
+                      "pageNumber": 1,
+                      "collection": false,
+                      "nestedFields": []
+                    },
+                    {
+                      "nameRus": "Количество приложений",
+                      "nameKazCyr": "Количество приложений",
+                      "nameKazLat": "Количество приложений",
+                      "type": "INTEGER",
+                      "jsonName": "_10",
+                      "validationConstraints": [
+                        { "constraintType": "NOT_NULL", "arguments": null }
+                      ],
+                      "hidden": false,
+                      "orderNumber": 6,
+                      "pageNumber": 1,
+                      "collection": false,
+                      "nestedFields": []
+                    }
+                  ]
+                },
+                {
+                  "nameRus": "Исчисление стоимости патента",
+                  "nameKazCyr": "Исчисление стоимости патента",
+                  "nameKazLat": "Исчисление стоимости патента",
+                  "type": "FORM_FIELD",
+                  "jsonName": "calculationPatentCost",
+                  "validationConstraints": [],
+                  "hidden": false,
+                  "orderNumber": 3,
+                  "pageNumber": 1,
+                  "collection": false,
+                  "nestedFields": [
+                    {
+                      "nameRus": "Строка 911.00.001- Доходы индивидуальных предпринимателей, за исключением осуществляющих деятельность в сфере торговли",
+                      "nameKazCyr": "Строка 911.00.001- Доходы индивидуальных предпринимателей, за исключением осуществляющих деятельность в сфере торговли",
+                      "nameKazLat": "Строка 911.00.001- Доходы индивидуальных предпринимателей, за исключением осуществляющих деятельность в сфере торговли",
+                      "type": "INTEGER",
+                      "jsonName": "_001",
+                      "validationConstraints": [
+                        { "constraintType": "NOT_NULL", "arguments": null }
+                      ],
+                      "hidden": false,
+                      "orderNumber": 1,
+                      "pageNumber": 1,
+                      "collection": false,
+                      "nestedFields": []
+                    },
+                    {
+                      "nameRus": "Строка 911.00.002",
+                      "nameKazCyr": "Строка 911.00.002",
+                      "nameKazLat": "Строка 911.00.002",
+                      "type": "FORM_FIELD",
+                      "jsonName": "_002",
+                      "validationConstraints": [
+                        { "constraintType": "NOT_NULL", "arguments": null }
+                      ],
+                      "hidden": false,
+                      "orderNumber": 2,
+                      "pageNumber": 1,
+                      "collection": false,
+                      "nestedFields": [
+                        {
+                          "nameRus": "Строка 911.00.002 А- доходы, полученные путем безналичных расчетов",
+                          "nameKazCyr": "Строка 911.00.002 А- доходы, полученные путем безналичных расчетов",
+                          "nameKazLat": "Строка 911.00.002 А- доходы, полученные путем безналичных расчетов",
+                          "type": "INTEGER",
+                          "jsonName": "A",
+                          "validationConstraints": [
+                            { "constraintType": "NOT_NULL", "arguments": null }
+                          ],
+                          "hidden": false,
+                          "orderNumber": 1,
+                          "pageNumber": 1,
+                          "collection": false,
+                          "nestedFields": []
+                        },
+                        {
+                          "nameRus": "Строка 911.00.002 В- доходы, полученные путем наличных расчетов",
+                          "nameKazCyr": "Строка 911.00.002 В- доходы, полученные путем наличных расчетов",
+                          "nameKazLat": "Строка 911.00.002 В- доходы, полученные путем наличных расчетов",
+                          "type": "INTEGER",
+                          "jsonName": "B",
+                          "validationConstraints": [
+                            { "constraintType": "NOT_NULL", "arguments": null }
+                          ],
+                          "hidden": false,
+                          "orderNumber": 2,
+                          "pageNumber": 1,
+                          "collection": false,
+                          "nestedFields": []
+                        },
+                        {
+                          "nameRus": "Строка 911.00.002- Доходы индивидуальных предпринимателей, осуществляющих деятельность в сфере торговли",
+                          "nameKazCyr": "Строка 911.00.002- Доходы индивидуальных предпринимателей, осуществляющих деятельность в сфере торговли",
+                          "nameKazLat": "Строка 911.00.002- Доходы индивидуальных предпринимателей, осуществляющих деятельность в сфере торговли",
+                          "type": "INTEGER",
+                          "jsonName": "total",
+                          "validationConstraints": [],
+                          "hidden": false,
+                          "orderNumber": 3,
+                          "pageNumber": 1,
+                          "collection": false,
+                          "nestedFields": []
+                        }
+                      ]
+                    },
+                    {
+                      "nameRus": "Строка 911.00.003-Сумма исчисленного индивидуального подоходного налога (911.00.01+911.00.02А)х1%",
+                      "nameKazCyr": "Строка 911.00.003-Сумма исчисленного индивидуального подоходного налога (911.00.01+911.00.02А)х1%",
+                      "nameKazLat": "Строка 911.00.003-Сумма исчисленного индивидуального подоходного налога (911.00.01+911.00.02А)х1%",
+                      "type": "INTEGER",
+                      "jsonName": "_003",
+                      "validationConstraints": [],
+                      "hidden": false,
+                      "orderNumber": 3,
+                      "pageNumber": 1,
+                      "collection": false,
+                      "nestedFields": []
+                    },
+                    {
+                      "nameRus": "Строка 911.00.004-Сумма исчисленного индивидуального подоходного налога (911.00.02Вх2%)",
+                      "nameKazCyr": "Строка 911.00.004-Сумма исчисленного индивидуального подоходного налога (911.00.02Вх2%)",
+                      "nameKazLat": "Строка 911.00.004-Сумма исчисленного индивидуального подоходного налога (911.00.02Вх2%)",
+                      "type": "INTEGER",
+                      "jsonName": "_004",
+                      "validationConstraints": [],
+                      "hidden": false,
+                      "orderNumber": 4,
+                      "pageNumber": 1,
+                      "collection": false,
+                      "nestedFields": []
+                    },
+                    {
+                      "nameRus": "Строка 911.00.005-Уменьшение суммы индивидуального подоходного налога в соответствии с пунктом 2-1 статьи 686 Налогового кодекса (на сумму 60 000 тенге, но не более чем на 50 процентов от исчисленной суммы индивидуального подоходного налога) за календарный год",
+                      "nameKazCyr": "Строка 911.00.005-Уменьшение суммы индивидуального подоходного налога в соответствии с пунктом 2-1 статьи 686 Налогового кодекса (на сумму 60 000 тенге, но не более чем на 50 процентов от исчисленной суммы индивидуального подоходного налога) за календарный год",
+                      "nameKazLat": "Строка 911.00.005-Уменьшение суммы индивидуального подоходного налога в соответствии с пунктом 2-1 статьи 686 Налогового кодекса (на сумму 60 000 тенге, но не более чем на 50 процентов от исчисленной суммы индивидуального подоходного налога) за календарный год",
+                      "type": "INTEGER",
+                      "jsonName": "_005",
+                      "validationConstraints": [],
+                      "hidden": false,
+                      "orderNumber": 5,
+                      "pageNumber": 1,
+                      "collection": false,
+                      "nestedFields": []
+                    },
+                    {
+                      "nameRus": "Строка 911.00.006-Сумма индивидуального подоходного налога, подлежащего уплате в бюджет (911.00.03+911.00.04)-911.00.05",
+                      "nameKazCyr": "Строка 911.00.006-Сумма индивидуального подоходного налога, подлежащего уплате в бюджет (911.00.03+911.00.04)-911.00.05",
+                      "nameKazLat": "Строка 911.00.006-Сумма индивидуального подоходного налога, подлежащего уплате в бюджет (911.00.03+911.00.04)-911.00.05",
+                      "type": "INTEGER",
+                      "jsonName": "_006",
+                      "validationConstraints": [],
+                      "hidden": false,
+                      "orderNumber": 6,
+                      "pageNumber": 1,
+                      "collection": false,
+                      "nestedFields": []
+                    },
+                    {
+                      "nameRus": "Строка 911.00.007-Сумма социальных отчислений",
+                      "nameKazCyr": "Строка 911.00.007-Сумма социальных отчислений",
+                      "nameKazLat": "Строка 911.00.007-Сумма социальных отчислений",
+                      "type": "INTEGER",
+                      "jsonName": "_007",
+                      "validationConstraints": [
+                        { "constraintType": "NOT_NULL", "arguments": null }
+                      ],
+                      "hidden": false,
+                      "orderNumber": 7,
+                      "pageNumber": 1,
+                      "collection": false,
+                      "nestedFields": []
+                    },
+                    {
+                      "nameRus": "Строка 911.00.008-Доход для исчисления обязательных пенсионных взносов",
+                      "nameKazCyr": "Строка 911.00.008-Доход для исчисления обязательных пенсионных взносов",
+                      "nameKazLat": "Строка 911.00.008-Доход для исчисления обязательных пенсионных взносов",
+                      "type": "INTEGER",
+                      "jsonName": "_008",
+                      "validationConstraints": [
+                        { "constraintType": "NOT_NULL", "arguments": null }
+                      ],
+                      "hidden": false,
+                      "orderNumber": 8,
+                      "pageNumber": 1,
+                      "collection": false,
+                      "nestedFields": []
+                    },
+                    {
+                      "nameRus": "Строка 911.00.009-Сумма обязательных пенсионных взносов",
+                      "nameKazCyr": "Строка 911.00.009-Сумма обязательных пенсионных взносов",
+                      "nameKazLat": "Строка 911.00.009-Сумма обязательных пенсионных взносов",
+                      "type": "STRING",
+                      "jsonName": "_009",
+                      "validationConstraints": [
+                        { "constraintType": "NOT_NULL", "arguments": null }
+                      ],
+                      "hidden": false,
+                      "orderNumber": 9,
+                      "pageNumber": 1,
+                      "collection": false,
+                      "nestedFields": []
+                    },
+                    {
+                      "nameRus": "Строка 911.00.010-Сумма взносов на обязательное социальное медицинское",
+                      "nameKazCyr": "Строка 911.00.010-Сумма взносов на обязательное социальное медицинское",
+                      "nameKazLat": "Строка 911.00.010-Сумма взносов на обязательное социальное медицинское",
+                      "type": "INTEGER",
+                      "jsonName": "_010",
+                      "validationConstraints": [
+                        { "constraintType": "NOT_NULL", "arguments": null }
+                      ],
+                      "hidden": false,
+                      "orderNumber": 10,
+                      "pageNumber": 1,
+                      "collection": false,
+                      "nestedFields": []
+                    }
+                  ]
+                },
+                {
+                  "nameRus": "Раздел. Сведения об уплате стоимости патент",
+                  "nameKazCyr": "Раздел. Сведения об уплате стоимости патент",
+                  "nameKazLat": "Раздел. Сведения об уплате стоимости патент",
+                  "type": "FORM_FIELD",
+                  "jsonName": "informationPatentCostPayment",
+                  "validationConstraints": [],
+                  "hidden": false,
+                  "orderNumber": 4,
+                  "pageNumber": 1,
+                  "collection": false,
+                  "nestedFields": [
+                    {
+                      "nameRus": "Индивидуальный подоходный налог",
+                      "nameKazCyr": "Индивидуальный подоходный налог",
+                      "nameKazLat": "Индивидуальный подоходный налог",
+                      "type": "FORM_FIELD",
+                      "jsonName": "individualIncomeTax",
+                      "validationConstraints": [],
+                      "hidden": false,
+                      "orderNumber": 1,
+                      "pageNumber": 1,
+                      "collection": false,
+                      "nestedFields": [
+                        {
+                          "nameRus": "КБК",
+                          "nameKazCyr": "КБК",
+                          "nameKazLat": "КБК",
+                          "type": "STRING",
+                          "jsonName": "B",
+                          "validationConstraints": [
+                            { "constraintType": "NOT_NULL", "arguments": null }
+                          ],
+                          "hidden": false,
+                          "orderNumber": 1,
+                          "pageNumber": 1,
+                          "collection": false,
+                          "nestedFields": []
+                        },
+                        {
+                          "nameRus": "Номер платежного документа",
+                          "nameKazCyr": "Номер платежного документа",
+                          "nameKazLat": "Номер платежного документа",
+                          "type": "STRING",
+                          "jsonName": "C",
+                          "validationConstraints": [],
+                          "hidden": false,
+                          "orderNumber": 2,
+                          "pageNumber": 1,
+                          "collection": false,
+                          "nestedFields": []
+                        },
+                        {
+                          "nameRus": "Дата уплаты",
+                          "nameKazCyr": "Дата уплаты",
+                          "nameKazLat": "Дата уплаты",
+                          "type": "DATE",
+                          "jsonName": "D",
+                          "validationConstraints": [],
+                          "hidden": false,
+                          "orderNumber": 3,
+                          "pageNumber": 1,
+                          "collection": false,
+                          "nestedFields": []
+                        },
+                        {
+                          "nameRus": "Сумма",
+                          "nameKazCyr": "Сумма",
+                          "nameKazLat": "Сумма",
+                          "type": "INTEGER",
+                          "jsonName": "E",
+                          "validationConstraints": [],
+                          "hidden": false,
+                          "orderNumber": 4,
+                          "pageNumber": 1,
+                          "collection": false,
+                          "nestedFields": []
+                        }
+                      ]
+                    },
+                    {
+                      "nameRus": "Социальные отчисления",
+                      "nameKazCyr": "Социальные отчисления",
+                      "nameKazLat": "Социальные отчисления",
+                      "type": "FORM_FIELD",
+                      "jsonName": "socialContributions",
+                      "validationConstraints": [],
+                      "hidden": false,
+                      "orderNumber": 2,
+                      "pageNumber": 1,
+                      "collection": false,
+                      "nestedFields": [
+                        {
+                          "nameRus": "КБК",
+                          "nameKazCyr": "КБК",
+                          "nameKazLat": "КБК",
+                          "type": "STRING",
+                          "jsonName": "B",
+                          "validationConstraints": [
+                            { "constraintType": "NOT_NULL", "arguments": null }
+                          ],
+                          "hidden": false,
+                          "orderNumber": 1,
+                          "pageNumber": 1,
+                          "collection": false,
+                          "nestedFields": []
+                        },
+                        {
+                          "nameRus": "Номер платежного документа",
+                          "nameKazCyr": "Номер платежного документа",
+                          "nameKazLat": "Номер платежного документа",
+                          "type": "STRING",
+                          "jsonName": "C",
+                          "validationConstraints": [],
+                          "hidden": false,
+                          "orderNumber": 2,
+                          "pageNumber": 1,
+                          "collection": false,
+                          "nestedFields": []
+                        },
+                        {
+                          "nameRus": "Дата уплаты",
+                          "nameKazCyr": "Дата уплаты",
+                          "nameKazLat": "Дата уплаты",
+                          "type": "DATE",
+                          "jsonName": "D",
+                          "validationConstraints": [],
+                          "hidden": false,
+                          "orderNumber": 3,
+                          "pageNumber": 1,
+                          "collection": false,
+                          "nestedFields": []
+                        },
+                        {
+                          "nameRus": "Сумма",
+                          "nameKazCyr": "Сумма",
+                          "nameKazLat": "Сумма",
+                          "type": "INTEGER",
+                          "jsonName": "E",
+                          "validationConstraints": [],
+                          "hidden": false,
+                          "orderNumber": 4,
+                          "pageNumber": 1,
+                          "collection": false,
+                          "nestedFields": []
+                        }
+                      ]
+                    },
+                    {
+                      "nameRus": "Обязательные пенсионные взносы",
+                      "nameKazCyr": "Обязательные пенсионные взносы",
+                      "nameKazLat": "Обязательные пенсионные взносы",
+                      "type": "FORM_FIELD",
+                      "jsonName": "mandatoryPensionContributions",
+                      "validationConstraints": [],
+                      "hidden": false,
+                      "orderNumber": 3,
+                      "pageNumber": 1,
+                      "collection": false,
+                      "nestedFields": [
+                        {
+                          "nameRus": "КБК",
+                          "nameKazCyr": "КБК",
+                          "nameKazLat": "КБК",
+                          "type": "STRING",
+                          "jsonName": "B",
+                          "validationConstraints": [
+                            { "constraintType": "NOT_NULL", "arguments": null }
+                          ],
+                          "hidden": false,
+                          "orderNumber": 1,
+                          "pageNumber": 1,
+                          "collection": false,
+                          "nestedFields": []
+                        },
+                        {
+                          "nameRus": "Номер платежного документа",
+                          "nameKazCyr": "Номер платежного документа",
+                          "nameKazLat": "Номер платежного документа",
+                          "type": "STRING",
+                          "jsonName": "C",
+                          "validationConstraints": [],
+                          "hidden": false,
+                          "orderNumber": 2,
+                          "pageNumber": 1,
+                          "collection": false,
+                          "nestedFields": []
+                        },
+                        {
+                          "nameRus": "Дата уплаты",
+                          "nameKazCyr": "Дата уплаты",
+                          "nameKazLat": "Дата уплаты",
+                          "type": "DATE",
+                          "jsonName": "D",
+                          "validationConstraints": [],
+                          "hidden": false,
+                          "orderNumber": 3,
+                          "pageNumber": 1,
+                          "collection": false,
+                          "nestedFields": []
+                        },
+                        {
+                          "nameRus": "Сумма",
+                          "nameKazCyr": "Сумма",
+                          "nameKazLat": "Сумма",
+                          "type": "INTEGER",
+                          "jsonName": "E",
+                          "validationConstraints": [],
+                          "hidden": false,
+                          "orderNumber": 4,
+                          "pageNumber": 1,
+                          "collection": false,
+                          "nestedFields": []
+                        }
+                      ]
+                    },
+                    {
+                      "nameRus": "Взносы на обязательное социальное медицинское страхование\t",
+                      "nameKazCyr": "Взносы на обязательное социальное медицинское страхование\t",
+                      "nameKazLat": "Взносы на обязательное социальное медицинское страхование\t",
+                      "type": "FORM_FIELD",
+                      "jsonName": "contributionSocialHealthInsurance",
+                      "validationConstraints": [],
+                      "hidden": false,
+                      "orderNumber": 4,
+                      "pageNumber": 1,
+                      "collection": false,
+                      "nestedFields": [
+                        {
+                          "nameRus": "КБК",
+                          "nameKazCyr": "КБК",
+                          "nameKazLat": "КБК",
+                          "type": "STRING",
+                          "jsonName": "B",
+                          "validationConstraints": [
+                            { "constraintType": "NOT_NULL", "arguments": null }
+                          ],
+                          "hidden": false,
+                          "orderNumber": 1,
+                          "pageNumber": 1,
+                          "collection": false,
+                          "nestedFields": []
+                        },
+                        {
+                          "nameRus": "Номер платежного документа",
+                          "nameKazCyr": "Номер платежного документа",
+                          "nameKazLat": "Номер платежного документа",
+                          "type": "STRING",
+                          "jsonName": "C",
+                          "validationConstraints": [],
+                          "hidden": false,
+                          "orderNumber": 2,
+                          "pageNumber": 1,
+                          "collection": false,
+                          "nestedFields": []
+                        },
+                        {
+                          "nameRus": "Дата уплаты",
+                          "nameKazCyr": "Дата уплаты",
+                          "nameKazLat": "Дата уплаты",
+                          "type": "DATE",
+                          "jsonName": "D",
+                          "validationConstraints": [],
+                          "hidden": false,
+                          "orderNumber": 3,
+                          "pageNumber": 1,
+                          "collection": false,
+                          "nestedFields": []
+                        },
+                        {
+                          "nameRus": "Сумма",
+                          "nameKazCyr": "Сумма",
+                          "nameKazLat": "Сумма",
+                          "type": "INTEGER",
+                          "jsonName": "E",
+                          "validationConstraints": [],
+                          "hidden": false,
+                          "orderNumber": 4,
+                          "pageNumber": 1,
+                          "collection": false,
+                          "nestedFields": []
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "nameRus": "Приложение к расчету стоимости патента",
+                  "nameKazCyr": "Приложение к расчету стоимости патента",
+                  "nameKazLat": "Приложение к расчету стоимости патента",
+                  "type": "FORM_FIELD",
+                  "jsonName": "application_01",
+                  "validationConstraints": [],
+                  "hidden": false,
+                  "orderNumber": 5,
+                  "pageNumber": 1,
+                  "collection": false,
+                  "nestedFields": [
+                    {
+                      "nameRus": "Номер страницы",
+                      "nameKazCyr": "Номер страницы",
+                      "nameKazLat": "Номер страницы",
+                      "type": "STRING",
+                      "jsonName": "pageNum",
+                      "validationConstraints": [],
+                      "hidden": false,
+                      "orderNumber": 1,
+                      "pageNumber": 1,
+                      "collection": false,
+                      "nestedFields": []
+                    },
+                    {
+                      "nameRus": "Строка 911.01.001-срок действия патента",
+                      "nameKazCyr": "Строка 911.01.001-срок действия патента",
+                      "nameKazLat": "Строка 911.01.001-срок действия патента",
+                      "type": "FORM_FIELD",
+                      "jsonName": "_001",
+                      "validationConstraints": [],
+                      "hidden": false,
+                      "orderNumber": 2,
+                      "pageNumber": 1,
+                      "collection": false,
+                      "nestedFields": [
+                        {
+                          "nameRus": "Строка 911.01.001 с",
+                          "nameKazCyr": "Строка 911.01.001 с",
+                          "nameKazLat": "Строка 911.01.001 с",
+                          "type": "DATE",
+                          "jsonName": "from",
+                          "validationConstraints": [
+                            { "constraintType": "NOT_NULL", "arguments": null }
+                          ],
+                          "hidden": false,
+                          "orderNumber": 1,
+                          "pageNumber": 1,
+                          "collection": false,
+                          "nestedFields": []
+                        },
+                        {
+                          "nameRus": "Строка 911.01.001 по",
+                          "nameKazCyr": "Строка 911.01.001 по",
+                          "nameKazLat": "Строка 911.01.001 по",
+                          "type": "DATE",
+                          "jsonName": "to",
+                          "validationConstraints": [
+                            { "constraintType": "NOT_NULL", "arguments": null }
+                          ],
+                          "hidden": false,
+                          "orderNumber": 2,
+                          "pageNumber": 1,
+                          "collection": false,
+                          "nestedFields": []
+                        }
+                      ]
+                    },
+                    {
+                      "nameRus": "Строка 911.01.002-Вид деятельности:",
+                      "nameKazCyr": "Строка 911.01.002-Вид деятельности:",
+                      "nameKazLat": "Строка 911.01.002-Вид деятельности:",
+                      "type": "STRING",
+                      "jsonName": "_002",
+                      "validationConstraints": [
+                        { "constraintType": "NOT_NULL", "arguments": null }
+                      ],
+                      "hidden": false,
+                      "orderNumber": 3,
+                      "pageNumber": 1,
+                      "collection": false,
+                      "nestedFields": []
+                    },
+                    {
+                      "nameRus": "Строка 911.01.003-Место осуществления предпринимательской деятельности: (справочник РКА)",
+                      "nameKazCyr": "Строка 911.01.003-Место осуществления предпринимательской деятельности: (справочник РКА)",
+                      "nameKazLat": "Строка 911.01.003-Место осуществления предпринимательской деятельности: (справочник РКА)",
+                      "type": "STRING",
+                      "jsonName": "_003",
+                      "validationConstraints": [
+                        { "constraintType": "NOT_NULL", "arguments": null }
+                      ],
+                      "hidden": false,
+                      "orderNumber": 4,
+                      "pageNumber": 1,
+                      "collection": false,
+                      "nestedFields": []
+                    },
+                    {
+                      "nameRus": "Строка 911.01.004-Вид деятельности",
+                      "nameKazCyr": "Строка 911.01.004-Вид деятельности",
+                      "nameKazLat": "Строка 911.01.004-Вид деятельности",
+                      "type": "STRING",
+                      "jsonName": "_004",
+                      "validationConstraints": [
+                        { "constraintType": "NOT_NULL", "arguments": null }
+                      ],
+                      "hidden": false,
+                      "orderNumber": 5,
+                      "pageNumber": 1,
+                      "collection": false,
+                      "nestedFields": []
+                    },
+                    {
+                      "nameRus": "Строка 911.01.005-Место осуществления предпринимательской деятельности: (справочник РКА)",
+                      "nameKazCyr": "Строка 911.01.005-Место осуществления предпринимательской деятельности: (справочник РКА)",
+                      "nameKazLat": "Строка 911.01.005-Место осуществления предпринимательской деятельности: (справочник РКА)",
+                      "type": "STRING",
+                      "jsonName": "_005",
+                      "validationConstraints": [
+                        { "constraintType": "NOT_NULL", "arguments": null }
+                      ],
+                      "hidden": false,
+                      "orderNumber": 6,
+                      "pageNumber": 1,
+                      "collection": false,
+                      "nestedFields": []
+                    }
+                  ]
+                },
+                {
+                  "nameRus": "Раздел. Ответственность",
+                  "nameKazCyr": "Раздел. Ответственность",
+                  "nameKazLat": "Раздел. Ответственность",
+                  "type": "FORM_FIELD",
+                  "jsonName": "taxpayerResponsibility",
+                  "validationConstraints": [],
+                  "hidden": false,
+                  "orderNumber": 6,
+                  "pageNumber": 1,
+                  "collection": false,
+                  "nestedFields": [
+                    {
+                      "nameRus": "Ответственность налогоплательщика",
+                      "nameKazCyr": "Ответственность налогоплательщика",
+                      "nameKazLat": "Ответственность налогоплательщика",
+                      "type": "BOOLEAN",
+                      "jsonName": "isResponsible",
+                      "validationConstraints": [],
+                      "hidden": false,
+                      "orderNumber": 1,
+                      "pageNumber": 1,
+                      "collection": false,
+                      "nestedFields": []
+                    },
+                    {
+                      "nameRus": "Фамилия, имя, отчетсво (при его наличии) налогоплательщика",
+                      "nameKazCyr": "Фамилия, имя, отчетсво (при его наличии) налогоплательщика",
+                      "nameKazLat": "Фамилия, имя, отчетсво (при его наличии) налогоплательщика",
+                      "type": "STRING",
+                      "jsonName": "fullNameOfHead",
+                      "validationConstraints": [
+                        { "constraintType": "NOT_NULL", "arguments": null }
+                      ],
+                      "hidden": false,
+                      "orderNumber": 2,
+                      "pageNumber": 1,
+                      "collection": false,
+                      "nestedFields": []
+                    },
+                    {
+                      "nameRus": "Дата подачи расчета",
+                      "nameKazCyr": "Дата подачи расчета",
+                      "nameKazLat": "Дата подачи расчета",
+                      "type": "DATE",
+                      "jsonName": "declarationDate",
+                      "validationConstraints": [
+                        { "constraintType": "NOT_NULL", "arguments": null }
+                      ],
+                      "hidden": false,
+                      "orderNumber": 3,
+                      "pageNumber": 1,
+                      "collection": false,
+                      "nestedFields": []
+                    },
+                    {
+                      "nameRus": "Фамилия, имя, отчество (при его наличии) должностного лица, принявшего Расчет ",
+                      "nameKazCyr": "Фамилия, имя, отчество (при его наличии) должностного лица, принявшего Расчет ",
+                      "nameKazLat": "Фамилия, имя, отчество (при его наличии) должностного лица, принявшего Расчет ",
+                      "type": "STRING",
+                      "jsonName": "fullNameOfEmployeeWhoAcceptedDeclaration",
+                      "validationConstraints": [],
+                      "hidden": false,
+                      "orderNumber": 4,
+                      "pageNumber": 1,
+                      "collection": false,
+                      "nestedFields": []
+                    },
+                    {
+                      "nameRus": "Дата приема Расчета",
+                      "nameKazCyr": "Дата приема Расчета",
+                      "nameKazLat": "Дата приема Расчета",
+                      "type": "DATE",
+                      "jsonName": "declarationReceiptDate",
+                      "validationConstraints": [],
+                      "hidden": false,
+                      "orderNumber": 5,
+                      "pageNumber": 1,
+                      "collection": false,
+                      "nestedFields": []
+                    },
+                    {
+                      "nameRus": "Входящий номер документа",
+                      "nameKazCyr": "Входящий номер документа",
+                      "nameKazLat": "Входящий номер документа",
+                      "type": "STRING",
+                      "jsonName": "declarationIncomingNumber",
+                      "validationConstraints": [],
+                      "hidden": false,
+                      "orderNumber": 6,
+                      "pageNumber": 1,
+                      "collection": false,
+                      "nestedFields": []
+                    },
+                    {
+                      "nameRus": "Дата почтового штемпеля",
+                      "nameKazCyr": "Дата почтового штемпеля",
+                      "nameKazLat": "Дата почтового штемпеля",
+                      "type": "DATE",
+                      "jsonName": "postmarkDate",
+                      "validationConstraints": [],
+                      "hidden": false,
+                      "orderNumber": 7,
+                      "pageNumber": 1,
+                      "collection": false,
+                      "nestedFields": []
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "number": 2,
+      "fieldsToLockOnDocumentRegistration": ["creatorType"]
+    },
+    "formType": "fno_911",
+    "number": 2,
+    "validFrom": "2021-12-31T23:59:59+06:00",
+    "validTo": null
+  }
+]

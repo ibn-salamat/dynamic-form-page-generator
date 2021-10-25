@@ -1,0 +1,1271 @@
+[
+  {
+    "name": "ФНО 870",
+    "createdAt": "2021-10-04T17:17:07.577874+06:00",
+    "updatedAt": null,
+    "lastRevision": {
+      "description": "Форма налоговой отчётности 870",
+      "createdAt": "2021-10-04T17:17:07.583377+06:00",
+      "active": true,
+      "fieldSets": [
+        {
+          "name": "Общие атрибуты входящей формы",
+          "orderNumber": 0,
+          "pageNumber": 1,
+          "fields": [
+            {
+              "nameRus": "Причина подачи документа",
+              "nameKazCyr": "Причина подачи документа",
+              "nameKazLat": "Причина подачи документа",
+              "type": "LONG",
+              "jsonName": "reasonId",
+              "validationConstraints": [],
+              "hidden": false,
+              "orderNumber": 1,
+              "pageNumber": 1,
+              "collection": false,
+              "nestedFields": []
+            },
+            {
+              "nameRus": "Источник документа(справочник)",
+              "nameKazCyr": "Источник документа(справочник)",
+              "nameKazLat": "Источник документа(справочник)",
+              "type": "LONG",
+              "jsonName": "documentSourceId",
+              "validationConstraints": [],
+              "hidden": false,
+              "orderNumber": 2,
+              "pageNumber": 1,
+              "collection": false,
+              "nestedFields": []
+            },
+            {
+              "nameRus": "Назначение документа(справочник)",
+              "nameKazCyr": "Назначение документа(справочник)",
+              "nameKazLat": "Назначение документа(справочник)",
+              "type": "LONG",
+              "jsonName": "documentDestinationId",
+              "validationConstraints": [],
+              "hidden": false,
+              "orderNumber": 3,
+              "pageNumber": 1,
+              "collection": false,
+              "nestedFields": []
+            },
+            {
+              "nameRus": "ОГД(справочник)",
+              "nameKazCyr": "ОГД(справочник)",
+              "nameKazLat": "ОГД(справочник)",
+              "type": "LONG",
+              "jsonName": "ogdId",
+              "validationConstraints": [],
+              "hidden": false,
+              "orderNumber": 4,
+              "pageNumber": 1,
+              "collection": false,
+              "nestedFields": []
+            },
+            {
+              "nameRus": "Тип документа(справочник)",
+              "nameKazCyr": "Тип документа(справочник)",
+              "nameKazLat": "Тип документа(справочник)",
+              "type": "LONG",
+              "jsonName": "documentTypeId",
+              "validationConstraints": [],
+              "hidden": false,
+              "orderNumber": 5,
+              "pageNumber": 1,
+              "collection": false,
+              "nestedFields": []
+            },
+            {
+              "nameRus": "ИИН/БИН",
+              "nameKazCyr": "ИИН/БИН",
+              "nameKazLat": "ИИН/БИН",
+              "type": "STRING",
+              "jsonName": "iinBin",
+              "validationConstraints": [],
+              "hidden": false,
+              "orderNumber": 6,
+              "pageNumber": 1,
+              "collection": false,
+              "nestedFields": []
+            },
+            {
+              "nameRus": "Ф.И.О. должностного лица государственного органа",
+              "nameKazCyr": "Ф.И.О. должностного лица государственного органа",
+              "nameKazLat": "Ф.И.О. должностного лица государственного органа",
+              "type": "STRING",
+              "jsonName": "checkerFullName",
+              "validationConstraints": [],
+              "hidden": false,
+              "orderNumber": 7,
+              "pageNumber": 1,
+              "collection": false,
+              "nestedFields": []
+            },
+            {
+              "nameRus": "Дата подачи налогового заявления",
+              "nameKazCyr": "Дата подачи налогового заявления",
+              "nameKazLat": "Дата подачи налогового заявления",
+              "type": "TIMESTAMP",
+              "jsonName": "applicationDate",
+              "validationConstraints": [],
+              "hidden": false,
+              "orderNumber": 8,
+              "pageNumber": 1,
+              "collection": false,
+              "nestedFields": []
+            },
+            {
+              "nameRus": "Дата почтового штемпеля",
+              "nameKazCyr": "Дата почтового штемпеля",
+              "nameKazLat": "Дата почтового штемпеля",
+              "type": "TIMESTAMP",
+              "jsonName": "postmarkDate",
+              "validationConstraints": [],
+              "hidden": false,
+              "orderNumber": 9,
+              "pageNumber": 1,
+              "collection": false,
+              "nestedFields": []
+            }
+          ]
+        },
+        {
+          "name": "Основная форма",
+          "orderNumber": 1,
+          "pageNumber": 1,
+          "fields": [
+            {
+              "nameRus": "Вид специального природопользования",
+              "nameKazCyr": "Вид специального природопользования",
+              "nameKazLat": "Вид специального природопользования",
+              "type": "STRING",
+              "jsonName": "_5",
+              "validationConstraints": [
+                {
+                  "constraintType": "IN",
+                  "arguments": {
+                    "type": "IN_ARGUMENTS",
+                    "value": [
+                      "A",
+                      "A1",
+                      "A2",
+                      "A3",
+                      "B",
+                      "C",
+                      "D",
+                      "A",
+                      "A1",
+                      "A2",
+                      "A3",
+                      "B",
+                      "C",
+                      "D"
+                    ],
+                    "message": null,
+                    "each": false,
+                    "displayedValues": {
+                      "A": {
+                        "kzCyr": "выбросы загрязняющих веществ",
+                        "kzLat": "выбросы загрязняющих веществ",
+                        "rus": "выбросы загрязняющих веществ"
+                      },
+                      "B": {
+                        "kzCyr": "сбросы",
+                        "kzLat": "сбросы",
+                        "rus": "сбросы"
+                      },
+                      "C": {
+                        "kzCyr": "размещение отходов производства и потребления",
+                        "kzLat": "размещение отходов производства и потребления",
+                        "rus": "размещение отходов производства и потребления"
+                      },
+                      "D": {
+                        "kzCyr": "размещение серы",
+                        "kzLat": "размещение серы",
+                        "rus": "размещение серы"
+                      },
+                      "A1": {
+                        "kzCyr": "от стационарных источников",
+                        "kzLat": "от стационарных источников",
+                        "rus": "от стационарных источников"
+                      },
+                      "A2": {
+                        "kzCyr": "от сжигания попутного и (или) природного газа в факелах",
+                        "kzLat": "от сжигания попутного и (или) природного газа в факелах",
+                        "rus": "от сжигания попутного и (или) природного газа в факелах"
+                      },
+                      "A3": {
+                        "kzCyr": "в атмосферный воздух от передвижных источников",
+                        "kzLat": "в атмосферный воздух от передвижных источников",
+                        "rus": "в атмосферный воздух от передвижных источников"
+                      }
+                    }
+                  }
+                },
+                {
+                  "constraintType": "NOT_NULL",
+                  "arguments": {
+                    "type": "MESSAGE_ARGUMENTS",
+                    "message": null,
+                    "each": false
+                  }
+                }
+              ],
+              "hidden": false,
+              "orderNumber": 1,
+              "pageNumber": 1,
+              "collection": false,
+              "nestedFields": [],
+              "enumerationValues": [
+                "A",
+                "A1",
+                "A2",
+                "A3",
+                "B",
+                "C",
+                "D",
+                "A",
+                "A1",
+                "A2",
+                "A3",
+                "B",
+                "C",
+                "D"
+              ],
+              "enumerationDisplayedValues": {
+                "A": {
+                  "kzCyr": "выбросы загрязняющих веществ",
+                  "kzLat": "выбросы загрязняющих веществ",
+                  "rus": "выбросы загрязняющих веществ"
+                },
+                "B": { "kzCyr": "сбросы", "kzLat": "сбросы", "rus": "сбросы" },
+                "C": {
+                  "kzCyr": "размещение отходов производства и потребления",
+                  "kzLat": "размещение отходов производства и потребления",
+                  "rus": "размещение отходов производства и потребления"
+                },
+                "D": {
+                  "kzCyr": "размещение серы",
+                  "kzLat": "размещение серы",
+                  "rus": "размещение серы"
+                },
+                "A1": {
+                  "kzCyr": "от стационарных источников",
+                  "kzLat": "от стационарных источников",
+                  "rus": "от стационарных источников"
+                },
+                "A2": {
+                  "kzCyr": "от сжигания попутного и (или) природного газа в факелах",
+                  "kzLat": "от сжигания попутного и (или) природного газа в факелах",
+                  "rus": "от сжигания попутного и (или) природного газа в факелах"
+                },
+                "A3": {
+                  "kzCyr": "в атмосферный воздух от передвижных источников",
+                  "kzLat": "в атмосферный воздух от передвижных источников",
+                  "rus": "в атмосферный воздух от передвижных источников"
+                }
+              }
+            },
+            {
+              "nameRus": "Категория налогоплательщика",
+              "nameKazCyr": "Категория налогоплательщика",
+              "nameKazLat": "Категория налогоплательщика",
+              "type": "STRING",
+              "jsonName": "_7",
+              "validationConstraints": [
+                {
+                  "constraintType": "IN",
+                  "arguments": {
+                    "type": "IN_ARGUMENTS",
+                    "value": ["7A", "7B", "7C", "7A", "7B", "7C"],
+                    "message": null,
+                    "each": true,
+                    "displayedValues": {
+                      "7A": {
+                        "kzCyr": "Доверительный управляющий",
+                        "kzLat": "Доверительный управляющий",
+                        "rus": "Доверительный управляющий"
+                      },
+                      "7B": {
+                        "kzCyr": "Учредитель доверительного управления",
+                        "kzLat": "Учредитель доверительного управления",
+                        "rus": "Учредитель доверительного управления"
+                      },
+                      "7C": {
+                        "kzCyr": "НП с объемами платежей до 100 МРП в суммарном годовом объеме",
+                        "kzLat": "НП с объемами платежей до 100 МРП в суммарном годовом объеме",
+                        "rus": "НП с объемами платежей до 100 МРП в суммарном годовом объеме"
+                      }
+                    }
+                  }
+                }
+              ],
+              "hidden": false,
+              "orderNumber": 2,
+              "pageNumber": 1,
+              "collection": true,
+              "nestedFields": [],
+              "enumerationValues": ["7A", "7B", "7C", "7A", "7B", "7C"],
+              "enumerationDisplayedValues": {
+                "7A": {
+                  "kzCyr": "Доверительный управляющий",
+                  "kzLat": "Доверительный управляющий",
+                  "rus": "Доверительный управляющий"
+                },
+                "7B": {
+                  "kzCyr": "Учредитель доверительного управления",
+                  "kzLat": "Учредитель доверительного управления",
+                  "rus": "Учредитель доверительного управления"
+                },
+                "7C": {
+                  "kzCyr": "НП с объемами платежей до 100 МРП в суммарном годовом объеме",
+                  "kzLat": "НП с объемами платежей до 100 МРП в суммарном годовом объеме",
+                  "rus": "НП с объемами платежей до 100 МРП в суммарном годовом объеме"
+                }
+              }
+            },
+            {
+              "nameRus": "Налоговый период - квартал",
+              "nameKazCyr": "Налоговый период - квартал",
+              "nameKazLat": "Налоговый период - квартал",
+              "type": "LONG",
+              "jsonName": "_3_1",
+              "validationConstraints": [
+                {
+                  "constraintType": "IN",
+                  "arguments": {
+                    "type": "IN_ARGUMENTS",
+                    "value": [1, 2, 3, 4, 1, 2, 3, 4],
+                    "message": null,
+                    "each": false,
+                    "displayedValues": null
+                  }
+                },
+                {
+                  "constraintType": "NOT_NULL",
+                  "arguments": {
+                    "type": "MESSAGE_ARGUMENTS",
+                    "message": null,
+                    "each": false
+                  }
+                }
+              ],
+              "hidden": false,
+              "orderNumber": 3,
+              "pageNumber": 1,
+              "collection": false,
+              "nestedFields": [],
+              "enumerationValues": [1, 2, 3, 4, 1, 2, 3, 4]
+            },
+            {
+              "nameRus": "Налоговый период - год",
+              "nameKazCyr": "Налоговый период - год",
+              "nameKazLat": "Налоговый период - год",
+              "type": "LONG",
+              "jsonName": "_3_2",
+              "validationConstraints": [
+                {
+                  "constraintType": "NOT_NULL",
+                  "arguments": {
+                    "type": "MESSAGE_ARGUMENTS",
+                    "message": null,
+                    "each": false
+                  }
+                }
+              ],
+              "hidden": false,
+              "orderNumber": 4,
+              "pageNumber": 1,
+              "collection": false,
+              "nestedFields": []
+            },
+            {
+              "nameRus": "Код валюты",
+              "nameKazCyr": "Код валюты",
+              "nameKazLat": "Код валюты",
+              "type": "STRING",
+              "jsonName": "_8",
+              "validationConstraints": [
+                {
+                  "constraintType": "NOT_NULL",
+                  "arguments": {
+                    "type": "MESSAGE_ARGUMENTS",
+                    "message": null,
+                    "each": false
+                  }
+                }
+              ],
+              "hidden": false,
+              "orderNumber": 5,
+              "pageNumber": 1,
+              "dictionaryName": "d_currencies",
+              "collection": false,
+              "nestedFields": [],
+              "dictionaryFieldDescription": {
+                "jsonSentKey": "code",
+                "displayedRuKey": "nameRu",
+                "displayedKazCyrKey": "nameKk",
+                "displayedKazLatKey": "nameQq"
+              }
+            },
+            {
+              "nameRus": "БИН юридического лица, структурным подразделением которого является филиал, представительство",
+              "nameKazCyr": "БИН юридического лица, структурным подразделением которого является филиал, представительство",
+              "nameKazLat": "БИН юридического лица, структурным подразделением которого является филиал, представительство",
+              "type": "STRING",
+              "jsonName": "_2",
+              "validationConstraints": [
+                {
+                  "constraintType": "SIZE",
+                  "arguments": {
+                    "type": "SIZE_ARGUMENTS",
+                    "min": 12,
+                    "max": 12,
+                    "message": null,
+                    "each": false
+                  }
+                }
+              ],
+              "hidden": false,
+              "orderNumber": 6,
+              "pageNumber": 1,
+              "collection": false,
+              "nestedFields": []
+            },
+            {
+              "nameRus": "Сумма исчисленной платы в пределах установленного норматива",
+              "nameKazCyr": "Сумма исчисленной платы в пределах установленного норматива",
+              "nameKazLat": "Сумма исчисленной платы в пределах установленного норматива",
+              "type": "LONG",
+              "jsonName": "_870_00_001",
+              "validationConstraints": [
+                {
+                  "constraintType": "SIZE",
+                  "arguments": {
+                    "type": "SIZE_ARGUMENTS",
+                    "min": 1,
+                    "max": 12,
+                    "message": null,
+                    "each": false
+                  }
+                }
+              ],
+              "hidden": false,
+              "orderNumber": 7,
+              "pageNumber": 1,
+              "collection": false,
+              "nestedFields": []
+            },
+            {
+              "nameRus": "Сумма исчисленной платы сверх установленного норматива",
+              "nameKazCyr": "Сумма исчисленной платы сверх установленного норматива",
+              "nameKazLat": "Сумма исчисленной платы сверх установленного норматива",
+              "type": "LONG",
+              "jsonName": "_870_00_002",
+              "validationConstraints": [
+                {
+                  "constraintType": "SIZE",
+                  "arguments": {
+                    "type": "SIZE_ARGUMENTS",
+                    "min": 1,
+                    "max": 12,
+                    "message": null,
+                    "each": false
+                  }
+                }
+              ],
+              "hidden": false,
+              "orderNumber": 8,
+              "pageNumber": 1,
+              "collection": false,
+              "nestedFields": []
+            },
+            {
+              "nameRus": "Фактический объем эмиссий в пределах установленных нормативов",
+              "nameKazCyr": "Фактический объем эмиссий в пределах установленных нормативов",
+              "nameKazLat": "Фактический объем эмиссий в пределах установленных нормативов",
+              "type": "BIG_DECIMAL",
+              "jsonName": "_870_00_003",
+              "validationConstraints": [
+                {
+                  "constraintType": "SIZE",
+                  "arguments": {
+                    "type": "SIZE_ARGUMENTS",
+                    "min": 1,
+                    "max": 12,
+                    "message": null,
+                    "each": false
+                  }
+                }
+              ],
+              "hidden": false,
+              "orderNumber": 9,
+              "pageNumber": 1,
+              "collection": false,
+              "nestedFields": []
+            },
+            {
+              "nameRus": "Приложение к Декларации - ПЛАТА ЗА ЭМИССИИ В ОКРУЖАЮЩУЮ СРЕДУ",
+              "nameKazCyr": "Приложение к Декларации - ПЛАТА ЗА ЭМИССИИ В ОКРУЖАЮЩУЮ СРЕДУ",
+              "nameKazLat": "Приложение к Декларации - ПЛАТА ЗА ЭМИССИИ В ОКРУЖАЮЩУЮ СРЕДУ",
+              "type": "FORM_FIELD",
+              "jsonName": "application01",
+              "validationConstraints": [],
+              "hidden": false,
+              "orderNumber": 10,
+              "pageNumber": 1,
+              "collection": true,
+              "nestedFields": [
+                {
+                  "nameRus": "Номер страницы",
+                  "nameKazCyr": "Номер страницы",
+                  "nameKazLat": "Номер страницы",
+                  "type": "LONG",
+                  "jsonName": "pageNum",
+                  "validationConstraints": [],
+                  "hidden": false,
+                  "orderNumber": 10,
+                  "pageNumber": 1,
+                  "collection": false,
+                  "nestedFields": []
+                },
+                {
+                  "nameRus": "Номер выдачи разрешительного документа",
+                  "nameKazCyr": "Номер выдачи разрешительного документа",
+                  "nameKazLat": "Номер выдачи разрешительного документа",
+                  "type": "STRING",
+                  "jsonName": "_4_A",
+                  "validationConstraints": [
+                    {
+                      "constraintType": "SIZE",
+                      "arguments": {
+                        "type": "SIZE_ARGUMENTS",
+                        "min": 4,
+                        "max": 15,
+                        "message": null,
+                        "each": false
+                      }
+                    }
+                  ],
+                  "hidden": false,
+                  "orderNumber": 11,
+                  "pageNumber": 1,
+                  "collection": false,
+                  "nestedFields": []
+                },
+                {
+                  "nameRus": "Дата выдачи разрешительного документа",
+                  "nameKazCyr": "Дата выдачи разрешительного документа",
+                  "nameKazLat": "Дата выдачи разрешительного документа",
+                  "type": "DATE",
+                  "jsonName": "_4_B",
+                  "validationConstraints": [],
+                  "hidden": false,
+                  "orderNumber": 12,
+                  "pageNumber": 1,
+                  "collection": false,
+                  "nestedFields": []
+                },
+                {
+                  "nameRus": "Категория объектов",
+                  "nameKazCyr": "Категория объектов",
+                  "nameKazLat": "Категория объектов",
+                  "type": "STRING",
+                  "jsonName": "_4_C",
+                  "validationConstraints": [
+                    {
+                      "constraintType": "SIZE",
+                      "arguments": {
+                        "type": "SIZE_ARGUMENTS",
+                        "min": 1,
+                        "max": 2,
+                        "message": null,
+                        "each": false
+                      }
+                    }
+                  ],
+                  "hidden": false,
+                  "orderNumber": 13,
+                  "pageNumber": 1,
+                  "collection": false,
+                  "nestedFields": []
+                },
+                {
+                  "nameRus": "срок действия разрешения \"с\"",
+                  "nameKazCyr": "срок действия разрешения \"с\"",
+                  "nameKazLat": "срок действия разрешения \"с\"",
+                  "type": "DATE",
+                  "jsonName": "_4_D_from",
+                  "validationConstraints": [],
+                  "hidden": false,
+                  "orderNumber": 14,
+                  "pageNumber": 1,
+                  "collection": false,
+                  "nestedFields": []
+                },
+                {
+                  "nameRus": "срок действия разрешения \"по\"",
+                  "nameKazCyr": "срок действия разрешения \"по\"",
+                  "nameKazLat": "срок действия разрешения \"по\"",
+                  "type": "DATE",
+                  "jsonName": "_4_D_to",
+                  "validationConstraints": [],
+                  "hidden": false,
+                  "orderNumber": 15,
+                  "pageNumber": 1,
+                  "collection": false,
+                  "nestedFields": []
+                },
+                {
+                  "nameRus": "Вид специального природопользования",
+                  "nameKazCyr": "Вид специального природопользования",
+                  "nameKazLat": "Вид специального природопользования",
+                  "type": "STRING",
+                  "jsonName": "_5",
+                  "validationConstraints": [
+                    {
+                      "constraintType": "NOT_EMPTY",
+                      "arguments": {
+                        "type": "MESSAGE_ARGUMENTS",
+                        "message": null,
+                        "each": false
+                      }
+                    },
+                    {
+                      "constraintType": "IN",
+                      "arguments": {
+                        "type": "IN_ARGUMENTS",
+                        "value": [
+                          "A",
+                          "A1",
+                          "A2",
+                          "A3",
+                          "B",
+                          "C",
+                          "D",
+                          "A",
+                          "A1",
+                          "A2",
+                          "A3",
+                          "B",
+                          "C",
+                          "D"
+                        ],
+                        "message": null,
+                        "each": true,
+                        "displayedValues": {
+                          "A": {
+                            "kzCyr": "выбросы загрязняющих веществ",
+                            "kzLat": "выбросы загрязняющих веществ",
+                            "rus": "выбросы загрязняющих веществ"
+                          },
+                          "B": {
+                            "kzCyr": "сбросы",
+                            "kzLat": "сбросы",
+                            "rus": "сбросы"
+                          },
+                          "C": {
+                            "kzCyr": "размещение отходов производства и потребления",
+                            "kzLat": "размещение отходов производства и потребления",
+                            "rus": "размещение отходов производства и потребления"
+                          },
+                          "D": {
+                            "kzCyr": "размещение серы",
+                            "kzLat": "размещение серы",
+                            "rus": "размещение серы"
+                          },
+                          "A1": {
+                            "kzCyr": "от стационарных источников",
+                            "kzLat": "от стационарных источников",
+                            "rus": "от стационарных источников"
+                          },
+                          "A2": {
+                            "kzCyr": "от сжигания попутного и (или) природного газа в факелах",
+                            "kzLat": "от сжигания попутного и (или) природного газа в факелах",
+                            "rus": "от сжигания попутного и (или) природного газа в факелах"
+                          },
+                          "A3": {
+                            "kzCyr": "в атмосферный воздух от передвижных источников",
+                            "kzLat": "в атмосферный воздух от передвижных источников",
+                            "rus": "в атмосферный воздух от передвижных источников"
+                          }
+                        }
+                      }
+                    }
+                  ],
+                  "hidden": false,
+                  "orderNumber": 16,
+                  "pageNumber": 1,
+                  "collection": true,
+                  "nestedFields": [],
+                  "enumerationValues": [
+                    "A",
+                    "A1",
+                    "A2",
+                    "A3",
+                    "B",
+                    "C",
+                    "D",
+                    "A",
+                    "A1",
+                    "A2",
+                    "A3",
+                    "B",
+                    "C",
+                    "D"
+                  ],
+                  "enumerationDisplayedValues": {
+                    "A": {
+                      "kzCyr": "выбросы загрязняющих веществ",
+                      "kzLat": "выбросы загрязняющих веществ",
+                      "rus": "выбросы загрязняющих веществ"
+                    },
+                    "B": {
+                      "kzCyr": "сбросы",
+                      "kzLat": "сбросы",
+                      "rus": "сбросы"
+                    },
+                    "C": {
+                      "kzCyr": "размещение отходов производства и потребления",
+                      "kzLat": "размещение отходов производства и потребления",
+                      "rus": "размещение отходов производства и потребления"
+                    },
+                    "D": {
+                      "kzCyr": "размещение серы",
+                      "kzLat": "размещение серы",
+                      "rus": "размещение серы"
+                    },
+                    "A1": {
+                      "kzCyr": "от стационарных источников",
+                      "kzLat": "от стационарных источников",
+                      "rus": "от стационарных источников"
+                    },
+                    "A2": {
+                      "kzCyr": "от сжигания попутного и (или) природного газа в факелах",
+                      "kzLat": "от сжигания попутного и (или) природного газа в факелах",
+                      "rus": "от сжигания попутного и (или) природного газа в факелах"
+                    },
+                    "A3": {
+                      "kzCyr": "в атмосферный воздух от передвижных источников",
+                      "kzLat": "в атмосферный воздух от передвижных источников",
+                      "rus": "в атмосферный воздух от передвижных источников"
+                    }
+                  }
+                },
+                {
+                  "nameRus": "Пункт",
+                  "nameKazCyr": "Пункт",
+                  "nameKazLat": "Пункт",
+                  "type": "LONG",
+                  "jsonName": "_6_A",
+                  "validationConstraints": [
+                    {
+                      "constraintType": "NOT_NULL",
+                      "arguments": {
+                        "type": "MESSAGE_ARGUMENTS",
+                        "message": null,
+                        "each": false
+                      }
+                    },
+                    {
+                      "constraintType": "SIZE",
+                      "arguments": {
+                        "type": "SIZE_ARGUMENTS",
+                        "min": 1,
+                        "max": 2,
+                        "message": null,
+                        "each": false
+                      }
+                    }
+                  ],
+                  "hidden": false,
+                  "orderNumber": 17,
+                  "pageNumber": 1,
+                  "collection": false,
+                  "nestedFields": []
+                },
+                {
+                  "nameRus": "Подпункт",
+                  "nameKazCyr": "Подпункт",
+                  "nameKazLat": "Подпункт",
+                  "type": "LONG",
+                  "jsonName": "_6_B",
+                  "validationConstraints": [
+                    {
+                      "constraintType": "NOT_NULL",
+                      "arguments": {
+                        "type": "MESSAGE_ARGUMENTS",
+                        "message": null,
+                        "each": false
+                      }
+                    },
+                    {
+                      "constraintType": "SIZE",
+                      "arguments": {
+                        "type": "SIZE_ARGUMENTS",
+                        "min": 1,
+                        "max": 6,
+                        "message": null,
+                        "each": false
+                      }
+                    }
+                  ],
+                  "hidden": false,
+                  "orderNumber": 18,
+                  "pageNumber": 1,
+                  "collection": false,
+                  "nestedFields": []
+                },
+                {
+                  "nameRus": "Код опасных отходов согласно Классификатору отходов",
+                  "nameKazCyr": "Код опасных отходов согласно Классификатору отходов",
+                  "nameKazLat": "Код опасных отходов согласно Классификатору отходов",
+                  "type": "STRING",
+                  "jsonName": "_6_C",
+                  "validationConstraints": [
+                    {
+                      "constraintType": "NOT_NULL",
+                      "arguments": {
+                        "type": "MESSAGE_ARGUMENTS",
+                        "message": null,
+                        "each": false
+                      }
+                    },
+                    {
+                      "constraintType": "SIZE",
+                      "arguments": {
+                        "type": "SIZE_ARGUMENTS",
+                        "min": 5,
+                        "max": 5,
+                        "message": null,
+                        "each": false
+                      }
+                    }
+                  ],
+                  "hidden": false,
+                  "orderNumber": 19,
+                  "pageNumber": 1,
+                  "collection": false,
+                  "nestedFields": []
+                },
+                {
+                  "nameRus": "Единицы измерения природопользования",
+                  "nameKazCyr": "Единицы измерения природопользования",
+                  "nameKazLat": "Единицы измерения природопользования",
+                  "type": "STRING",
+                  "jsonName": "_7",
+                  "validationConstraints": [
+                    {
+                      "constraintType": "NOT_NULL",
+                      "arguments": {
+                        "type": "MESSAGE_ARGUMENTS",
+                        "message": null,
+                        "each": false
+                      }
+                    },
+                    {
+                      "constraintType": "IN",
+                      "arguments": {
+                        "type": "IN_ARGUMENTS",
+                        "value": ["A", "B", "C", "D", "A", "B", "C", "D"],
+                        "message": null,
+                        "each": true,
+                        "displayedValues": {
+                          "A": {
+                            "kzCyr": "тонна",
+                            "kzLat": "тонна",
+                            "rus": "тонна"
+                          },
+                          "B": { "kzCyr": "кг", "kzLat": "кг", "rus": "кг" },
+                          "C": { "kzCyr": "гБк", "kzLat": "гБк", "rus": "гБк" },
+                          "D": {
+                            "kzCyr": "иное",
+                            "kzLat": "иное",
+                            "rus": "иное"
+                          }
+                        }
+                      }
+                    }
+                  ],
+                  "hidden": false,
+                  "orderNumber": 20,
+                  "pageNumber": 1,
+                  "collection": false,
+                  "nestedFields": [],
+                  "enumerationValues": ["A", "B", "C", "D", "A", "B", "C", "D"],
+                  "enumerationDisplayedValues": {
+                    "A": { "kzCyr": "тонна", "kzLat": "тонна", "rus": "тонна" },
+                    "B": { "kzCyr": "кг", "kzLat": "кг", "rus": "кг" },
+                    "C": { "kzCyr": "гБк", "kzLat": "гБк", "rus": "гБк" },
+                    "D": { "kzCyr": "иное", "kzLat": "иное", "rus": "иное" }
+                  }
+                },
+                {
+                  "nameRus": "строка 870.01.001-Остаток норматива на начало квартала",
+                  "nameKazCyr": "строка 870.01.001-Остаток норматива на начало квартала",
+                  "nameKazLat": "строка 870.01.001-Остаток норматива на начало квартала",
+                  "type": "BIG_DECIMAL",
+                  "jsonName": "_870_01_001",
+                  "validationConstraints": [
+                    {
+                      "constraintType": "SIZE",
+                      "arguments": {
+                        "type": "SIZE_ARGUMENTS",
+                        "min": 1,
+                        "max": 9,
+                        "message": null,
+                        "each": false
+                      }
+                    }
+                  ],
+                  "hidden": false,
+                  "orderNumber": 29,
+                  "pageNumber": 1,
+                  "collection": false,
+                  "nestedFields": []
+                },
+                {
+                  "nameRus": "строка 870.01.002-Объем выкупленного норматива",
+                  "nameKazCyr": "строка 870.01.002-Объем выкупленного норматива",
+                  "nameKazLat": "строка 870.01.002-Объем выкупленного норматива",
+                  "type": "BIG_DECIMAL",
+                  "jsonName": "_870_01_002",
+                  "validationConstraints": [
+                    {
+                      "constraintType": "SIZE",
+                      "arguments": {
+                        "type": "SIZE_ARGUMENTS",
+                        "min": 1,
+                        "max": 9,
+                        "message": null,
+                        "each": false
+                      }
+                    }
+                  ],
+                  "hidden": false,
+                  "orderNumber": 30,
+                  "pageNumber": 1,
+                  "collection": false,
+                  "nestedFields": []
+                },
+                {
+                  "nameRus": "строка 870.01.003-Фактический объем эмиссий в пределах установленных нормативов",
+                  "nameKazCyr": "строка 870.01.003-Фактический объем эмиссий в пределах установленных нормативов",
+                  "nameKazLat": "строка 870.01.003-Фактический объем эмиссий в пределах установленных нормативов",
+                  "type": "BIG_DECIMAL",
+                  "jsonName": "_870_01_003",
+                  "validationConstraints": [
+                    {
+                      "constraintType": "NOT_NULL",
+                      "arguments": {
+                        "type": "MESSAGE_ARGUMENTS",
+                        "message": null,
+                        "each": false
+                      }
+                    },
+                    {
+                      "constraintType": "SIZE",
+                      "arguments": {
+                        "type": "SIZE_ARGUMENTS",
+                        "min": 1,
+                        "max": 9,
+                        "message": null,
+                        "each": false
+                      }
+                    }
+                  ],
+                  "hidden": false,
+                  "orderNumber": 31,
+                  "pageNumber": 1,
+                  "collection": false,
+                  "nestedFields": []
+                },
+                {
+                  "nameRus": "строка 870.01.004-Фактический объем эмиссий сверх установленных нормативов",
+                  "nameKazCyr": "строка 870.01.004-Фактический объем эмиссий сверх установленных нормативов",
+                  "nameKazLat": "строка 870.01.004-Фактический объем эмиссий сверх установленных нормативов",
+                  "type": "BIG_DECIMAL",
+                  "jsonName": "_870_01_004",
+                  "validationConstraints": [
+                    {
+                      "constraintType": "SIZE",
+                      "arguments": {
+                        "type": "SIZE_ARGUMENTS",
+                        "min": 1,
+                        "max": 9,
+                        "message": null,
+                        "each": false
+                      }
+                    }
+                  ],
+                  "hidden": false,
+                  "orderNumber": 32,
+                  "pageNumber": 1,
+                  "collection": false,
+                  "nestedFields": []
+                },
+                {
+                  "nameRus": "строка 870.01.005-Остаток норматива на конец квартала",
+                  "nameKazCyr": "строка 870.01.005-Остаток норматива на конец квартала",
+                  "nameKazLat": "строка 870.01.005-Остаток норматива на конец квартала",
+                  "type": "BIG_DECIMAL",
+                  "jsonName": "_870_01_005",
+                  "validationConstraints": [
+                    {
+                      "constraintType": "SIZE",
+                      "arguments": {
+                        "type": "SIZE_ARGUMENTS",
+                        "min": 1,
+                        "max": 9,
+                        "message": null,
+                        "each": false
+                      }
+                    }
+                  ],
+                  "hidden": false,
+                  "orderNumber": 33,
+                  "pageNumber": 1,
+                  "collection": false,
+                  "nestedFields": []
+                },
+                {
+                  "nameRus": "строка 870.01.006-Ставка платы, установленная согласно статье 576 Налогового кодекса",
+                  "nameKazCyr": "строка 870.01.006-Ставка платы, установленная согласно статье 576 Налогового кодекса",
+                  "nameKazLat": "строка 870.01.006-Ставка платы, установленная согласно статье 576 Налогового кодекса",
+                  "type": "BIG_DECIMAL",
+                  "jsonName": "_870_01_006",
+                  "validationConstraints": [
+                    {
+                      "constraintType": "NOT_NULL",
+                      "arguments": {
+                        "type": "MESSAGE_ARGUMENTS",
+                        "message": null,
+                        "each": false
+                      }
+                    },
+                    {
+                      "constraintType": "SIZE",
+                      "arguments": {
+                        "type": "SIZE_ARGUMENTS",
+                        "min": 1,
+                        "max": 9,
+                        "message": null,
+                        "each": false
+                      }
+                    }
+                  ],
+                  "hidden": false,
+                  "orderNumber": 34,
+                  "pageNumber": 1,
+                  "collection": false,
+                  "nestedFields": []
+                },
+                {
+                  "nameRus": "строка 870.01.007-Размер повышения ставки платы по решению местных представительных органов (п.8 ст. 576 Налогового кодекса)",
+                  "nameKazCyr": "строка 870.01.007-Размер повышения ставки платы по решению местных представительных органов (п.8 ст. 576 Налогового кодекса)",
+                  "nameKazLat": "строка 870.01.007-Размер повышения ставки платы по решению местных представительных органов (п.8 ст. 576 Налогового кодекса)",
+                  "type": "BIG_DECIMAL",
+                  "jsonName": "_870_01_007",
+                  "validationConstraints": [
+                    {
+                      "constraintType": "SIZE",
+                      "arguments": {
+                        "type": "SIZE_ARGUMENTS",
+                        "min": 1,
+                        "max": 9,
+                        "message": null,
+                        "each": false
+                      }
+                    }
+                  ],
+                  "hidden": false,
+                  "orderNumber": 35,
+                  "pageNumber": 1,
+                  "collection": false,
+                  "nestedFields": []
+                },
+                {
+                  "nameRus": "строка 870.01.008-Ставка платы с учетом размера повышения ставки по решению местных представительных органов согласно п.8 ст. 576 Налогового кодекса",
+                  "nameKazCyr": "строка 870.01.008-Ставка платы с учетом размера повышения ставки по решению местных представительных органов согласно п.8 ст. 576 Налогового кодекса",
+                  "nameKazLat": "строка 870.01.008-Ставка платы с учетом размера повышения ставки по решению местных представительных органов согласно п.8 ст. 576 Налогового кодекса",
+                  "type": "BIG_DECIMAL",
+                  "jsonName": "_070_01_008",
+                  "validationConstraints": [
+                    {
+                      "constraintType": "SIZE",
+                      "arguments": {
+                        "type": "SIZE_ARGUMENTS",
+                        "min": 1,
+                        "max": 9,
+                        "message": null,
+                        "each": false
+                      }
+                    }
+                  ],
+                  "hidden": false,
+                  "orderNumber": 36,
+                  "pageNumber": 1,
+                  "collection": false,
+                  "nestedFields": []
+                },
+                {
+                  "nameRus": "строка 870.01.009-Коэффициенты, применяемые к плательщикам платы согласно п. 2 ст. 577 Налогового кодекса",
+                  "nameKazCyr": "строка 870.01.009-Коэффициенты, применяемые к плательщикам платы согласно п. 2 ст. 577 Налогового кодекса",
+                  "nameKazLat": "строка 870.01.009-Коэффициенты, применяемые к плательщикам платы согласно п. 2 ст. 577 Налогового кодекса",
+                  "type": "LONG",
+                  "jsonName": "_870_01_009",
+                  "validationConstraints": [
+                    {
+                      "constraintType": "SIZE",
+                      "arguments": {
+                        "type": "SIZE_ARGUMENTS",
+                        "min": 1,
+                        "max": 1,
+                        "message": null,
+                        "each": false
+                      }
+                    }
+                  ],
+                  "hidden": false,
+                  "orderNumber": 37,
+                  "pageNumber": 1,
+                  "collection": false,
+                  "nestedFields": []
+                },
+                {
+                  "nameRus": "строка 870.01.010-Ставка платы в пределах норматива, с учетом размера повышения ставки по решению местных представительных органов (п.8 ст. 576 Налогового кодекса) и коэффициентов (п. 2 ст. 577 Налогового кодекса)",
+                  "nameKazCyr": "строка 870.01.010-Ставка платы в пределах норматива, с учетом размера повышения ставки по решению местных представительных органов (п.8 ст. 576 Налогового кодекса) и коэффициентов (п. 2 ст. 577 Налогового кодекса)",
+                  "nameKazLat": "строка 870.01.010-Ставка платы в пределах норматива, с учетом размера повышения ставки по решению местных представительных органов (п.8 ст. 576 Налогового кодекса) и коэффициентов (п. 2 ст. 577 Налогового кодекса)",
+                  "type": "BIG_DECIMAL",
+                  "jsonName": "_870_01_010",
+                  "validationConstraints": [
+                    {
+                      "constraintType": "SIZE",
+                      "arguments": {
+                        "type": "SIZE_ARGUMENTS",
+                        "min": 1,
+                        "max": 9,
+                        "message": null,
+                        "each": false
+                      }
+                    }
+                  ],
+                  "hidden": false,
+                  "orderNumber": 38,
+                  "pageNumber": 1,
+                  "collection": false,
+                  "nestedFields": []
+                },
+                {
+                  "nameRus": "строка 870.01.011-Сумма исчисленной платы в пределах установленного норматива",
+                  "nameKazCyr": "строка 870.01.011-Сумма исчисленной платы в пределах установленного норматива",
+                  "nameKazLat": "строка 870.01.011-Сумма исчисленной платы в пределах установленного норматива",
+                  "type": "BIG_DECIMAL",
+                  "jsonName": "_870_01_009",
+                  "validationConstraints": [
+                    {
+                      "constraintType": "SIZE",
+                      "arguments": {
+                        "type": "SIZE_ARGUMENTS",
+                        "min": 1,
+                        "max": 9,
+                        "message": null,
+                        "each": false
+                      }
+                    }
+                  ],
+                  "hidden": false,
+                  "orderNumber": 39,
+                  "pageNumber": 1,
+                  "collection": false,
+                  "nestedFields": []
+                },
+                {
+                  "nameRus": "строка 870.01.010-Ставка платы в пределах норматива, с учетом размера повышения ставки по решению местных представительных органов (п.8 ст. 576 Налогового кодекса) и коэффициентов (п. 2 ст. 577 Налогового кодекса)",
+                  "nameKazCyr": "строка 870.01.010-Ставка платы в пределах норматива, с учетом размера повышения ставки по решению местных представительных органов (п.8 ст. 576 Налогового кодекса) и коэффициентов (п. 2 ст. 577 Налогового кодекса)",
+                  "nameKazLat": "строка 870.01.010-Ставка платы в пределах норматива, с учетом размера повышения ставки по решению местных представительных органов (п.8 ст. 576 Налогового кодекса) и коэффициентов (п. 2 ст. 577 Налогового кодекса)",
+                  "type": "BIG_DECIMAL",
+                  "jsonName": "_870_01_010",
+                  "validationConstraints": [
+                    {
+                      "constraintType": "SIZE",
+                      "arguments": {
+                        "type": "SIZE_ARGUMENTS",
+                        "min": 1,
+                        "max": 9,
+                        "message": null,
+                        "each": false
+                      }
+                    }
+                  ],
+                  "hidden": false,
+                  "orderNumber": 40,
+                  "pageNumber": 1,
+                  "collection": false,
+                  "nestedFields": []
+                },
+                {
+                  "nameRus": "строка 870.01.011-Сумма исчисленной платы в пределах установленного норматива",
+                  "nameKazCyr": "строка 870.01.011-Сумма исчисленной платы в пределах установленного норматива",
+                  "nameKazLat": "строка 870.01.011-Сумма исчисленной платы в пределах установленного норматива",
+                  "type": "LONG",
+                  "jsonName": "_870_01_011",
+                  "validationConstraints": [
+                    {
+                      "constraintType": "SIZE",
+                      "arguments": {
+                        "type": "SIZE_ARGUMENTS",
+                        "min": 1,
+                        "max": 12,
+                        "message": null,
+                        "each": false
+                      }
+                    }
+                  ],
+                  "hidden": false,
+                  "orderNumber": 41,
+                  "pageNumber": 1,
+                  "collection": false,
+                  "nestedFields": []
+                },
+                {
+                  "nameRus": "строка 870.01.012-Сумма исчисленной платы сверх установленного норматива",
+                  "nameKazCyr": "строка 870.01.012-Сумма исчисленной платы сверх установленного норматива",
+                  "nameKazLat": "строка 870.01.012-Сумма исчисленной платы сверх установленного норматива",
+                  "type": "LONG",
+                  "jsonName": "_870_01_012",
+                  "validationConstraints": [
+                    {
+                      "constraintType": "SIZE",
+                      "arguments": {
+                        "type": "SIZE_ARGUMENTS",
+                        "min": 1,
+                        "max": 12,
+                        "message": null,
+                        "each": false
+                      }
+                    }
+                  ],
+                  "hidden": false,
+                  "orderNumber": 41,
+                  "pageNumber": 1,
+                  "collection": false,
+                  "nestedFields": []
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "number": 1,
+      "fieldsToLockOnDocumentRegistration": ["_2", "_4", "_iinBin"]
+    },
+    "formType": "fno_870",
+    "number": 1,
+    "validFrom": "2020-01-01T01:01:01+06:00",
+    "validTo": "2022-12-31T23:59:59+06:00"
+  }
+]
