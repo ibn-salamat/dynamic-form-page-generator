@@ -5,7 +5,6 @@ import { router } from "umi";
 import { Button } from "@/components";
 // utils
 import request from "@/utils/request";
-import testFno from "./temporary/testFno.json";
 
 const { Option } = Select;
 
@@ -23,22 +22,6 @@ export function GenerateFormComponent(props) {
   const { versions, currentVersion } = state;
 
   async function getVersions() {
-    if (formName === "fno_test") {
-      // setState({ versions: testFno });
-
-      router.replace({
-        pathname: "/account/arm/mgu/monitoring/generated-form",
-        query: {
-          form: "fno_test",
-          version: 1,
-          revision: 1,
-          mode: "add",
-        },
-        state: testFno,
-      });
-
-      return;
-    }
     // temporary
     try {
       const res = await request(`/mgu/api/dynamic-form/${formName}/versions`);
