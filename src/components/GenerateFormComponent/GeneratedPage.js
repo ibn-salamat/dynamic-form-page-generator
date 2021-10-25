@@ -1,3 +1,7 @@
+/* eslint-disable import/order */
+/* eslint-disable camelcase */
+/* eslint-disable no-underscore-dangle */
+/* eslint-disable import/prefer-default-export */
 import React, { useEffect, useState } from "react";
 import { Card, Form, notification } from "antd";
 import { connect } from "dva";
@@ -129,17 +133,10 @@ function GeneratedPage(props) {
   }, [responseGetDoc]);
 
   useEffect(() => {
-    if (currentOgd) {
-      form.setFieldsValue({ ogdId: currentOgd.id });
-    }
-  }, [currentOgd]);
-
-  useEffect(() => {
     if (pageData?.fieldSets.length > 0) {
       setFormData({
         ...pageData,
         fieldSets: pageData?.fieldSets,
-        // applications: _applications,
         isExist: true,
         title: pageData?.description,
       });
@@ -177,7 +174,6 @@ function GeneratedPage(props) {
                 typeForm === "fno_911" ||
                 typeForm === "fno_421" ||
                 typeForm === "fno_700" ||
-                typeForm === "fno_test" ||
                 typeForm === "fno_870" ||
                 typeForm === "fno_250" ||
                 typeForm === "fno_860" ||
