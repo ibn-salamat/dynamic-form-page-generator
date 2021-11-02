@@ -1,9 +1,12 @@
-import React from "react";
-import { Input, InputNumber, Checkbox, DatePicker, Select } from "antd";
-import { uid } from "uid";
+/* eslint-disable import/order */
+/* eslint-disable camelcase */
+/* eslint-disable no-underscore-dangle */
+/* eslint-disable import/prefer-default-export */
+import React from 'react';
+import { Input, InputNumber, Checkbox, DatePicker, Select } from 'antd';
 // components
 // utils
-import { fieldTypes } from "./utils";
+import { fieldTypes } from '../utils';
 
 export function renderInput(field, props = {}) {
   const {
@@ -12,12 +15,8 @@ export function renderInput(field, props = {}) {
     enumerationDisplayedValues,
     validationConstraints,
   } = field;
-  const lengthRules = validationConstraints.find(
-    (el) => el.constraintType === "SIZE"
-  );
-  const maxRules = validationConstraints.find(
-    (el) => el.constraintType === "MAX"
-  );
+  const lengthRules = validationConstraints.find(el => el.constraintType === 'SIZE');
+  const maxRules = validationConstraints.find(el => el.constraintType === 'MAX');
 
   const lengthProps = {};
 
@@ -36,9 +35,9 @@ export function renderInput(field, props = {}) {
 
   if (enumerationValues && enumerationDisplayedValues) {
     const optionsValues = Array.from(new Set(enumerationValues));
-    const options = optionsValues.map((option) => {
+    const options = optionsValues.map(option => {
       return (
-        <Select.Option key={uid()} value={option}>
+        <Select.Option key={option} value={option}>
           {enumerationDisplayedValues[option]?.rus}
         </Select.Option>
       );
@@ -53,9 +52,7 @@ export function renderInput(field, props = {}) {
     case fieldTypes.INTEGER:
     case fieldTypes.BIG_DECIMAL:
     case fieldTypes.FLOAT:
-      component = (
-        <InputNumber {...lengthProps} style={{ width: "100%" }} {...props} />
-      );
+      component = <InputNumber {...lengthProps} style={{ width: '100%' }} {...props} />;
       break;
 
     case fieldTypes.STRING:
